@@ -1,5 +1,4 @@
 import { writeFileSync } from "fs";
-
 interface Question {
   id: string;
   type: string;
@@ -14,7 +13,7 @@ interface Question {
 const generatePlaceholderQuestion = (
   loNumber: number,
   setNumber: number,
-  type: "mcq" | "tof" | "fib" | "sha",
+  type: "mcq" | "tof" | "fib" | "sha"
 ): Question => {
   const typeMap = {
     mcq: "Multiple Choice",
@@ -30,9 +29,10 @@ const generatePlaceholderQuestion = (
     id,
     type: typeMap[type],
     question: {
-      stem: type === "fib"
-        ? `This is a placeholder ${type.toUpperCase()} question for LO${loNumber} Set${setNumber} with _____`
-        : `This is a placeholder ${type.toUpperCase()} question for LO${loNumber} Set${setNumber}?`,
+      stem:
+        type === "fib"
+          ? `This is a placeholder ${type.toUpperCase()} question for LO${loNumber} Set${setNumber} with _____`
+          : `This is a placeholder ${type.toUpperCase()} question for LO${loNumber} Set${setNumber}?`,
     },
     answerKey: "placeholder",
     lo: `Learning Objective ${loNumber}`,

@@ -1,24 +1,26 @@
-import { shuffleArray } from "~/utils/arrays/shuffleArray.utils";
 import { Assignment, LearningObjective, Question } from "./nsfStudy2.types";
+import { shuffleArray } from "./util";
 
 export const generateStudentAssignment = (
-  learningObjectives: Omit<LearningObjective, "sets">[],
+  learningObjectives: Omit<LearningObjective, "sets">[]
 ): Assignment[] => {
   // 1. Split LOs by spacing condition
   const wideSpacingLOs = learningObjectives.filter(
-    (lo) => lo.condition?.spacing === "wide",
+    (lo) => lo.condition?.spacing === "wide"
   );
   const narrowSpacingLOs = learningObjectives.filter(
-    (lo) => lo.condition?.spacing === "narrow",
+    (lo) => lo.condition?.spacing === "narrow"
   );
 
   // 2. Generate pretest
   const pretest: Assignment = {
     questions: shuffleArray(
-      learningObjectives.flatMap((lo) => [
-        lo.sequence?.pretest.questionSet1,
-        lo.sequence?.pretest.randomQuestionSet,
-      ]).filter((q): q is Question => q !== undefined),
+      learningObjectives
+        .flatMap((lo) => [
+          lo.sequence?.pretest.questionSet1,
+          lo.sequence?.pretest.randomQuestionSet,
+        ])
+        .filter((q): q is Question => q !== undefined)
     ),
     type: "pretest",
     day: "pretest",
@@ -42,7 +44,7 @@ export const generateStudentAssignment = (
         // Take 2 questions from the block
         const questionsFromBlock = block.questions.slice(
           questionStartIdx,
-          questionStartIdx + 2,
+          questionStartIdx + 2
         );
         questionsForDay.push(...questionsFromBlock);
       }
@@ -64,9 +66,10 @@ export const generateStudentAssignment = (
     const startIdx = (week - 1) * 2;
     const narrowLOsForDay = narrowSpacingLOs.slice(startIdx, startIdx + 2);
 
-    const questionsForDay = narrowLOsForDay.flatMap((lo) =>
-      // For each LO, get all questions from all blocks
-      lo.sequence?.learning.blocks.flatMap((block) => block.questions) ?? []
+    const questionsForDay = narrowLOsForDay.flatMap(
+      (lo) =>
+        // For each LO, get all questions from all blocks
+        lo.sequence?.learning.blocks.flatMap((block) => block.questions) ?? []
     );
 
     const narrowSpacingAssignment: Assignment = {
@@ -81,10 +84,12 @@ export const generateStudentAssignment = (
   // 4. Generate posttest
   const posttest: Assignment = {
     questions: shuffleArray(
-      learningObjectives.flatMap((lo) => [
-        lo.sequence?.posttest.questionSet6,
-        lo.sequence?.posttest.matchingPretest,
-      ]).filter((q): q is Question => q !== undefined),
+      learningObjectives
+        .flatMap((lo) => [
+          lo.sequence?.posttest.questionSet6,
+          lo.sequence?.posttest.matchingPretest,
+        ])
+        .filter((q): q is Question => q !== undefined)
     ),
     type: "posttest",
     day: "posttest",

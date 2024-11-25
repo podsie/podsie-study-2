@@ -4,11 +4,14 @@
   "private": true,
   "sideEffects": false,
   "type": "module",
-  "scripts": {},
-  "dependencies": {},
+  "scripts": {
+    "generate": "tsx ./nsfStudy2/generate.ts",
+    "test": "vitest"
+  },
   "devDependencies": {
     "tsx": "^4.19.2",
-    "typescript": "^5.6.3"
+    "typescript": "^5.6.3",
+    "vitest": "^2.1.5"
   },
   "engines": {
     "node": ">=20.0.0"
