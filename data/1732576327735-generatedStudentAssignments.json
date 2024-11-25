@@ -1,0 +1,6788 @@
+[
+  {
+    "questions": [
+      {
+        "id": "spacing-1018-sha-102",
+        "type": "Short Answer",
+        "question": {
+          "stem": "This is a placeholder SHA question for LO18 Set2?"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 18",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1007-mcq-101",
+        "type": "Multiple Choice",
+        "question": {
+          "stem": "This is a placeholder MCQ question for LO7 Set1?",
+          "choices": [
+            {
+              "label": "a",
+              "text": "Choice A for LO7 Set1"
+            },
+            {
+              "label": "b",
+              "text": "Choice B for LO7 Set1"
+            },
+            {
+              "label": "c",
+              "text": "Choice C for LO7 Set1"
+            },
+            {
+              "label": "d",
+              "text": "Choice D for LO7 Set1"
+            }
+          ]
+        },
+        "answerKey": "a",
+        "lo": "Learning Objective 7",
+        "condition": {
+          "spacing": "wide",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1022-mcq-105",
+        "type": "Multiple Choice",
+        "question": {
+          "stem": "This is a placeholder MCQ question for LO22 Set5?",
+          "choices": [
+            {
+              "label": "a",
+              "text": "Choice A for LO22 Set5"
+            },
+            {
+              "label": "b",
+              "text": "Choice B for LO22 Set5"
+            },
+            {
+              "label": "c",
+              "text": "Choice C for LO22 Set5"
+            },
+            {
+              "label": "d",
+              "text": "Choice D for LO22 Set5"
+            }
+          ]
+        },
+        "answerKey": "a",
+        "lo": "Learning Objective 22",
+        "condition": {
+          "spacing": "wide",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1024-tof-104",
+        "type": "True or False",
+        "question": {
+          "stem": "This is a placeholder TOF question for LO24 Set4?"
+        },
+        "answerKey": true,
+        "lo": "Learning Objective 24",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1004-mcq-103",
+        "type": "Multiple Choice",
+        "question": {
+          "stem": "This is a placeholder MCQ question for LO4 Set3?",
+          "choices": [
+            {
+              "label": "a",
+              "text": "Choice A for LO4 Set3"
+            },
+            {
+              "label": "b",
+              "text": "Choice B for LO4 Set3"
+            },
+            {
+              "label": "c",
+              "text": "Choice C for LO4 Set3"
+            },
+            {
+              "label": "d",
+              "text": "Choice D for LO4 Set3"
+            }
+          ]
+        },
+        "answerKey": "a",
+        "lo": "Learning Objective 4",
+        "condition": {
+          "spacing": "wide",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1009-mcq-105",
+        "type": "Multiple Choice",
+        "question": {
+          "stem": "This is a placeholder MCQ question for LO9 Set5?",
+          "choices": [
+            {
+              "label": "a",
+              "text": "Choice A for LO9 Set5"
+            },
+            {
+              "label": "b",
+              "text": "Choice B for LO9 Set5"
+            },
+            {
+              "label": "c",
+              "text": "Choice C for LO9 Set5"
+            },
+            {
+              "label": "d",
+              "text": "Choice D for LO9 Set5"
+            }
+          ]
+        },
+        "answerKey": "a",
+        "lo": "Learning Objective 9",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1006-mcq-102",
+        "type": "Multiple Choice",
+        "question": {
+          "stem": "This is a placeholder MCQ question for LO6 Set2?",
+          "choices": [
+            {
+              "label": "a",
+              "text": "Choice A for LO6 Set2"
+            },
+            {
+              "label": "b",
+              "text": "Choice B for LO6 Set2"
+            },
+            {
+              "label": "c",
+              "text": "Choice C for LO6 Set2"
+            },
+            {
+              "label": "d",
+              "text": "Choice D for LO6 Set2"
+            }
+          ]
+        },
+        "answerKey": "a",
+        "lo": "Learning Objective 6",
+        "condition": {
+          "spacing": "wide",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1005-sha-104",
+        "type": "Short Answer",
+        "question": {
+          "stem": "This is a placeholder SHA question for LO5 Set4?"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 5",
+        "condition": {
+          "spacing": "wide",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1022-sha-101",
+        "type": "Short Answer",
+        "question": {
+          "stem": "This is a placeholder SHA question for LO22 Set1?"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 22",
+        "condition": {
+          "spacing": "wide",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1021-sha-104",
+        "type": "Short Answer",
+        "question": {
+          "stem": "This is a placeholder SHA question for LO21 Set4?"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 21",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1017-tof-104",
+        "type": "True or False",
+        "question": {
+          "stem": "This is a placeholder TOF question for LO17 Set4?"
+        },
+        "answerKey": true,
+        "lo": "Learning Objective 17",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1001-tof-103",
+        "type": "True or False",
+        "question": {
+          "stem": "This is a placeholder TOF question for LO1 Set3?"
+        },
+        "answerKey": true,
+        "lo": "Learning Objective 1",
+        "condition": {
+          "spacing": "wide",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1016-sha-102",
+        "type": "Short Answer",
+        "question": {
+          "stem": "This is a placeholder SHA question for LO16 Set2?"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 16",
+        "condition": {
+          "spacing": "wide",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1001-mcq-101",
+        "type": "Multiple Choice",
+        "question": {
+          "stem": "This is a placeholder MCQ question for LO1 Set1?",
+          "choices": [
+            {
+              "label": "a",
+              "text": "Choice A for LO1 Set1"
+            },
+            {
+              "label": "b",
+              "text": "Choice B for LO1 Set1"
+            },
+            {
+              "label": "c",
+              "text": "Choice C for LO1 Set1"
+            },
+            {
+              "label": "d",
+              "text": "Choice D for LO1 Set1"
+            }
+          ]
+        },
+        "answerKey": "a",
+        "lo": "Learning Objective 1",
+        "condition": {
+          "spacing": "wide",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1024-tof-105",
+        "type": "True or False",
+        "question": {
+          "stem": "This is a placeholder TOF question for LO24 Set5?"
+        },
+        "answerKey": true,
+        "lo": "Learning Objective 24",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1008-sha-103",
+        "type": "Short Answer",
+        "question": {
+          "stem": "This is a placeholder SHA question for LO8 Set3?"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 8",
+        "condition": {
+          "spacing": "wide",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1017-sha-106",
+        "type": "Short Answer",
+        "question": {
+          "stem": "This is a placeholder SHA question for LO17 Set6?"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 17",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1018-sha-101",
+        "type": "Short Answer",
+        "question": {
+          "stem": "This is a placeholder SHA question for LO18 Set1?"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 18",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1010-fib-103",
+        "type": "Fill in Blank",
+        "question": {
+          "stem": "This is a placeholder FIB question for LO10 Set3 with _____"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 10",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1006-tof-104",
+        "type": "True or False",
+        "question": {
+          "stem": "This is a placeholder TOF question for LO6 Set4?"
+        },
+        "answerKey": true,
+        "lo": "Learning Objective 6",
+        "condition": {
+          "spacing": "wide",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1010-mcq-101",
+        "type": "Multiple Choice",
+        "question": {
+          "stem": "This is a placeholder MCQ question for LO10 Set1?",
+          "choices": [
+            {
+              "label": "a",
+              "text": "Choice A for LO10 Set1"
+            },
+            {
+              "label": "b",
+              "text": "Choice B for LO10 Set1"
+            },
+            {
+              "label": "c",
+              "text": "Choice C for LO10 Set1"
+            },
+            {
+              "label": "d",
+              "text": "Choice D for LO10 Set1"
+            }
+          ]
+        },
+        "answerKey": "a",
+        "lo": "Learning Objective 10",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1012-sha-104",
+        "type": "Short Answer",
+        "question": {
+          "stem": "This is a placeholder SHA question for LO12 Set4?"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 12",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1004-fib-102",
+        "type": "Fill in Blank",
+        "question": {
+          "stem": "This is a placeholder FIB question for LO4 Set2 with _____"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 4",
+        "condition": {
+          "spacing": "wide",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1014-mcq-103",
+        "type": "Multiple Choice",
+        "question": {
+          "stem": "This is a placeholder MCQ question for LO14 Set3?",
+          "choices": [
+            {
+              "label": "a",
+              "text": "Choice A for LO14 Set3"
+            },
+            {
+              "label": "b",
+              "text": "Choice B for LO14 Set3"
+            },
+            {
+              "label": "c",
+              "text": "Choice C for LO14 Set3"
+            },
+            {
+              "label": "d",
+              "text": "Choice D for LO14 Set3"
+            }
+          ]
+        },
+        "answerKey": "a",
+        "lo": "Learning Objective 14",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1002-fib-101",
+        "type": "Fill in Blank",
+        "question": {
+          "stem": "This is a placeholder FIB question for LO2 Set1 with _____"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 2",
+        "condition": {
+          "spacing": "wide",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1011-tof-102",
+        "type": "True or False",
+        "question": {
+          "stem": "This is a placeholder TOF question for LO11 Set2?"
+        },
+        "answerKey": true,
+        "lo": "Learning Objective 11",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1009-fib-103",
+        "type": "Fill in Blank",
+        "question": {
+          "stem": "This is a placeholder FIB question for LO9 Set3 with _____"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 9",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1023-mcq-106",
+        "type": "Multiple Choice",
+        "question": {
+          "stem": "This is a placeholder MCQ question for LO23 Set6?",
+          "choices": [
+            {
+              "label": "a",
+              "text": "Choice A for LO23 Set6"
+            },
+            {
+              "label": "b",
+              "text": "Choice B for LO23 Set6"
+            },
+            {
+              "label": "c",
+              "text": "Choice C for LO23 Set6"
+            },
+            {
+              "label": "d",
+              "text": "Choice D for LO23 Set6"
+            }
+          ]
+        },
+        "answerKey": "a",
+        "lo": "Learning Objective 23",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1012-sha-101",
+        "type": "Short Answer",
+        "question": {
+          "stem": "This is a placeholder SHA question for LO12 Set1?"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 12",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1002-sha-106",
+        "type": "Short Answer",
+        "question": {
+          "stem": "This is a placeholder SHA question for LO2 Set6?"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 2",
+        "condition": {
+          "spacing": "wide",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1023-mcq-103",
+        "type": "Multiple Choice",
+        "question": {
+          "stem": "This is a placeholder MCQ question for LO23 Set3?",
+          "choices": [
+            {
+              "label": "a",
+              "text": "Choice A for LO23 Set3"
+            },
+            {
+              "label": "b",
+              "text": "Choice B for LO23 Set3"
+            },
+            {
+              "label": "c",
+              "text": "Choice C for LO23 Set3"
+            },
+            {
+              "label": "d",
+              "text": "Choice D for LO23 Set3"
+            }
+          ]
+        },
+        "answerKey": "a",
+        "lo": "Learning Objective 23",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1003-tof-104",
+        "type": "True or False",
+        "question": {
+          "stem": "This is a placeholder TOF question for LO3 Set4?"
+        },
+        "answerKey": true,
+        "lo": "Learning Objective 3",
+        "condition": {
+          "spacing": "wide",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1011-fib-104",
+        "type": "Fill in Blank",
+        "question": {
+          "stem": "This is a placeholder FIB question for LO11 Set4 with _____"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 11",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1013-fib-105",
+        "type": "Fill in Blank",
+        "question": {
+          "stem": "This is a placeholder FIB question for LO13 Set5 with _____"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 13",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1015-tof-101",
+        "type": "True or False",
+        "question": {
+          "stem": "This is a placeholder TOF question for LO15 Set1?"
+        },
+        "answerKey": true,
+        "lo": "Learning Objective 15",
+        "condition": {
+          "spacing": "wide",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1013-fib-103",
+        "type": "Fill in Blank",
+        "question": {
+          "stem": "This is a placeholder FIB question for LO13 Set3 with _____"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 13",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1021-sha-103",
+        "type": "Short Answer",
+        "question": {
+          "stem": "This is a placeholder SHA question for LO21 Set3?"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 21",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1020-mcq-101",
+        "type": "Multiple Choice",
+        "question": {
+          "stem": "This is a placeholder MCQ question for LO20 Set1?",
+          "choices": [
+            {
+              "label": "a",
+              "text": "Choice A for LO20 Set1"
+            },
+            {
+              "label": "b",
+              "text": "Choice B for LO20 Set1"
+            },
+            {
+              "label": "c",
+              "text": "Choice C for LO20 Set1"
+            },
+            {
+              "label": "d",
+              "text": "Choice D for LO20 Set1"
+            }
+          ]
+        },
+        "answerKey": "a",
+        "lo": "Learning Objective 20",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1020-tof-103",
+        "type": "True or False",
+        "question": {
+          "stem": "This is a placeholder TOF question for LO20 Set3?"
+        },
+        "answerKey": true,
+        "lo": "Learning Objective 20",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1007-mcq-103",
+        "type": "Multiple Choice",
+        "question": {
+          "stem": "This is a placeholder MCQ question for LO7 Set3?",
+          "choices": [
+            {
+              "label": "a",
+              "text": "Choice A for LO7 Set3"
+            },
+            {
+              "label": "b",
+              "text": "Choice B for LO7 Set3"
+            },
+            {
+              "label": "c",
+              "text": "Choice C for LO7 Set3"
+            },
+            {
+              "label": "d",
+              "text": "Choice D for LO7 Set3"
+            }
+          ]
+        },
+        "answerKey": "a",
+        "lo": "Learning Objective 7",
+        "condition": {
+          "spacing": "wide",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1014-fib-101",
+        "type": "Fill in Blank",
+        "question": {
+          "stem": "This is a placeholder FIB question for LO14 Set1 with _____"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 14",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1019-mcq-105",
+        "type": "Multiple Choice",
+        "question": {
+          "stem": "This is a placeholder MCQ question for LO19 Set5?",
+          "choices": [
+            {
+              "label": "a",
+              "text": "Choice A for LO19 Set5"
+            },
+            {
+              "label": "b",
+              "text": "Choice B for LO19 Set5"
+            },
+            {
+              "label": "c",
+              "text": "Choice C for LO19 Set5"
+            },
+            {
+              "label": "d",
+              "text": "Choice D for LO19 Set5"
+            }
+          ]
+        },
+        "answerKey": "a",
+        "lo": "Learning Objective 19",
+        "condition": {
+          "spacing": "wide",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1015-tof-103",
+        "type": "True or False",
+        "question": {
+          "stem": "This is a placeholder TOF question for LO15 Set3?"
+        },
+        "answerKey": true,
+        "lo": "Learning Objective 15",
+        "condition": {
+          "spacing": "wide",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1019-mcq-104",
+        "type": "Multiple Choice",
+        "question": {
+          "stem": "This is a placeholder MCQ question for LO19 Set4?",
+          "choices": [
+            {
+              "label": "a",
+              "text": "Choice A for LO19 Set4"
+            },
+            {
+              "label": "b",
+              "text": "Choice B for LO19 Set4"
+            },
+            {
+              "label": "c",
+              "text": "Choice C for LO19 Set4"
+            },
+            {
+              "label": "d",
+              "text": "Choice D for LO19 Set4"
+            }
+          ]
+        },
+        "answerKey": "a",
+        "lo": "Learning Objective 19",
+        "condition": {
+          "spacing": "wide",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1003-tof-103",
+        "type": "True or False",
+        "question": {
+          "stem": "This is a placeholder TOF question for LO3 Set3?"
+        },
+        "answerKey": true,
+        "lo": "Learning Objective 3",
+        "condition": {
+          "spacing": "wide",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1016-sha-104",
+        "type": "Short Answer",
+        "question": {
+          "stem": "This is a placeholder SHA question for LO16 Set4?"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 16",
+        "condition": {
+          "spacing": "wide",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1008-tof-104",
+        "type": "True or False",
+        "question": {
+          "stem": "This is a placeholder TOF question for LO8 Set4?"
+        },
+        "answerKey": true,
+        "lo": "Learning Objective 8",
+        "condition": {
+          "spacing": "wide",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1005-mcq-106",
+        "type": "Multiple Choice",
+        "question": {
+          "stem": "This is a placeholder MCQ question for LO5 Set6?",
+          "choices": [
+            {
+              "label": "a",
+              "text": "Choice A for LO5 Set6"
+            },
+            {
+              "label": "b",
+              "text": "Choice B for LO5 Set6"
+            },
+            {
+              "label": "c",
+              "text": "Choice C for LO5 Set6"
+            },
+            {
+              "label": "d",
+              "text": "Choice D for LO5 Set6"
+            }
+          ]
+        },
+        "answerKey": "a",
+        "lo": "Learning Objective 5",
+        "condition": {
+          "spacing": "wide",
+          "variability": "high"
+        }
+      }
+    ],
+    "type": "pretest",
+    "day": "pretest"
+  },
+  {
+    "questions": [
+      {
+        "id": "spacing-1007-tof-102",
+        "type": "True or False",
+        "question": {
+          "stem": "This is a placeholder TOF question for LO7 Set2?"
+        },
+        "answerKey": true,
+        "lo": "Learning Objective 7",
+        "condition": {
+          "spacing": "wide",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1001-sha-103",
+        "type": "Short Answer",
+        "question": {
+          "stem": "This is a placeholder SHA question for LO1 Set3?"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 1",
+        "condition": {
+          "spacing": "wide",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1001-mcq-103",
+        "type": "Multiple Choice",
+        "question": {
+          "stem": "This is a placeholder MCQ question for LO1 Set3?",
+          "choices": [
+            {
+              "label": "a",
+              "text": "Choice A for LO1 Set3"
+            },
+            {
+              "label": "b",
+              "text": "Choice B for LO1 Set3"
+            },
+            {
+              "label": "c",
+              "text": "Choice C for LO1 Set3"
+            },
+            {
+              "label": "d",
+              "text": "Choice D for LO1 Set3"
+            }
+          ]
+        },
+        "answerKey": "a",
+        "lo": "Learning Objective 1",
+        "condition": {
+          "spacing": "wide",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1007-mcq-102",
+        "type": "Multiple Choice",
+        "question": {
+          "stem": "This is a placeholder MCQ question for LO7 Set2?",
+          "choices": [
+            {
+              "label": "a",
+              "text": "Choice A for LO7 Set2"
+            },
+            {
+              "label": "b",
+              "text": "Choice B for LO7 Set2"
+            },
+            {
+              "label": "c",
+              "text": "Choice C for LO7 Set2"
+            },
+            {
+              "label": "d",
+              "text": "Choice D for LO7 Set2"
+            }
+          ]
+        },
+        "answerKey": "a",
+        "lo": "Learning Objective 7",
+        "condition": {
+          "spacing": "wide",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1015-sha-106",
+        "type": "Short Answer",
+        "question": {
+          "stem": "This is a placeholder SHA question for LO15 Set6?"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 15",
+        "condition": {
+          "spacing": "wide",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1016-tof-101",
+        "type": "True or False",
+        "question": {
+          "stem": "This is a placeholder TOF question for LO16 Set1?"
+        },
+        "answerKey": true,
+        "lo": "Learning Objective 16",
+        "condition": {
+          "spacing": "wide",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1019-fib-105",
+        "type": "Fill in Blank",
+        "question": {
+          "stem": "This is a placeholder FIB question for LO19 Set5 with _____"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 19",
+        "condition": {
+          "spacing": "wide",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1004-sha-102",
+        "type": "Short Answer",
+        "question": {
+          "stem": "This is a placeholder SHA question for LO4 Set2?"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 4",
+        "condition": {
+          "spacing": "wide",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1006-mcq-103",
+        "type": "Multiple Choice",
+        "question": {
+          "stem": "This is a placeholder MCQ question for LO6 Set3?",
+          "choices": [
+            {
+              "label": "a",
+              "text": "Choice A for LO6 Set3"
+            },
+            {
+              "label": "b",
+              "text": "Choice B for LO6 Set3"
+            },
+            {
+              "label": "c",
+              "text": "Choice C for LO6 Set3"
+            },
+            {
+              "label": "d",
+              "text": "Choice D for LO6 Set3"
+            }
+          ]
+        },
+        "answerKey": "a",
+        "lo": "Learning Objective 6",
+        "condition": {
+          "spacing": "wide",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1003-tof-101",
+        "type": "True or False",
+        "question": {
+          "stem": "This is a placeholder TOF question for LO3 Set1?"
+        },
+        "answerKey": true,
+        "lo": "Learning Objective 3",
+        "condition": {
+          "spacing": "wide",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1016-sha-105",
+        "type": "Short Answer",
+        "question": {
+          "stem": "This is a placeholder SHA question for LO16 Set5?"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 16",
+        "condition": {
+          "spacing": "wide",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1008-fib-101",
+        "type": "Fill in Blank",
+        "question": {
+          "stem": "This is a placeholder FIB question for LO8 Set1 with _____"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 8",
+        "condition": {
+          "spacing": "wide",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1022-fib-102",
+        "type": "Fill in Blank",
+        "question": {
+          "stem": "This is a placeholder FIB question for LO22 Set2 with _____"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 22",
+        "condition": {
+          "spacing": "wide",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1004-tof-102",
+        "type": "True or False",
+        "question": {
+          "stem": "This is a placeholder TOF question for LO4 Set2?"
+        },
+        "answerKey": true,
+        "lo": "Learning Objective 4",
+        "condition": {
+          "spacing": "wide",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1002-sha-105",
+        "type": "Short Answer",
+        "question": {
+          "stem": "This is a placeholder SHA question for LO2 Set5?"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 2",
+        "condition": {
+          "spacing": "wide",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1005-mcq-105",
+        "type": "Multiple Choice",
+        "question": {
+          "stem": "This is a placeholder MCQ question for LO5 Set5?",
+          "choices": [
+            {
+              "label": "a",
+              "text": "Choice A for LO5 Set5"
+            },
+            {
+              "label": "b",
+              "text": "Choice B for LO5 Set5"
+            },
+            {
+              "label": "c",
+              "text": "Choice C for LO5 Set5"
+            },
+            {
+              "label": "d",
+              "text": "Choice D for LO5 Set5"
+            }
+          ]
+        },
+        "answerKey": "a",
+        "lo": "Learning Objective 5",
+        "condition": {
+          "spacing": "wide",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1008-fib-103",
+        "type": "Fill in Blank",
+        "question": {
+          "stem": "This is a placeholder FIB question for LO8 Set3 with _____"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 8",
+        "condition": {
+          "spacing": "wide",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1006-fib-103",
+        "type": "Fill in Blank",
+        "question": {
+          "stem": "This is a placeholder FIB question for LO6 Set3 with _____"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 6",
+        "condition": {
+          "spacing": "wide",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1022-fib-102",
+        "type": "Fill in Blank",
+        "question": {
+          "stem": "This is a placeholder FIB question for LO22 Set2 with _____"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 22",
+        "condition": {
+          "spacing": "wide",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1003-tof-104",
+        "type": "True or False",
+        "question": {
+          "stem": "This is a placeholder TOF question for LO3 Set4?"
+        },
+        "answerKey": true,
+        "lo": "Learning Objective 3",
+        "condition": {
+          "spacing": "wide",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1005-fib-104",
+        "type": "Fill in Blank",
+        "question": {
+          "stem": "This is a placeholder FIB question for LO5 Set4 with _____"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 5",
+        "condition": {
+          "spacing": "wide",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1015-sha-102",
+        "type": "Short Answer",
+        "question": {
+          "stem": "This is a placeholder SHA question for LO15 Set2?"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 15",
+        "condition": {
+          "spacing": "wide",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1002-tof-105",
+        "type": "True or False",
+        "question": {
+          "stem": "This is a placeholder TOF question for LO2 Set5?"
+        },
+        "answerKey": true,
+        "lo": "Learning Objective 2",
+        "condition": {
+          "spacing": "wide",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1019-fib-106",
+        "type": "Fill in Blank",
+        "question": {
+          "stem": "This is a placeholder FIB question for LO19 Set6 with _____"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 19",
+        "condition": {
+          "spacing": "wide",
+          "variability": "high"
+        }
+      }
+    ],
+    "type": "learning",
+    "day": "W1D1"
+  },
+  {
+    "questions": [
+      {
+        "id": "spacing-1006-tof-103",
+        "type": "True or False",
+        "question": {
+          "stem": "This is a placeholder TOF question for LO6 Set3?"
+        },
+        "answerKey": true,
+        "lo": "Learning Objective 6",
+        "condition": {
+          "spacing": "wide",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1022-sha-102",
+        "type": "Short Answer",
+        "question": {
+          "stem": "This is a placeholder SHA question for LO22 Set2?"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 22",
+        "condition": {
+          "spacing": "wide",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1015-tof-105",
+        "type": "True or False",
+        "question": {
+          "stem": "This is a placeholder TOF question for LO15 Set5?"
+        },
+        "answerKey": true,
+        "lo": "Learning Objective 15",
+        "condition": {
+          "spacing": "wide",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1004-sha-102",
+        "type": "Short Answer",
+        "question": {
+          "stem": "This is a placeholder SHA question for LO4 Set2?"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 4",
+        "condition": {
+          "spacing": "wide",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1001-tof-103",
+        "type": "True or False",
+        "question": {
+          "stem": "This is a placeholder TOF question for LO1 Set3?"
+        },
+        "answerKey": true,
+        "lo": "Learning Objective 1",
+        "condition": {
+          "spacing": "wide",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1002-mcq-105",
+        "type": "Multiple Choice",
+        "question": {
+          "stem": "This is a placeholder MCQ question for LO2 Set5?",
+          "choices": [
+            {
+              "label": "a",
+              "text": "Choice A for LO2 Set5"
+            },
+            {
+              "label": "b",
+              "text": "Choice B for LO2 Set5"
+            },
+            {
+              "label": "c",
+              "text": "Choice C for LO2 Set5"
+            },
+            {
+              "label": "d",
+              "text": "Choice D for LO2 Set5"
+            }
+          ]
+        },
+        "answerKey": "a",
+        "lo": "Learning Objective 2",
+        "condition": {
+          "spacing": "wide",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1003-fib-105",
+        "type": "Fill in Blank",
+        "question": {
+          "stem": "This is a placeholder FIB question for LO3 Set5 with _____"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 3",
+        "condition": {
+          "spacing": "wide",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1008-sha-106",
+        "type": "Short Answer",
+        "question": {
+          "stem": "This is a placeholder SHA question for LO8 Set6?"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 8",
+        "condition": {
+          "spacing": "wide",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1005-sha-103",
+        "type": "Short Answer",
+        "question": {
+          "stem": "This is a placeholder SHA question for LO5 Set3?"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 5",
+        "condition": {
+          "spacing": "wide",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1008-fib-105",
+        "type": "Fill in Blank",
+        "question": {
+          "stem": "This is a placeholder FIB question for LO8 Set5 with _____"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 8",
+        "condition": {
+          "spacing": "wide",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1007-tof-102",
+        "type": "True or False",
+        "question": {
+          "stem": "This is a placeholder TOF question for LO7 Set2?"
+        },
+        "answerKey": true,
+        "lo": "Learning Objective 7",
+        "condition": {
+          "spacing": "wide",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1016-fib-103",
+        "type": "Fill in Blank",
+        "question": {
+          "stem": "This is a placeholder FIB question for LO16 Set3 with _____"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 16",
+        "condition": {
+          "spacing": "wide",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1004-sha-102",
+        "type": "Short Answer",
+        "question": {
+          "stem": "This is a placeholder SHA question for LO4 Set2?"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 4",
+        "condition": {
+          "spacing": "wide",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1001-fib-103",
+        "type": "Fill in Blank",
+        "question": {
+          "stem": "This is a placeholder FIB question for LO1 Set3 with _____"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 1",
+        "condition": {
+          "spacing": "wide",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1019-sha-102",
+        "type": "Short Answer",
+        "question": {
+          "stem": "This is a placeholder SHA question for LO19 Set2?"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 19",
+        "condition": {
+          "spacing": "wide",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1005-tof-102",
+        "type": "True or False",
+        "question": {
+          "stem": "This is a placeholder TOF question for LO5 Set2?"
+        },
+        "answerKey": true,
+        "lo": "Learning Objective 5",
+        "condition": {
+          "spacing": "wide",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1022-tof-102",
+        "type": "True or False",
+        "question": {
+          "stem": "This is a placeholder TOF question for LO22 Set2?"
+        },
+        "answerKey": true,
+        "lo": "Learning Objective 22",
+        "condition": {
+          "spacing": "wide",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1015-mcq-101",
+        "type": "Multiple Choice",
+        "question": {
+          "stem": "This is a placeholder MCQ question for LO15 Set1?",
+          "choices": [
+            {
+              "label": "a",
+              "text": "Choice A for LO15 Set1"
+            },
+            {
+              "label": "b",
+              "text": "Choice B for LO15 Set1"
+            },
+            {
+              "label": "c",
+              "text": "Choice C for LO15 Set1"
+            },
+            {
+              "label": "d",
+              "text": "Choice D for LO15 Set1"
+            }
+          ]
+        },
+        "answerKey": "a",
+        "lo": "Learning Objective 15",
+        "condition": {
+          "spacing": "wide",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1019-mcq-103",
+        "type": "Multiple Choice",
+        "question": {
+          "stem": "This is a placeholder MCQ question for LO19 Set3?",
+          "choices": [
+            {
+              "label": "a",
+              "text": "Choice A for LO19 Set3"
+            },
+            {
+              "label": "b",
+              "text": "Choice B for LO19 Set3"
+            },
+            {
+              "label": "c",
+              "text": "Choice C for LO19 Set3"
+            },
+            {
+              "label": "d",
+              "text": "Choice D for LO19 Set3"
+            }
+          ]
+        },
+        "answerKey": "a",
+        "lo": "Learning Objective 19",
+        "condition": {
+          "spacing": "wide",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1006-tof-103",
+        "type": "True or False",
+        "question": {
+          "stem": "This is a placeholder TOF question for LO6 Set3?"
+        },
+        "answerKey": true,
+        "lo": "Learning Objective 6",
+        "condition": {
+          "spacing": "wide",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1003-tof-106",
+        "type": "True or False",
+        "question": {
+          "stem": "This is a placeholder TOF question for LO3 Set6?"
+        },
+        "answerKey": true,
+        "lo": "Learning Objective 3",
+        "condition": {
+          "spacing": "wide",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1002-sha-105",
+        "type": "Short Answer",
+        "question": {
+          "stem": "This is a placeholder SHA question for LO2 Set5?"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 2",
+        "condition": {
+          "spacing": "wide",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1007-mcq-102",
+        "type": "Multiple Choice",
+        "question": {
+          "stem": "This is a placeholder MCQ question for LO7 Set2?",
+          "choices": [
+            {
+              "label": "a",
+              "text": "Choice A for LO7 Set2"
+            },
+            {
+              "label": "b",
+              "text": "Choice B for LO7 Set2"
+            },
+            {
+              "label": "c",
+              "text": "Choice C for LO7 Set2"
+            },
+            {
+              "label": "d",
+              "text": "Choice D for LO7 Set2"
+            }
+          ]
+        },
+        "answerKey": "a",
+        "lo": "Learning Objective 7",
+        "condition": {
+          "spacing": "wide",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1016-mcq-104",
+        "type": "Multiple Choice",
+        "question": {
+          "stem": "This is a placeholder MCQ question for LO16 Set4?",
+          "choices": [
+            {
+              "label": "a",
+              "text": "Choice A for LO16 Set4"
+            },
+            {
+              "label": "b",
+              "text": "Choice B for LO16 Set4"
+            },
+            {
+              "label": "c",
+              "text": "Choice C for LO16 Set4"
+            },
+            {
+              "label": "d",
+              "text": "Choice D for LO16 Set4"
+            }
+          ]
+        },
+        "answerKey": "a",
+        "lo": "Learning Objective 16",
+        "condition": {
+          "spacing": "wide",
+          "variability": "high"
+        }
+      }
+    ],
+    "type": "learning",
+    "day": "W2D1"
+  },
+  {
+    "questions": [
+      {
+        "id": "spacing-1003-fib-101",
+        "type": "Fill in Blank",
+        "question": {
+          "stem": "This is a placeholder FIB question for LO3 Set1 with _____"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 3",
+        "condition": {
+          "spacing": "wide",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1001-tof-103",
+        "type": "True or False",
+        "question": {
+          "stem": "This is a placeholder TOF question for LO1 Set3?"
+        },
+        "answerKey": true,
+        "lo": "Learning Objective 1",
+        "condition": {
+          "spacing": "wide",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1004-sha-102",
+        "type": "Short Answer",
+        "question": {
+          "stem": "This is a placeholder SHA question for LO4 Set2?"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 4",
+        "condition": {
+          "spacing": "wide",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1008-tof-105",
+        "type": "True or False",
+        "question": {
+          "stem": "This is a placeholder TOF question for LO8 Set5?"
+        },
+        "answerKey": true,
+        "lo": "Learning Objective 8",
+        "condition": {
+          "spacing": "wide",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1002-sha-105",
+        "type": "Short Answer",
+        "question": {
+          "stem": "This is a placeholder SHA question for LO2 Set5?"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 2",
+        "condition": {
+          "spacing": "wide",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1003-tof-105",
+        "type": "True or False",
+        "question": {
+          "stem": "This is a placeholder TOF question for LO3 Set5?"
+        },
+        "answerKey": true,
+        "lo": "Learning Objective 3",
+        "condition": {
+          "spacing": "wide",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1006-mcq-103",
+        "type": "Multiple Choice",
+        "question": {
+          "stem": "This is a placeholder MCQ question for LO6 Set3?",
+          "choices": [
+            {
+              "label": "a",
+              "text": "Choice A for LO6 Set3"
+            },
+            {
+              "label": "b",
+              "text": "Choice B for LO6 Set3"
+            },
+            {
+              "label": "c",
+              "text": "Choice C for LO6 Set3"
+            },
+            {
+              "label": "d",
+              "text": "Choice D for LO6 Set3"
+            }
+          ]
+        },
+        "answerKey": "a",
+        "lo": "Learning Objective 6",
+        "condition": {
+          "spacing": "wide",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1007-tof-102",
+        "type": "True or False",
+        "question": {
+          "stem": "This is a placeholder TOF question for LO7 Set2?"
+        },
+        "answerKey": true,
+        "lo": "Learning Objective 7",
+        "condition": {
+          "spacing": "wide",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1016-mcq-101",
+        "type": "Multiple Choice",
+        "question": {
+          "stem": "This is a placeholder MCQ question for LO16 Set1?",
+          "choices": [
+            {
+              "label": "a",
+              "text": "Choice A for LO16 Set1"
+            },
+            {
+              "label": "b",
+              "text": "Choice B for LO16 Set1"
+            },
+            {
+              "label": "c",
+              "text": "Choice C for LO16 Set1"
+            },
+            {
+              "label": "d",
+              "text": "Choice D for LO16 Set1"
+            }
+          ]
+        },
+        "answerKey": "a",
+        "lo": "Learning Objective 16",
+        "condition": {
+          "spacing": "wide",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1015-sha-102",
+        "type": "Short Answer",
+        "question": {
+          "stem": "This is a placeholder SHA question for LO15 Set2?"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 15",
+        "condition": {
+          "spacing": "wide",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1008-sha-101",
+        "type": "Short Answer",
+        "question": {
+          "stem": "This is a placeholder SHA question for LO8 Set1?"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 8",
+        "condition": {
+          "spacing": "wide",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1016-mcq-104",
+        "type": "Multiple Choice",
+        "question": {
+          "stem": "This is a placeholder MCQ question for LO16 Set4?",
+          "choices": [
+            {
+              "label": "a",
+              "text": "Choice A for LO16 Set4"
+            },
+            {
+              "label": "b",
+              "text": "Choice B for LO16 Set4"
+            },
+            {
+              "label": "c",
+              "text": "Choice C for LO16 Set4"
+            },
+            {
+              "label": "d",
+              "text": "Choice D for LO16 Set4"
+            }
+          ]
+        },
+        "answerKey": "a",
+        "lo": "Learning Objective 16",
+        "condition": {
+          "spacing": "wide",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1019-tof-102",
+        "type": "True or False",
+        "question": {
+          "stem": "This is a placeholder TOF question for LO19 Set2?"
+        },
+        "answerKey": true,
+        "lo": "Learning Objective 19",
+        "condition": {
+          "spacing": "wide",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1007-tof-102",
+        "type": "True or False",
+        "question": {
+          "stem": "This is a placeholder TOF question for LO7 Set2?"
+        },
+        "answerKey": true,
+        "lo": "Learning Objective 7",
+        "condition": {
+          "spacing": "wide",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1004-tof-102",
+        "type": "True or False",
+        "question": {
+          "stem": "This is a placeholder TOF question for LO4 Set2?"
+        },
+        "answerKey": true,
+        "lo": "Learning Objective 4",
+        "condition": {
+          "spacing": "wide",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1006-sha-103",
+        "type": "Short Answer",
+        "question": {
+          "stem": "This is a placeholder SHA question for LO6 Set3?"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 6",
+        "condition": {
+          "spacing": "wide",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1015-sha-101",
+        "type": "Short Answer",
+        "question": {
+          "stem": "This is a placeholder SHA question for LO15 Set1?"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 15",
+        "condition": {
+          "spacing": "wide",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1005-sha-105",
+        "type": "Short Answer",
+        "question": {
+          "stem": "This is a placeholder SHA question for LO5 Set5?"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 5",
+        "condition": {
+          "spacing": "wide",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1022-tof-102",
+        "type": "True or False",
+        "question": {
+          "stem": "This is a placeholder TOF question for LO22 Set2?"
+        },
+        "answerKey": true,
+        "lo": "Learning Objective 22",
+        "condition": {
+          "spacing": "wide",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1002-sha-105",
+        "type": "Short Answer",
+        "question": {
+          "stem": "This is a placeholder SHA question for LO2 Set5?"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 2",
+        "condition": {
+          "spacing": "wide",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1019-sha-105",
+        "type": "Short Answer",
+        "question": {
+          "stem": "This is a placeholder SHA question for LO19 Set5?"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 19",
+        "condition": {
+          "spacing": "wide",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1005-tof-104",
+        "type": "True or False",
+        "question": {
+          "stem": "This is a placeholder TOF question for LO5 Set4?"
+        },
+        "answerKey": true,
+        "lo": "Learning Objective 5",
+        "condition": {
+          "spacing": "wide",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1001-mcq-103",
+        "type": "Multiple Choice",
+        "question": {
+          "stem": "This is a placeholder MCQ question for LO1 Set3?",
+          "choices": [
+            {
+              "label": "a",
+              "text": "Choice A for LO1 Set3"
+            },
+            {
+              "label": "b",
+              "text": "Choice B for LO1 Set3"
+            },
+            {
+              "label": "c",
+              "text": "Choice C for LO1 Set3"
+            },
+            {
+              "label": "d",
+              "text": "Choice D for LO1 Set3"
+            }
+          ]
+        },
+        "answerKey": "a",
+        "lo": "Learning Objective 1",
+        "condition": {
+          "spacing": "wide",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1022-mcq-102",
+        "type": "Multiple Choice",
+        "question": {
+          "stem": "This is a placeholder MCQ question for LO22 Set2?",
+          "choices": [
+            {
+              "label": "a",
+              "text": "Choice A for LO22 Set2"
+            },
+            {
+              "label": "b",
+              "text": "Choice B for LO22 Set2"
+            },
+            {
+              "label": "c",
+              "text": "Choice C for LO22 Set2"
+            },
+            {
+              "label": "d",
+              "text": "Choice D for LO22 Set2"
+            }
+          ]
+        },
+        "answerKey": "a",
+        "lo": "Learning Objective 22",
+        "condition": {
+          "spacing": "wide",
+          "variability": "low"
+        }
+      }
+    ],
+    "type": "learning",
+    "day": "W3D1"
+  },
+  {
+    "questions": [
+      {
+        "id": "spacing-1016-tof-105",
+        "type": "True or False",
+        "question": {
+          "stem": "This is a placeholder TOF question for LO16 Set5?"
+        },
+        "answerKey": true,
+        "lo": "Learning Objective 16",
+        "condition": {
+          "spacing": "wide",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1007-mcq-102",
+        "type": "Multiple Choice",
+        "question": {
+          "stem": "This is a placeholder MCQ question for LO7 Set2?",
+          "choices": [
+            {
+              "label": "a",
+              "text": "Choice A for LO7 Set2"
+            },
+            {
+              "label": "b",
+              "text": "Choice B for LO7 Set2"
+            },
+            {
+              "label": "c",
+              "text": "Choice C for LO7 Set2"
+            },
+            {
+              "label": "d",
+              "text": "Choice D for LO7 Set2"
+            }
+          ]
+        },
+        "answerKey": "a",
+        "lo": "Learning Objective 7",
+        "condition": {
+          "spacing": "wide",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1007-sha-102",
+        "type": "Short Answer",
+        "question": {
+          "stem": "This is a placeholder SHA question for LO7 Set2?"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 7",
+        "condition": {
+          "spacing": "wide",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1019-fib-103",
+        "type": "Fill in Blank",
+        "question": {
+          "stem": "This is a placeholder FIB question for LO19 Set3 with _____"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 19",
+        "condition": {
+          "spacing": "wide",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1006-fib-103",
+        "type": "Fill in Blank",
+        "question": {
+          "stem": "This is a placeholder FIB question for LO6 Set3 with _____"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 6",
+        "condition": {
+          "spacing": "wide",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1004-tof-102",
+        "type": "True or False",
+        "question": {
+          "stem": "This is a placeholder TOF question for LO4 Set2?"
+        },
+        "answerKey": true,
+        "lo": "Learning Objective 4",
+        "condition": {
+          "spacing": "wide",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1003-sha-106",
+        "type": "Short Answer",
+        "question": {
+          "stem": "This is a placeholder SHA question for LO3 Set6?"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 3",
+        "condition": {
+          "spacing": "wide",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1003-sha-104",
+        "type": "Short Answer",
+        "question": {
+          "stem": "This is a placeholder SHA question for LO3 Set4?"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 3",
+        "condition": {
+          "spacing": "wide",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1002-tof-105",
+        "type": "True or False",
+        "question": {
+          "stem": "This is a placeholder TOF question for LO2 Set5?"
+        },
+        "answerKey": true,
+        "lo": "Learning Objective 2",
+        "condition": {
+          "spacing": "wide",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1022-fib-102",
+        "type": "Fill in Blank",
+        "question": {
+          "stem": "This is a placeholder FIB question for LO22 Set2 with _____"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 22",
+        "condition": {
+          "spacing": "wide",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1005-fib-102",
+        "type": "Fill in Blank",
+        "question": {
+          "stem": "This is a placeholder FIB question for LO5 Set2 with _____"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 5",
+        "condition": {
+          "spacing": "wide",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1004-fib-102",
+        "type": "Fill in Blank",
+        "question": {
+          "stem": "This is a placeholder FIB question for LO4 Set2 with _____"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 4",
+        "condition": {
+          "spacing": "wide",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1008-tof-103",
+        "type": "True or False",
+        "question": {
+          "stem": "This is a placeholder TOF question for LO8 Set3?"
+        },
+        "answerKey": true,
+        "lo": "Learning Objective 8",
+        "condition": {
+          "spacing": "wide",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1002-fib-105",
+        "type": "Fill in Blank",
+        "question": {
+          "stem": "This is a placeholder FIB question for LO2 Set5 with _____"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 2",
+        "condition": {
+          "spacing": "wide",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1008-fib-106",
+        "type": "Fill in Blank",
+        "question": {
+          "stem": "This is a placeholder FIB question for LO8 Set6 with _____"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 8",
+        "condition": {
+          "spacing": "wide",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1001-mcq-103",
+        "type": "Multiple Choice",
+        "question": {
+          "stem": "This is a placeholder MCQ question for LO1 Set3?",
+          "choices": [
+            {
+              "label": "a",
+              "text": "Choice A for LO1 Set3"
+            },
+            {
+              "label": "b",
+              "text": "Choice B for LO1 Set3"
+            },
+            {
+              "label": "c",
+              "text": "Choice C for LO1 Set3"
+            },
+            {
+              "label": "d",
+              "text": "Choice D for LO1 Set3"
+            }
+          ]
+        },
+        "answerKey": "a",
+        "lo": "Learning Objective 1",
+        "condition": {
+          "spacing": "wide",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1001-tof-103",
+        "type": "True or False",
+        "question": {
+          "stem": "This is a placeholder TOF question for LO1 Set3?"
+        },
+        "answerKey": true,
+        "lo": "Learning Objective 1",
+        "condition": {
+          "spacing": "wide",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1005-fib-103",
+        "type": "Fill in Blank",
+        "question": {
+          "stem": "This is a placeholder FIB question for LO5 Set3 with _____"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 5",
+        "condition": {
+          "spacing": "wide",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1015-sha-105",
+        "type": "Short Answer",
+        "question": {
+          "stem": "This is a placeholder SHA question for LO15 Set5?"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 15",
+        "condition": {
+          "spacing": "wide",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1022-sha-102",
+        "type": "Short Answer",
+        "question": {
+          "stem": "This is a placeholder SHA question for LO22 Set2?"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 22",
+        "condition": {
+          "spacing": "wide",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1015-tof-106",
+        "type": "True or False",
+        "question": {
+          "stem": "This is a placeholder TOF question for LO15 Set6?"
+        },
+        "answerKey": true,
+        "lo": "Learning Objective 15",
+        "condition": {
+          "spacing": "wide",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1016-mcq-103",
+        "type": "Multiple Choice",
+        "question": {
+          "stem": "This is a placeholder MCQ question for LO16 Set3?",
+          "choices": [
+            {
+              "label": "a",
+              "text": "Choice A for LO16 Set3"
+            },
+            {
+              "label": "b",
+              "text": "Choice B for LO16 Set3"
+            },
+            {
+              "label": "c",
+              "text": "Choice C for LO16 Set3"
+            },
+            {
+              "label": "d",
+              "text": "Choice D for LO16 Set3"
+            }
+          ]
+        },
+        "answerKey": "a",
+        "lo": "Learning Objective 16",
+        "condition": {
+          "spacing": "wide",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1019-sha-106",
+        "type": "Short Answer",
+        "question": {
+          "stem": "This is a placeholder SHA question for LO19 Set6?"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 19",
+        "condition": {
+          "spacing": "wide",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1006-tof-103",
+        "type": "True or False",
+        "question": {
+          "stem": "This is a placeholder TOF question for LO6 Set3?"
+        },
+        "answerKey": true,
+        "lo": "Learning Objective 6",
+        "condition": {
+          "spacing": "wide",
+          "variability": "low"
+        }
+      }
+    ],
+    "type": "learning",
+    "day": "W4D1"
+  },
+  {
+    "questions": [
+      {
+        "id": "spacing-1002-mcq-105",
+        "type": "Multiple Choice",
+        "question": {
+          "stem": "This is a placeholder MCQ question for LO2 Set5?",
+          "choices": [
+            {
+              "label": "a",
+              "text": "Choice A for LO2 Set5"
+            },
+            {
+              "label": "b",
+              "text": "Choice B for LO2 Set5"
+            },
+            {
+              "label": "c",
+              "text": "Choice C for LO2 Set5"
+            },
+            {
+              "label": "d",
+              "text": "Choice D for LO2 Set5"
+            }
+          ]
+        },
+        "answerKey": "a",
+        "lo": "Learning Objective 2",
+        "condition": {
+          "spacing": "wide",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1003-sha-101",
+        "type": "Short Answer",
+        "question": {
+          "stem": "This is a placeholder SHA question for LO3 Set1?"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 3",
+        "condition": {
+          "spacing": "wide",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1008-mcq-103",
+        "type": "Multiple Choice",
+        "question": {
+          "stem": "This is a placeholder MCQ question for LO8 Set3?",
+          "choices": [
+            {
+              "label": "a",
+              "text": "Choice A for LO8 Set3"
+            },
+            {
+              "label": "b",
+              "text": "Choice B for LO8 Set3"
+            },
+            {
+              "label": "c",
+              "text": "Choice C for LO8 Set3"
+            },
+            {
+              "label": "d",
+              "text": "Choice D for LO8 Set3"
+            }
+          ]
+        },
+        "answerKey": "a",
+        "lo": "Learning Objective 8",
+        "condition": {
+          "spacing": "wide",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1016-tof-105",
+        "type": "True or False",
+        "question": {
+          "stem": "This is a placeholder TOF question for LO16 Set5?"
+        },
+        "answerKey": true,
+        "lo": "Learning Objective 16",
+        "condition": {
+          "spacing": "wide",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1015-mcq-105",
+        "type": "Multiple Choice",
+        "question": {
+          "stem": "This is a placeholder MCQ question for LO15 Set5?",
+          "choices": [
+            {
+              "label": "a",
+              "text": "Choice A for LO15 Set5"
+            },
+            {
+              "label": "b",
+              "text": "Choice B for LO15 Set5"
+            },
+            {
+              "label": "c",
+              "text": "Choice C for LO15 Set5"
+            },
+            {
+              "label": "d",
+              "text": "Choice D for LO15 Set5"
+            }
+          ]
+        },
+        "answerKey": "a",
+        "lo": "Learning Objective 15",
+        "condition": {
+          "spacing": "wide",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1004-mcq-102",
+        "type": "Multiple Choice",
+        "question": {
+          "stem": "This is a placeholder MCQ question for LO4 Set2?",
+          "choices": [
+            {
+              "label": "a",
+              "text": "Choice A for LO4 Set2"
+            },
+            {
+              "label": "b",
+              "text": "Choice B for LO4 Set2"
+            },
+            {
+              "label": "c",
+              "text": "Choice C for LO4 Set2"
+            },
+            {
+              "label": "d",
+              "text": "Choice D for LO4 Set2"
+            }
+          ]
+        },
+        "answerKey": "a",
+        "lo": "Learning Objective 4",
+        "condition": {
+          "spacing": "wide",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1001-tof-103",
+        "type": "True or False",
+        "question": {
+          "stem": "This is a placeholder TOF question for LO1 Set3?"
+        },
+        "answerKey": true,
+        "lo": "Learning Objective 1",
+        "condition": {
+          "spacing": "wide",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1002-tof-105",
+        "type": "True or False",
+        "question": {
+          "stem": "This is a placeholder TOF question for LO2 Set5?"
+        },
+        "answerKey": true,
+        "lo": "Learning Objective 2",
+        "condition": {
+          "spacing": "wide",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1019-tof-103",
+        "type": "True or False",
+        "question": {
+          "stem": "This is a placeholder TOF question for LO19 Set3?"
+        },
+        "answerKey": true,
+        "lo": "Learning Objective 19",
+        "condition": {
+          "spacing": "wide",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1019-mcq-105",
+        "type": "Multiple Choice",
+        "question": {
+          "stem": "This is a placeholder MCQ question for LO19 Set5?",
+          "choices": [
+            {
+              "label": "a",
+              "text": "Choice A for LO19 Set5"
+            },
+            {
+              "label": "b",
+              "text": "Choice B for LO19 Set5"
+            },
+            {
+              "label": "c",
+              "text": "Choice C for LO19 Set5"
+            },
+            {
+              "label": "d",
+              "text": "Choice D for LO19 Set5"
+            }
+          ]
+        },
+        "answerKey": "a",
+        "lo": "Learning Objective 19",
+        "condition": {
+          "spacing": "wide",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1001-tof-103",
+        "type": "True or False",
+        "question": {
+          "stem": "This is a placeholder TOF question for LO1 Set3?"
+        },
+        "answerKey": true,
+        "lo": "Learning Objective 1",
+        "condition": {
+          "spacing": "wide",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1007-tof-102",
+        "type": "True or False",
+        "question": {
+          "stem": "This is a placeholder TOF question for LO7 Set2?"
+        },
+        "answerKey": true,
+        "lo": "Learning Objective 7",
+        "condition": {
+          "spacing": "wide",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1004-sha-102",
+        "type": "Short Answer",
+        "question": {
+          "stem": "This is a placeholder SHA question for LO4 Set2?"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 4",
+        "condition": {
+          "spacing": "wide",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1016-mcq-104",
+        "type": "Multiple Choice",
+        "question": {
+          "stem": "This is a placeholder MCQ question for LO16 Set4?",
+          "choices": [
+            {
+              "label": "a",
+              "text": "Choice A for LO16 Set4"
+            },
+            {
+              "label": "b",
+              "text": "Choice B for LO16 Set4"
+            },
+            {
+              "label": "c",
+              "text": "Choice C for LO16 Set4"
+            },
+            {
+              "label": "d",
+              "text": "Choice D for LO16 Set4"
+            }
+          ]
+        },
+        "answerKey": "a",
+        "lo": "Learning Objective 16",
+        "condition": {
+          "spacing": "wide",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1007-mcq-102",
+        "type": "Multiple Choice",
+        "question": {
+          "stem": "This is a placeholder MCQ question for LO7 Set2?",
+          "choices": [
+            {
+              "label": "a",
+              "text": "Choice A for LO7 Set2"
+            },
+            {
+              "label": "b",
+              "text": "Choice B for LO7 Set2"
+            },
+            {
+              "label": "c",
+              "text": "Choice C for LO7 Set2"
+            },
+            {
+              "label": "d",
+              "text": "Choice D for LO7 Set2"
+            }
+          ]
+        },
+        "answerKey": "a",
+        "lo": "Learning Objective 7",
+        "condition": {
+          "spacing": "wide",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1003-tof-106",
+        "type": "True or False",
+        "question": {
+          "stem": "This is a placeholder TOF question for LO3 Set6?"
+        },
+        "answerKey": true,
+        "lo": "Learning Objective 3",
+        "condition": {
+          "spacing": "wide",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1022-mcq-102",
+        "type": "Multiple Choice",
+        "question": {
+          "stem": "This is a placeholder MCQ question for LO22 Set2?",
+          "choices": [
+            {
+              "label": "a",
+              "text": "Choice A for LO22 Set2"
+            },
+            {
+              "label": "b",
+              "text": "Choice B for LO22 Set2"
+            },
+            {
+              "label": "c",
+              "text": "Choice C for LO22 Set2"
+            },
+            {
+              "label": "d",
+              "text": "Choice D for LO22 Set2"
+            }
+          ]
+        },
+        "answerKey": "a",
+        "lo": "Learning Objective 22",
+        "condition": {
+          "spacing": "wide",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1022-fib-102",
+        "type": "Fill in Blank",
+        "question": {
+          "stem": "This is a placeholder FIB question for LO22 Set2 with _____"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 22",
+        "condition": {
+          "spacing": "wide",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1006-tof-103",
+        "type": "True or False",
+        "question": {
+          "stem": "This is a placeholder TOF question for LO6 Set3?"
+        },
+        "answerKey": true,
+        "lo": "Learning Objective 6",
+        "condition": {
+          "spacing": "wide",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1006-mcq-103",
+        "type": "Multiple Choice",
+        "question": {
+          "stem": "This is a placeholder MCQ question for LO6 Set3?",
+          "choices": [
+            {
+              "label": "a",
+              "text": "Choice A for LO6 Set3"
+            },
+            {
+              "label": "b",
+              "text": "Choice B for LO6 Set3"
+            },
+            {
+              "label": "c",
+              "text": "Choice C for LO6 Set3"
+            },
+            {
+              "label": "d",
+              "text": "Choice D for LO6 Set3"
+            }
+          ]
+        },
+        "answerKey": "a",
+        "lo": "Learning Objective 6",
+        "condition": {
+          "spacing": "wide",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1005-tof-105",
+        "type": "True or False",
+        "question": {
+          "stem": "This is a placeholder TOF question for LO5 Set5?"
+        },
+        "answerKey": true,
+        "lo": "Learning Objective 5",
+        "condition": {
+          "spacing": "wide",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1005-mcq-103",
+        "type": "Multiple Choice",
+        "question": {
+          "stem": "This is a placeholder MCQ question for LO5 Set3?",
+          "choices": [
+            {
+              "label": "a",
+              "text": "Choice A for LO5 Set3"
+            },
+            {
+              "label": "b",
+              "text": "Choice B for LO5 Set3"
+            },
+            {
+              "label": "c",
+              "text": "Choice C for LO5 Set3"
+            },
+            {
+              "label": "d",
+              "text": "Choice D for LO5 Set3"
+            }
+          ]
+        },
+        "answerKey": "a",
+        "lo": "Learning Objective 5",
+        "condition": {
+          "spacing": "wide",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1008-fib-105",
+        "type": "Fill in Blank",
+        "question": {
+          "stem": "This is a placeholder FIB question for LO8 Set5 with _____"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 8",
+        "condition": {
+          "spacing": "wide",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1015-mcq-101",
+        "type": "Multiple Choice",
+        "question": {
+          "stem": "This is a placeholder MCQ question for LO15 Set1?",
+          "choices": [
+            {
+              "label": "a",
+              "text": "Choice A for LO15 Set1"
+            },
+            {
+              "label": "b",
+              "text": "Choice B for LO15 Set1"
+            },
+            {
+              "label": "c",
+              "text": "Choice C for LO15 Set1"
+            },
+            {
+              "label": "d",
+              "text": "Choice D for LO15 Set1"
+            }
+          ]
+        },
+        "answerKey": "a",
+        "lo": "Learning Objective 15",
+        "condition": {
+          "spacing": "wide",
+          "variability": "high"
+        }
+      }
+    ],
+    "type": "learning",
+    "day": "W5D1"
+  },
+  {
+    "questions": [
+      {
+        "id": "spacing-1015-mcq-106",
+        "type": "Multiple Choice",
+        "question": {
+          "stem": "This is a placeholder MCQ question for LO15 Set6?",
+          "choices": [
+            {
+              "label": "a",
+              "text": "Choice A for LO15 Set6"
+            },
+            {
+              "label": "b",
+              "text": "Choice B for LO15 Set6"
+            },
+            {
+              "label": "c",
+              "text": "Choice C for LO15 Set6"
+            },
+            {
+              "label": "d",
+              "text": "Choice D for LO15 Set6"
+            }
+          ]
+        },
+        "answerKey": "a",
+        "lo": "Learning Objective 15",
+        "condition": {
+          "spacing": "wide",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1005-tof-102",
+        "type": "True or False",
+        "question": {
+          "stem": "This is a placeholder TOF question for LO5 Set2?"
+        },
+        "answerKey": true,
+        "lo": "Learning Objective 5",
+        "condition": {
+          "spacing": "wide",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1022-fib-102",
+        "type": "Fill in Blank",
+        "question": {
+          "stem": "This is a placeholder FIB question for LO22 Set2 with _____"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 22",
+        "condition": {
+          "spacing": "wide",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1008-mcq-106",
+        "type": "Multiple Choice",
+        "question": {
+          "stem": "This is a placeholder MCQ question for LO8 Set6?",
+          "choices": [
+            {
+              "label": "a",
+              "text": "Choice A for LO8 Set6"
+            },
+            {
+              "label": "b",
+              "text": "Choice B for LO8 Set6"
+            },
+            {
+              "label": "c",
+              "text": "Choice C for LO8 Set6"
+            },
+            {
+              "label": "d",
+              "text": "Choice D for LO8 Set6"
+            }
+          ]
+        },
+        "answerKey": "a",
+        "lo": "Learning Objective 8",
+        "condition": {
+          "spacing": "wide",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1003-fib-105",
+        "type": "Fill in Blank",
+        "question": {
+          "stem": "This is a placeholder FIB question for LO3 Set5 with _____"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 3",
+        "condition": {
+          "spacing": "wide",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1002-mcq-105",
+        "type": "Multiple Choice",
+        "question": {
+          "stem": "This is a placeholder MCQ question for LO2 Set5?",
+          "choices": [
+            {
+              "label": "a",
+              "text": "Choice A for LO2 Set5"
+            },
+            {
+              "label": "b",
+              "text": "Choice B for LO2 Set5"
+            },
+            {
+              "label": "c",
+              "text": "Choice C for LO2 Set5"
+            },
+            {
+              "label": "d",
+              "text": "Choice D for LO2 Set5"
+            }
+          ]
+        },
+        "answerKey": "a",
+        "lo": "Learning Objective 2",
+        "condition": {
+          "spacing": "wide",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1008-mcq-101",
+        "type": "Multiple Choice",
+        "question": {
+          "stem": "This is a placeholder MCQ question for LO8 Set1?",
+          "choices": [
+            {
+              "label": "a",
+              "text": "Choice A for LO8 Set1"
+            },
+            {
+              "label": "b",
+              "text": "Choice B for LO8 Set1"
+            },
+            {
+              "label": "c",
+              "text": "Choice C for LO8 Set1"
+            },
+            {
+              "label": "d",
+              "text": "Choice D for LO8 Set1"
+            }
+          ]
+        },
+        "answerKey": "a",
+        "lo": "Learning Objective 8",
+        "condition": {
+          "spacing": "wide",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1004-sha-102",
+        "type": "Short Answer",
+        "question": {
+          "stem": "This is a placeholder SHA question for LO4 Set2?"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 4",
+        "condition": {
+          "spacing": "wide",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1005-tof-104",
+        "type": "True or False",
+        "question": {
+          "stem": "This is a placeholder TOF question for LO5 Set4?"
+        },
+        "answerKey": true,
+        "lo": "Learning Objective 5",
+        "condition": {
+          "spacing": "wide",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1022-fib-102",
+        "type": "Fill in Blank",
+        "question": {
+          "stem": "This is a placeholder FIB question for LO22 Set2 with _____"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 22",
+        "condition": {
+          "spacing": "wide",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1004-sha-102",
+        "type": "Short Answer",
+        "question": {
+          "stem": "This is a placeholder SHA question for LO4 Set2?"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 4",
+        "condition": {
+          "spacing": "wide",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1015-tof-102",
+        "type": "True or False",
+        "question": {
+          "stem": "This is a placeholder TOF question for LO15 Set2?"
+        },
+        "answerKey": true,
+        "lo": "Learning Objective 15",
+        "condition": {
+          "spacing": "wide",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1019-fib-102",
+        "type": "Fill in Blank",
+        "question": {
+          "stem": "This is a placeholder FIB question for LO19 Set2 with _____"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 19",
+        "condition": {
+          "spacing": "wide",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1016-tof-101",
+        "type": "True or False",
+        "question": {
+          "stem": "This is a placeholder TOF question for LO16 Set1?"
+        },
+        "answerKey": true,
+        "lo": "Learning Objective 16",
+        "condition": {
+          "spacing": "wide",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1016-mcq-103",
+        "type": "Multiple Choice",
+        "question": {
+          "stem": "This is a placeholder MCQ question for LO16 Set3?",
+          "choices": [
+            {
+              "label": "a",
+              "text": "Choice A for LO16 Set3"
+            },
+            {
+              "label": "b",
+              "text": "Choice B for LO16 Set3"
+            },
+            {
+              "label": "c",
+              "text": "Choice C for LO16 Set3"
+            },
+            {
+              "label": "d",
+              "text": "Choice D for LO16 Set3"
+            }
+          ]
+        },
+        "answerKey": "a",
+        "lo": "Learning Objective 16",
+        "condition": {
+          "spacing": "wide",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1003-tof-104",
+        "type": "True or False",
+        "question": {
+          "stem": "This is a placeholder TOF question for LO3 Set4?"
+        },
+        "answerKey": true,
+        "lo": "Learning Objective 3",
+        "condition": {
+          "spacing": "wide",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1002-sha-105",
+        "type": "Short Answer",
+        "question": {
+          "stem": "This is a placeholder SHA question for LO2 Set5?"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 2",
+        "condition": {
+          "spacing": "wide",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1019-tof-106",
+        "type": "True or False",
+        "question": {
+          "stem": "This is a placeholder TOF question for LO19 Set6?"
+        },
+        "answerKey": true,
+        "lo": "Learning Objective 19",
+        "condition": {
+          "spacing": "wide",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1001-fib-103",
+        "type": "Fill in Blank",
+        "question": {
+          "stem": "This is a placeholder FIB question for LO1 Set3 with _____"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 1",
+        "condition": {
+          "spacing": "wide",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1006-fib-103",
+        "type": "Fill in Blank",
+        "question": {
+          "stem": "This is a placeholder FIB question for LO6 Set3 with _____"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 6",
+        "condition": {
+          "spacing": "wide",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1006-sha-103",
+        "type": "Short Answer",
+        "question": {
+          "stem": "This is a placeholder SHA question for LO6 Set3?"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 6",
+        "condition": {
+          "spacing": "wide",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1007-fib-102",
+        "type": "Fill in Blank",
+        "question": {
+          "stem": "This is a placeholder FIB question for LO7 Set2 with _____"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 7",
+        "condition": {
+          "spacing": "wide",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1001-fib-103",
+        "type": "Fill in Blank",
+        "question": {
+          "stem": "This is a placeholder FIB question for LO1 Set3 with _____"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 1",
+        "condition": {
+          "spacing": "wide",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1007-tof-102",
+        "type": "True or False",
+        "question": {
+          "stem": "This is a placeholder TOF question for LO7 Set2?"
+        },
+        "answerKey": true,
+        "lo": "Learning Objective 7",
+        "condition": {
+          "spacing": "wide",
+          "variability": "low"
+        }
+      }
+    ],
+    "type": "learning",
+    "day": "W6D1"
+  },
+  {
+    "questions": [
+      {
+        "id": "spacing-1023-sha-102",
+        "type": "Short Answer",
+        "question": {
+          "stem": "This is a placeholder SHA question for LO23 Set2?"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 23",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1023-mcq-101",
+        "type": "Multiple Choice",
+        "question": {
+          "stem": "This is a placeholder MCQ question for LO23 Set1?",
+          "choices": [
+            {
+              "label": "a",
+              "text": "Choice A for LO23 Set1"
+            },
+            {
+              "label": "b",
+              "text": "Choice B for LO23 Set1"
+            },
+            {
+              "label": "c",
+              "text": "Choice C for LO23 Set1"
+            },
+            {
+              "label": "d",
+              "text": "Choice D for LO23 Set1"
+            }
+          ]
+        },
+        "answerKey": "a",
+        "lo": "Learning Objective 23",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1012-sha-106",
+        "type": "Short Answer",
+        "question": {
+          "stem": "This is a placeholder SHA question for LO12 Set6?"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 12",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1012-fib-106",
+        "type": "Fill in Blank",
+        "question": {
+          "stem": "This is a placeholder FIB question for LO12 Set6 with _____"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 12",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1023-mcq-103",
+        "type": "Multiple Choice",
+        "question": {
+          "stem": "This is a placeholder MCQ question for LO23 Set3?",
+          "choices": [
+            {
+              "label": "a",
+              "text": "Choice A for LO23 Set3"
+            },
+            {
+              "label": "b",
+              "text": "Choice B for LO23 Set3"
+            },
+            {
+              "label": "c",
+              "text": "Choice C for LO23 Set3"
+            },
+            {
+              "label": "d",
+              "text": "Choice D for LO23 Set3"
+            }
+          ]
+        },
+        "answerKey": "a",
+        "lo": "Learning Objective 23",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1012-sha-106",
+        "type": "Short Answer",
+        "question": {
+          "stem": "This is a placeholder SHA question for LO12 Set6?"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 12",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1012-sha-106",
+        "type": "Short Answer",
+        "question": {
+          "stem": "This is a placeholder SHA question for LO12 Set6?"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 12",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1012-mcq-106",
+        "type": "Multiple Choice",
+        "question": {
+          "stem": "This is a placeholder MCQ question for LO12 Set6?",
+          "choices": [
+            {
+              "label": "a",
+              "text": "Choice A for LO12 Set6"
+            },
+            {
+              "label": "b",
+              "text": "Choice B for LO12 Set6"
+            },
+            {
+              "label": "c",
+              "text": "Choice C for LO12 Set6"
+            },
+            {
+              "label": "d",
+              "text": "Choice D for LO12 Set6"
+            }
+          ]
+        },
+        "answerKey": "a",
+        "lo": "Learning Objective 12",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1012-fib-106",
+        "type": "Fill in Blank",
+        "question": {
+          "stem": "This is a placeholder FIB question for LO12 Set6 with _____"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 12",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1023-sha-105",
+        "type": "Short Answer",
+        "question": {
+          "stem": "This is a placeholder SHA question for LO23 Set5?"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 23",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1012-sha-106",
+        "type": "Short Answer",
+        "question": {
+          "stem": "This is a placeholder SHA question for LO12 Set6?"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 12",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1012-mcq-106",
+        "type": "Multiple Choice",
+        "question": {
+          "stem": "This is a placeholder MCQ question for LO12 Set6?",
+          "choices": [
+            {
+              "label": "a",
+              "text": "Choice A for LO12 Set6"
+            },
+            {
+              "label": "b",
+              "text": "Choice B for LO12 Set6"
+            },
+            {
+              "label": "c",
+              "text": "Choice C for LO12 Set6"
+            },
+            {
+              "label": "d",
+              "text": "Choice D for LO12 Set6"
+            }
+          ]
+        },
+        "answerKey": "a",
+        "lo": "Learning Objective 12",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1023-mcq-103",
+        "type": "Multiple Choice",
+        "question": {
+          "stem": "This is a placeholder MCQ question for LO23 Set3?",
+          "choices": [
+            {
+              "label": "a",
+              "text": "Choice A for LO23 Set3"
+            },
+            {
+              "label": "b",
+              "text": "Choice B for LO23 Set3"
+            },
+            {
+              "label": "c",
+              "text": "Choice C for LO23 Set3"
+            },
+            {
+              "label": "d",
+              "text": "Choice D for LO23 Set3"
+            }
+          ]
+        },
+        "answerKey": "a",
+        "lo": "Learning Objective 23",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1012-mcq-106",
+        "type": "Multiple Choice",
+        "question": {
+          "stem": "This is a placeholder MCQ question for LO12 Set6?",
+          "choices": [
+            {
+              "label": "a",
+              "text": "Choice A for LO12 Set6"
+            },
+            {
+              "label": "b",
+              "text": "Choice B for LO12 Set6"
+            },
+            {
+              "label": "c",
+              "text": "Choice C for LO12 Set6"
+            },
+            {
+              "label": "d",
+              "text": "Choice D for LO12 Set6"
+            }
+          ]
+        },
+        "answerKey": "a",
+        "lo": "Learning Objective 12",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1023-sha-105",
+        "type": "Short Answer",
+        "question": {
+          "stem": "This is a placeholder SHA question for LO23 Set5?"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 23",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1012-sha-106",
+        "type": "Short Answer",
+        "question": {
+          "stem": "This is a placeholder SHA question for LO12 Set6?"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 12",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1023-fib-101",
+        "type": "Fill in Blank",
+        "question": {
+          "stem": "This is a placeholder FIB question for LO23 Set1 with _____"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 23",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1012-tof-106",
+        "type": "True or False",
+        "question": {
+          "stem": "This is a placeholder TOF question for LO12 Set6?"
+        },
+        "answerKey": true,
+        "lo": "Learning Objective 12",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1012-fib-106",
+        "type": "Fill in Blank",
+        "question": {
+          "stem": "This is a placeholder FIB question for LO12 Set6 with _____"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 12",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1023-tof-105",
+        "type": "True or False",
+        "question": {
+          "stem": "This is a placeholder TOF question for LO23 Set5?"
+        },
+        "answerKey": true,
+        "lo": "Learning Objective 23",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1023-fib-101",
+        "type": "Fill in Blank",
+        "question": {
+          "stem": "This is a placeholder FIB question for LO23 Set1 with _____"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 23",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1023-mcq-103",
+        "type": "Multiple Choice",
+        "question": {
+          "stem": "This is a placeholder MCQ question for LO23 Set3?",
+          "choices": [
+            {
+              "label": "a",
+              "text": "Choice A for LO23 Set3"
+            },
+            {
+              "label": "b",
+              "text": "Choice B for LO23 Set3"
+            },
+            {
+              "label": "c",
+              "text": "Choice C for LO23 Set3"
+            },
+            {
+              "label": "d",
+              "text": "Choice D for LO23 Set3"
+            }
+          ]
+        },
+        "answerKey": "a",
+        "lo": "Learning Objective 23",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1023-sha-102",
+        "type": "Short Answer",
+        "question": {
+          "stem": "This is a placeholder SHA question for LO23 Set2?"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 23",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1023-tof-102",
+        "type": "True or False",
+        "question": {
+          "stem": "This is a placeholder TOF question for LO23 Set2?"
+        },
+        "answerKey": true,
+        "lo": "Learning Objective 23",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "high"
+        }
+      }
+    ],
+    "type": "learning",
+    "day": "W1D2"
+  },
+  {
+    "questions": [
+      {
+        "id": "spacing-1012-sha-106",
+        "type": "Short Answer",
+        "question": {
+          "stem": "This is a placeholder SHA question for LO12 Set6?"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 12",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1023-mcq-101",
+        "type": "Multiple Choice",
+        "question": {
+          "stem": "This is a placeholder MCQ question for LO23 Set1?",
+          "choices": [
+            {
+              "label": "a",
+              "text": "Choice A for LO23 Set1"
+            },
+            {
+              "label": "b",
+              "text": "Choice B for LO23 Set1"
+            },
+            {
+              "label": "c",
+              "text": "Choice C for LO23 Set1"
+            },
+            {
+              "label": "d",
+              "text": "Choice D for LO23 Set1"
+            }
+          ]
+        },
+        "answerKey": "a",
+        "lo": "Learning Objective 23",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1012-mcq-106",
+        "type": "Multiple Choice",
+        "question": {
+          "stem": "This is a placeholder MCQ question for LO12 Set6?",
+          "choices": [
+            {
+              "label": "a",
+              "text": "Choice A for LO12 Set6"
+            },
+            {
+              "label": "b",
+              "text": "Choice B for LO12 Set6"
+            },
+            {
+              "label": "c",
+              "text": "Choice C for LO12 Set6"
+            },
+            {
+              "label": "d",
+              "text": "Choice D for LO12 Set6"
+            }
+          ]
+        },
+        "answerKey": "a",
+        "lo": "Learning Objective 12",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1023-mcq-103",
+        "type": "Multiple Choice",
+        "question": {
+          "stem": "This is a placeholder MCQ question for LO23 Set3?",
+          "choices": [
+            {
+              "label": "a",
+              "text": "Choice A for LO23 Set3"
+            },
+            {
+              "label": "b",
+              "text": "Choice B for LO23 Set3"
+            },
+            {
+              "label": "c",
+              "text": "Choice C for LO23 Set3"
+            },
+            {
+              "label": "d",
+              "text": "Choice D for LO23 Set3"
+            }
+          ]
+        },
+        "answerKey": "a",
+        "lo": "Learning Objective 23",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1012-sha-106",
+        "type": "Short Answer",
+        "question": {
+          "stem": "This is a placeholder SHA question for LO12 Set6?"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 12",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1012-mcq-106",
+        "type": "Multiple Choice",
+        "question": {
+          "stem": "This is a placeholder MCQ question for LO12 Set6?",
+          "choices": [
+            {
+              "label": "a",
+              "text": "Choice A for LO12 Set6"
+            },
+            {
+              "label": "b",
+              "text": "Choice B for LO12 Set6"
+            },
+            {
+              "label": "c",
+              "text": "Choice C for LO12 Set6"
+            },
+            {
+              "label": "d",
+              "text": "Choice D for LO12 Set6"
+            }
+          ]
+        },
+        "answerKey": "a",
+        "lo": "Learning Objective 12",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1012-sha-106",
+        "type": "Short Answer",
+        "question": {
+          "stem": "This is a placeholder SHA question for LO12 Set6?"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 12",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1023-sha-102",
+        "type": "Short Answer",
+        "question": {
+          "stem": "This is a placeholder SHA question for LO23 Set2?"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 23",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1012-sha-106",
+        "type": "Short Answer",
+        "question": {
+          "stem": "This is a placeholder SHA question for LO12 Set6?"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 12",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1023-tof-105",
+        "type": "True or False",
+        "question": {
+          "stem": "This is a placeholder TOF question for LO23 Set5?"
+        },
+        "answerKey": true,
+        "lo": "Learning Objective 23",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1023-sha-102",
+        "type": "Short Answer",
+        "question": {
+          "stem": "This is a placeholder SHA question for LO23 Set2?"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 23",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1023-mcq-103",
+        "type": "Multiple Choice",
+        "question": {
+          "stem": "This is a placeholder MCQ question for LO23 Set3?",
+          "choices": [
+            {
+              "label": "a",
+              "text": "Choice A for LO23 Set3"
+            },
+            {
+              "label": "b",
+              "text": "Choice B for LO23 Set3"
+            },
+            {
+              "label": "c",
+              "text": "Choice C for LO23 Set3"
+            },
+            {
+              "label": "d",
+              "text": "Choice D for LO23 Set3"
+            }
+          ]
+        },
+        "answerKey": "a",
+        "lo": "Learning Objective 23",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1012-fib-106",
+        "type": "Fill in Blank",
+        "question": {
+          "stem": "This is a placeholder FIB question for LO12 Set6 with _____"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 12",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1012-sha-106",
+        "type": "Short Answer",
+        "question": {
+          "stem": "This is a placeholder SHA question for LO12 Set6?"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 12",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1023-sha-105",
+        "type": "Short Answer",
+        "question": {
+          "stem": "This is a placeholder SHA question for LO23 Set5?"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 23",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1023-fib-101",
+        "type": "Fill in Blank",
+        "question": {
+          "stem": "This is a placeholder FIB question for LO23 Set1 with _____"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 23",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1012-fib-106",
+        "type": "Fill in Blank",
+        "question": {
+          "stem": "This is a placeholder FIB question for LO12 Set6 with _____"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 12",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1023-mcq-103",
+        "type": "Multiple Choice",
+        "question": {
+          "stem": "This is a placeholder MCQ question for LO23 Set3?",
+          "choices": [
+            {
+              "label": "a",
+              "text": "Choice A for LO23 Set3"
+            },
+            {
+              "label": "b",
+              "text": "Choice B for LO23 Set3"
+            },
+            {
+              "label": "c",
+              "text": "Choice C for LO23 Set3"
+            },
+            {
+              "label": "d",
+              "text": "Choice D for LO23 Set3"
+            }
+          ]
+        },
+        "answerKey": "a",
+        "lo": "Learning Objective 23",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1012-tof-106",
+        "type": "True or False",
+        "question": {
+          "stem": "This is a placeholder TOF question for LO12 Set6?"
+        },
+        "answerKey": true,
+        "lo": "Learning Objective 12",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1023-tof-102",
+        "type": "True or False",
+        "question": {
+          "stem": "This is a placeholder TOF question for LO23 Set2?"
+        },
+        "answerKey": true,
+        "lo": "Learning Objective 23",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1012-fib-106",
+        "type": "Fill in Blank",
+        "question": {
+          "stem": "This is a placeholder FIB question for LO12 Set6 with _____"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 12",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1012-mcq-106",
+        "type": "Multiple Choice",
+        "question": {
+          "stem": "This is a placeholder MCQ question for LO12 Set6?",
+          "choices": [
+            {
+              "label": "a",
+              "text": "Choice A for LO12 Set6"
+            },
+            {
+              "label": "b",
+              "text": "Choice B for LO12 Set6"
+            },
+            {
+              "label": "c",
+              "text": "Choice C for LO12 Set6"
+            },
+            {
+              "label": "d",
+              "text": "Choice D for LO12 Set6"
+            }
+          ]
+        },
+        "answerKey": "a",
+        "lo": "Learning Objective 12",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1023-sha-105",
+        "type": "Short Answer",
+        "question": {
+          "stem": "This is a placeholder SHA question for LO23 Set5?"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 23",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1023-fib-101",
+        "type": "Fill in Blank",
+        "question": {
+          "stem": "This is a placeholder FIB question for LO23 Set1 with _____"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 23",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "high"
+        }
+      }
+    ],
+    "type": "learning",
+    "day": "W2D2"
+  },
+  {
+    "questions": [
+      {
+        "id": "spacing-1011-sha-106",
+        "type": "Short Answer",
+        "question": {
+          "stem": "This is a placeholder SHA question for LO11 Set6?"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 11",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1011-sha-105",
+        "type": "Short Answer",
+        "question": {
+          "stem": "This is a placeholder SHA question for LO11 Set5?"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 11",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1017-tof-105",
+        "type": "True or False",
+        "question": {
+          "stem": "This is a placeholder TOF question for LO17 Set5?"
+        },
+        "answerKey": true,
+        "lo": "Learning Objective 17",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1017-fib-105",
+        "type": "Fill in Blank",
+        "question": {
+          "stem": "This is a placeholder FIB question for LO17 Set5 with _____"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 17",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1017-fib-105",
+        "type": "Fill in Blank",
+        "question": {
+          "stem": "This is a placeholder FIB question for LO17 Set5 with _____"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 17",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1017-fib-105",
+        "type": "Fill in Blank",
+        "question": {
+          "stem": "This is a placeholder FIB question for LO17 Set5 with _____"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 17",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1017-mcq-105",
+        "type": "Multiple Choice",
+        "question": {
+          "stem": "This is a placeholder MCQ question for LO17 Set5?",
+          "choices": [
+            {
+              "label": "a",
+              "text": "Choice A for LO17 Set5"
+            },
+            {
+              "label": "b",
+              "text": "Choice B for LO17 Set5"
+            },
+            {
+              "label": "c",
+              "text": "Choice C for LO17 Set5"
+            },
+            {
+              "label": "d",
+              "text": "Choice D for LO17 Set5"
+            }
+          ]
+        },
+        "answerKey": "a",
+        "lo": "Learning Objective 17",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1017-mcq-105",
+        "type": "Multiple Choice",
+        "question": {
+          "stem": "This is a placeholder MCQ question for LO17 Set5?",
+          "choices": [
+            {
+              "label": "a",
+              "text": "Choice A for LO17 Set5"
+            },
+            {
+              "label": "b",
+              "text": "Choice B for LO17 Set5"
+            },
+            {
+              "label": "c",
+              "text": "Choice C for LO17 Set5"
+            },
+            {
+              "label": "d",
+              "text": "Choice D for LO17 Set5"
+            }
+          ]
+        },
+        "answerKey": "a",
+        "lo": "Learning Objective 17",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1011-tof-105",
+        "type": "True or False",
+        "question": {
+          "stem": "This is a placeholder TOF question for LO11 Set5?"
+        },
+        "answerKey": true,
+        "lo": "Learning Objective 11",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1017-sha-105",
+        "type": "Short Answer",
+        "question": {
+          "stem": "This is a placeholder SHA question for LO17 Set5?"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 17",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1011-fib-104",
+        "type": "Fill in Blank",
+        "question": {
+          "stem": "This is a placeholder FIB question for LO11 Set4 with _____"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 11",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1011-tof-104",
+        "type": "True or False",
+        "question": {
+          "stem": "This is a placeholder TOF question for LO11 Set4?"
+        },
+        "answerKey": true,
+        "lo": "Learning Objective 11",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1011-sha-101",
+        "type": "Short Answer",
+        "question": {
+          "stem": "This is a placeholder SHA question for LO11 Set1?"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 11",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1011-tof-101",
+        "type": "True or False",
+        "question": {
+          "stem": "This is a placeholder TOF question for LO11 Set1?"
+        },
+        "answerKey": true,
+        "lo": "Learning Objective 11",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1011-sha-101",
+        "type": "Short Answer",
+        "question": {
+          "stem": "This is a placeholder SHA question for LO11 Set1?"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 11",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1011-sha-106",
+        "type": "Short Answer",
+        "question": {
+          "stem": "This is a placeholder SHA question for LO11 Set6?"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 11",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1017-sha-105",
+        "type": "Short Answer",
+        "question": {
+          "stem": "This is a placeholder SHA question for LO17 Set5?"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 17",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1011-tof-104",
+        "type": "True or False",
+        "question": {
+          "stem": "This is a placeholder TOF question for LO11 Set4?"
+        },
+        "answerKey": true,
+        "lo": "Learning Objective 11",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1017-tof-105",
+        "type": "True or False",
+        "question": {
+          "stem": "This is a placeholder TOF question for LO17 Set5?"
+        },
+        "answerKey": true,
+        "lo": "Learning Objective 17",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1017-mcq-105",
+        "type": "Multiple Choice",
+        "question": {
+          "stem": "This is a placeholder MCQ question for LO17 Set5?",
+          "choices": [
+            {
+              "label": "a",
+              "text": "Choice A for LO17 Set5"
+            },
+            {
+              "label": "b",
+              "text": "Choice B for LO17 Set5"
+            },
+            {
+              "label": "c",
+              "text": "Choice C for LO17 Set5"
+            },
+            {
+              "label": "d",
+              "text": "Choice D for LO17 Set5"
+            }
+          ]
+        },
+        "answerKey": "a",
+        "lo": "Learning Objective 17",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1017-sha-105",
+        "type": "Short Answer",
+        "question": {
+          "stem": "This is a placeholder SHA question for LO17 Set5?"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 17",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1011-mcq-106",
+        "type": "Multiple Choice",
+        "question": {
+          "stem": "This is a placeholder MCQ question for LO11 Set6?",
+          "choices": [
+            {
+              "label": "a",
+              "text": "Choice A for LO11 Set6"
+            },
+            {
+              "label": "b",
+              "text": "Choice B for LO11 Set6"
+            },
+            {
+              "label": "c",
+              "text": "Choice C for LO11 Set6"
+            },
+            {
+              "label": "d",
+              "text": "Choice D for LO11 Set6"
+            }
+          ]
+        },
+        "answerKey": "a",
+        "lo": "Learning Objective 11",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1011-sha-105",
+        "type": "Short Answer",
+        "question": {
+          "stem": "This is a placeholder SHA question for LO11 Set5?"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 11",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1017-mcq-105",
+        "type": "Multiple Choice",
+        "question": {
+          "stem": "This is a placeholder MCQ question for LO17 Set5?",
+          "choices": [
+            {
+              "label": "a",
+              "text": "Choice A for LO17 Set5"
+            },
+            {
+              "label": "b",
+              "text": "Choice B for LO17 Set5"
+            },
+            {
+              "label": "c",
+              "text": "Choice C for LO17 Set5"
+            },
+            {
+              "label": "d",
+              "text": "Choice D for LO17 Set5"
+            }
+          ]
+        },
+        "answerKey": "a",
+        "lo": "Learning Objective 17",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "low"
+        }
+      }
+    ],
+    "type": "learning",
+    "day": "W3D2"
+  },
+  {
+    "questions": [
+      {
+        "id": "spacing-1011-sha-101",
+        "type": "Short Answer",
+        "question": {
+          "stem": "This is a placeholder SHA question for LO11 Set1?"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 11",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1011-tof-105",
+        "type": "True or False",
+        "question": {
+          "stem": "This is a placeholder TOF question for LO11 Set5?"
+        },
+        "answerKey": true,
+        "lo": "Learning Objective 11",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1011-tof-104",
+        "type": "True or False",
+        "question": {
+          "stem": "This is a placeholder TOF question for LO11 Set4?"
+        },
+        "answerKey": true,
+        "lo": "Learning Objective 11",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1017-mcq-105",
+        "type": "Multiple Choice",
+        "question": {
+          "stem": "This is a placeholder MCQ question for LO17 Set5?",
+          "choices": [
+            {
+              "label": "a",
+              "text": "Choice A for LO17 Set5"
+            },
+            {
+              "label": "b",
+              "text": "Choice B for LO17 Set5"
+            },
+            {
+              "label": "c",
+              "text": "Choice C for LO17 Set5"
+            },
+            {
+              "label": "d",
+              "text": "Choice D for LO17 Set5"
+            }
+          ]
+        },
+        "answerKey": "a",
+        "lo": "Learning Objective 17",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1011-mcq-106",
+        "type": "Multiple Choice",
+        "question": {
+          "stem": "This is a placeholder MCQ question for LO11 Set6?",
+          "choices": [
+            {
+              "label": "a",
+              "text": "Choice A for LO11 Set6"
+            },
+            {
+              "label": "b",
+              "text": "Choice B for LO11 Set6"
+            },
+            {
+              "label": "c",
+              "text": "Choice C for LO11 Set6"
+            },
+            {
+              "label": "d",
+              "text": "Choice D for LO11 Set6"
+            }
+          ]
+        },
+        "answerKey": "a",
+        "lo": "Learning Objective 11",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1017-fib-105",
+        "type": "Fill in Blank",
+        "question": {
+          "stem": "This is a placeholder FIB question for LO17 Set5 with _____"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 17",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1017-sha-105",
+        "type": "Short Answer",
+        "question": {
+          "stem": "This is a placeholder SHA question for LO17 Set5?"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 17",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1011-tof-101",
+        "type": "True or False",
+        "question": {
+          "stem": "This is a placeholder TOF question for LO11 Set1?"
+        },
+        "answerKey": true,
+        "lo": "Learning Objective 11",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1017-sha-105",
+        "type": "Short Answer",
+        "question": {
+          "stem": "This is a placeholder SHA question for LO17 Set5?"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 17",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1011-sha-106",
+        "type": "Short Answer",
+        "question": {
+          "stem": "This is a placeholder SHA question for LO11 Set6?"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 11",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1017-mcq-105",
+        "type": "Multiple Choice",
+        "question": {
+          "stem": "This is a placeholder MCQ question for LO17 Set5?",
+          "choices": [
+            {
+              "label": "a",
+              "text": "Choice A for LO17 Set5"
+            },
+            {
+              "label": "b",
+              "text": "Choice B for LO17 Set5"
+            },
+            {
+              "label": "c",
+              "text": "Choice C for LO17 Set5"
+            },
+            {
+              "label": "d",
+              "text": "Choice D for LO17 Set5"
+            }
+          ]
+        },
+        "answerKey": "a",
+        "lo": "Learning Objective 17",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1017-fib-105",
+        "type": "Fill in Blank",
+        "question": {
+          "stem": "This is a placeholder FIB question for LO17 Set5 with _____"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 17",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1017-fib-105",
+        "type": "Fill in Blank",
+        "question": {
+          "stem": "This is a placeholder FIB question for LO17 Set5 with _____"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 17",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1011-sha-105",
+        "type": "Short Answer",
+        "question": {
+          "stem": "This is a placeholder SHA question for LO11 Set5?"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 11",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1017-sha-105",
+        "type": "Short Answer",
+        "question": {
+          "stem": "This is a placeholder SHA question for LO17 Set5?"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 17",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1017-tof-105",
+        "type": "True or False",
+        "question": {
+          "stem": "This is a placeholder TOF question for LO17 Set5?"
+        },
+        "answerKey": true,
+        "lo": "Learning Objective 17",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1011-sha-101",
+        "type": "Short Answer",
+        "question": {
+          "stem": "This is a placeholder SHA question for LO11 Set1?"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 11",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1011-sha-105",
+        "type": "Short Answer",
+        "question": {
+          "stem": "This is a placeholder SHA question for LO11 Set5?"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 11",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1011-fib-104",
+        "type": "Fill in Blank",
+        "question": {
+          "stem": "This is a placeholder FIB question for LO11 Set4 with _____"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 11",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1017-mcq-105",
+        "type": "Multiple Choice",
+        "question": {
+          "stem": "This is a placeholder MCQ question for LO17 Set5?",
+          "choices": [
+            {
+              "label": "a",
+              "text": "Choice A for LO17 Set5"
+            },
+            {
+              "label": "b",
+              "text": "Choice B for LO17 Set5"
+            },
+            {
+              "label": "c",
+              "text": "Choice C for LO17 Set5"
+            },
+            {
+              "label": "d",
+              "text": "Choice D for LO17 Set5"
+            }
+          ]
+        },
+        "answerKey": "a",
+        "lo": "Learning Objective 17",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1011-sha-106",
+        "type": "Short Answer",
+        "question": {
+          "stem": "This is a placeholder SHA question for LO11 Set6?"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 11",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1017-tof-105",
+        "type": "True or False",
+        "question": {
+          "stem": "This is a placeholder TOF question for LO17 Set5?"
+        },
+        "answerKey": true,
+        "lo": "Learning Objective 17",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1017-mcq-105",
+        "type": "Multiple Choice",
+        "question": {
+          "stem": "This is a placeholder MCQ question for LO17 Set5?",
+          "choices": [
+            {
+              "label": "a",
+              "text": "Choice A for LO17 Set5"
+            },
+            {
+              "label": "b",
+              "text": "Choice B for LO17 Set5"
+            },
+            {
+              "label": "c",
+              "text": "Choice C for LO17 Set5"
+            },
+            {
+              "label": "d",
+              "text": "Choice D for LO17 Set5"
+            }
+          ]
+        },
+        "answerKey": "a",
+        "lo": "Learning Objective 17",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1011-tof-104",
+        "type": "True or False",
+        "question": {
+          "stem": "This is a placeholder TOF question for LO11 Set4?"
+        },
+        "answerKey": true,
+        "lo": "Learning Objective 11",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "high"
+        }
+      }
+    ],
+    "type": "learning",
+    "day": "W4D2"
+  },
+  {
+    "questions": [
+      {
+        "id": "spacing-1009-sha-101",
+        "type": "Short Answer",
+        "question": {
+          "stem": "This is a placeholder SHA question for LO9 Set1?"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 9",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1010-mcq-104",
+        "type": "Multiple Choice",
+        "question": {
+          "stem": "This is a placeholder MCQ question for LO10 Set4?",
+          "choices": [
+            {
+              "label": "a",
+              "text": "Choice A for LO10 Set4"
+            },
+            {
+              "label": "b",
+              "text": "Choice B for LO10 Set4"
+            },
+            {
+              "label": "c",
+              "text": "Choice C for LO10 Set4"
+            },
+            {
+              "label": "d",
+              "text": "Choice D for LO10 Set4"
+            }
+          ]
+        },
+        "answerKey": "a",
+        "lo": "Learning Objective 10",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1009-sha-103",
+        "type": "Short Answer",
+        "question": {
+          "stem": "This is a placeholder SHA question for LO9 Set3?"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 9",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1009-fib-101",
+        "type": "Fill in Blank",
+        "question": {
+          "stem": "This is a placeholder FIB question for LO9 Set1 with _____"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 9",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1010-sha-104",
+        "type": "Short Answer",
+        "question": {
+          "stem": "This is a placeholder SHA question for LO10 Set4?"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 10",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1010-tof-104",
+        "type": "True or False",
+        "question": {
+          "stem": "This is a placeholder TOF question for LO10 Set4?"
+        },
+        "answerKey": true,
+        "lo": "Learning Objective 10",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1009-mcq-101",
+        "type": "Multiple Choice",
+        "question": {
+          "stem": "This is a placeholder MCQ question for LO9 Set1?",
+          "choices": [
+            {
+              "label": "a",
+              "text": "Choice A for LO9 Set1"
+            },
+            {
+              "label": "b",
+              "text": "Choice B for LO9 Set1"
+            },
+            {
+              "label": "c",
+              "text": "Choice C for LO9 Set1"
+            },
+            {
+              "label": "d",
+              "text": "Choice D for LO9 Set1"
+            }
+          ]
+        },
+        "answerKey": "a",
+        "lo": "Learning Objective 9",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1010-tof-104",
+        "type": "True or False",
+        "question": {
+          "stem": "This is a placeholder TOF question for LO10 Set4?"
+        },
+        "answerKey": true,
+        "lo": "Learning Objective 10",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1010-mcq-104",
+        "type": "Multiple Choice",
+        "question": {
+          "stem": "This is a placeholder MCQ question for LO10 Set4?",
+          "choices": [
+            {
+              "label": "a",
+              "text": "Choice A for LO10 Set4"
+            },
+            {
+              "label": "b",
+              "text": "Choice B for LO10 Set4"
+            },
+            {
+              "label": "c",
+              "text": "Choice C for LO10 Set4"
+            },
+            {
+              "label": "d",
+              "text": "Choice D for LO10 Set4"
+            }
+          ]
+        },
+        "answerKey": "a",
+        "lo": "Learning Objective 10",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1010-fib-104",
+        "type": "Fill in Blank",
+        "question": {
+          "stem": "This is a placeholder FIB question for LO10 Set4 with _____"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 10",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1010-fib-104",
+        "type": "Fill in Blank",
+        "question": {
+          "stem": "This is a placeholder FIB question for LO10 Set4 with _____"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 10",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1010-tof-104",
+        "type": "True or False",
+        "question": {
+          "stem": "This is a placeholder TOF question for LO10 Set4?"
+        },
+        "answerKey": true,
+        "lo": "Learning Objective 10",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1010-fib-104",
+        "type": "Fill in Blank",
+        "question": {
+          "stem": "This is a placeholder FIB question for LO10 Set4 with _____"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 10",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1009-fib-102",
+        "type": "Fill in Blank",
+        "question": {
+          "stem": "This is a placeholder FIB question for LO9 Set2 with _____"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 9",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1010-sha-104",
+        "type": "Short Answer",
+        "question": {
+          "stem": "This is a placeholder SHA question for LO10 Set4?"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 10",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1009-tof-103",
+        "type": "True or False",
+        "question": {
+          "stem": "This is a placeholder TOF question for LO9 Set3?"
+        },
+        "answerKey": true,
+        "lo": "Learning Objective 9",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1009-mcq-103",
+        "type": "Multiple Choice",
+        "question": {
+          "stem": "This is a placeholder MCQ question for LO9 Set3?",
+          "choices": [
+            {
+              "label": "a",
+              "text": "Choice A for LO9 Set3"
+            },
+            {
+              "label": "b",
+              "text": "Choice B for LO9 Set3"
+            },
+            {
+              "label": "c",
+              "text": "Choice C for LO9 Set3"
+            },
+            {
+              "label": "d",
+              "text": "Choice D for LO9 Set3"
+            }
+          ]
+        },
+        "answerKey": "a",
+        "lo": "Learning Objective 9",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1009-tof-106",
+        "type": "True or False",
+        "question": {
+          "stem": "This is a placeholder TOF question for LO9 Set6?"
+        },
+        "answerKey": true,
+        "lo": "Learning Objective 9",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1010-tof-104",
+        "type": "True or False",
+        "question": {
+          "stem": "This is a placeholder TOF question for LO10 Set4?"
+        },
+        "answerKey": true,
+        "lo": "Learning Objective 10",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1009-tof-106",
+        "type": "True or False",
+        "question": {
+          "stem": "This is a placeholder TOF question for LO9 Set6?"
+        },
+        "answerKey": true,
+        "lo": "Learning Objective 9",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1009-sha-106",
+        "type": "Short Answer",
+        "question": {
+          "stem": "This is a placeholder SHA question for LO9 Set6?"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 9",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1009-tof-102",
+        "type": "True or False",
+        "question": {
+          "stem": "This is a placeholder TOF question for LO9 Set2?"
+        },
+        "answerKey": true,
+        "lo": "Learning Objective 9",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1009-tof-102",
+        "type": "True or False",
+        "question": {
+          "stem": "This is a placeholder TOF question for LO9 Set2?"
+        },
+        "answerKey": true,
+        "lo": "Learning Objective 9",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1010-mcq-104",
+        "type": "Multiple Choice",
+        "question": {
+          "stem": "This is a placeholder MCQ question for LO10 Set4?",
+          "choices": [
+            {
+              "label": "a",
+              "text": "Choice A for LO10 Set4"
+            },
+            {
+              "label": "b",
+              "text": "Choice B for LO10 Set4"
+            },
+            {
+              "label": "c",
+              "text": "Choice C for LO10 Set4"
+            },
+            {
+              "label": "d",
+              "text": "Choice D for LO10 Set4"
+            }
+          ]
+        },
+        "answerKey": "a",
+        "lo": "Learning Objective 10",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "low"
+        }
+      }
+    ],
+    "type": "learning",
+    "day": "W5D2"
+  },
+  {
+    "questions": [
+      {
+        "id": "spacing-1009-sha-101",
+        "type": "Short Answer",
+        "question": {
+          "stem": "This is a placeholder SHA question for LO9 Set1?"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 9",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1010-tof-104",
+        "type": "True or False",
+        "question": {
+          "stem": "This is a placeholder TOF question for LO10 Set4?"
+        },
+        "answerKey": true,
+        "lo": "Learning Objective 10",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1010-mcq-104",
+        "type": "Multiple Choice",
+        "question": {
+          "stem": "This is a placeholder MCQ question for LO10 Set4?",
+          "choices": [
+            {
+              "label": "a",
+              "text": "Choice A for LO10 Set4"
+            },
+            {
+              "label": "b",
+              "text": "Choice B for LO10 Set4"
+            },
+            {
+              "label": "c",
+              "text": "Choice C for LO10 Set4"
+            },
+            {
+              "label": "d",
+              "text": "Choice D for LO10 Set4"
+            }
+          ]
+        },
+        "answerKey": "a",
+        "lo": "Learning Objective 10",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1010-tof-104",
+        "type": "True or False",
+        "question": {
+          "stem": "This is a placeholder TOF question for LO10 Set4?"
+        },
+        "answerKey": true,
+        "lo": "Learning Objective 10",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1009-fib-102",
+        "type": "Fill in Blank",
+        "question": {
+          "stem": "This is a placeholder FIB question for LO9 Set2 with _____"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 9",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1010-fib-104",
+        "type": "Fill in Blank",
+        "question": {
+          "stem": "This is a placeholder FIB question for LO10 Set4 with _____"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 10",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1009-tof-102",
+        "type": "True or False",
+        "question": {
+          "stem": "This is a placeholder TOF question for LO9 Set2?"
+        },
+        "answerKey": true,
+        "lo": "Learning Objective 9",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1009-mcq-101",
+        "type": "Multiple Choice",
+        "question": {
+          "stem": "This is a placeholder MCQ question for LO9 Set1?",
+          "choices": [
+            {
+              "label": "a",
+              "text": "Choice A for LO9 Set1"
+            },
+            {
+              "label": "b",
+              "text": "Choice B for LO9 Set1"
+            },
+            {
+              "label": "c",
+              "text": "Choice C for LO9 Set1"
+            },
+            {
+              "label": "d",
+              "text": "Choice D for LO9 Set1"
+            }
+          ]
+        },
+        "answerKey": "a",
+        "lo": "Learning Objective 9",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1010-mcq-104",
+        "type": "Multiple Choice",
+        "question": {
+          "stem": "This is a placeholder MCQ question for LO10 Set4?",
+          "choices": [
+            {
+              "label": "a",
+              "text": "Choice A for LO10 Set4"
+            },
+            {
+              "label": "b",
+              "text": "Choice B for LO10 Set4"
+            },
+            {
+              "label": "c",
+              "text": "Choice C for LO10 Set4"
+            },
+            {
+              "label": "d",
+              "text": "Choice D for LO10 Set4"
+            }
+          ]
+        },
+        "answerKey": "a",
+        "lo": "Learning Objective 10",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1010-tof-104",
+        "type": "True or False",
+        "question": {
+          "stem": "This is a placeholder TOF question for LO10 Set4?"
+        },
+        "answerKey": true,
+        "lo": "Learning Objective 10",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1009-tof-102",
+        "type": "True or False",
+        "question": {
+          "stem": "This is a placeholder TOF question for LO9 Set2?"
+        },
+        "answerKey": true,
+        "lo": "Learning Objective 9",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1010-fib-104",
+        "type": "Fill in Blank",
+        "question": {
+          "stem": "This is a placeholder FIB question for LO10 Set4 with _____"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 10",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1009-tof-106",
+        "type": "True or False",
+        "question": {
+          "stem": "This is a placeholder TOF question for LO9 Set6?"
+        },
+        "answerKey": true,
+        "lo": "Learning Objective 9",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1010-sha-104",
+        "type": "Short Answer",
+        "question": {
+          "stem": "This is a placeholder SHA question for LO10 Set4?"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 10",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1009-sha-103",
+        "type": "Short Answer",
+        "question": {
+          "stem": "This is a placeholder SHA question for LO9 Set3?"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 9",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1009-mcq-103",
+        "type": "Multiple Choice",
+        "question": {
+          "stem": "This is a placeholder MCQ question for LO9 Set3?",
+          "choices": [
+            {
+              "label": "a",
+              "text": "Choice A for LO9 Set3"
+            },
+            {
+              "label": "b",
+              "text": "Choice B for LO9 Set3"
+            },
+            {
+              "label": "c",
+              "text": "Choice C for LO9 Set3"
+            },
+            {
+              "label": "d",
+              "text": "Choice D for LO9 Set3"
+            }
+          ]
+        },
+        "answerKey": "a",
+        "lo": "Learning Objective 9",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1009-sha-106",
+        "type": "Short Answer",
+        "question": {
+          "stem": "This is a placeholder SHA question for LO9 Set6?"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 9",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1010-tof-104",
+        "type": "True or False",
+        "question": {
+          "stem": "This is a placeholder TOF question for LO10 Set4?"
+        },
+        "answerKey": true,
+        "lo": "Learning Objective 10",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1010-mcq-104",
+        "type": "Multiple Choice",
+        "question": {
+          "stem": "This is a placeholder MCQ question for LO10 Set4?",
+          "choices": [
+            {
+              "label": "a",
+              "text": "Choice A for LO10 Set4"
+            },
+            {
+              "label": "b",
+              "text": "Choice B for LO10 Set4"
+            },
+            {
+              "label": "c",
+              "text": "Choice C for LO10 Set4"
+            },
+            {
+              "label": "d",
+              "text": "Choice D for LO10 Set4"
+            }
+          ]
+        },
+        "answerKey": "a",
+        "lo": "Learning Objective 10",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1009-tof-106",
+        "type": "True or False",
+        "question": {
+          "stem": "This is a placeholder TOF question for LO9 Set6?"
+        },
+        "answerKey": true,
+        "lo": "Learning Objective 9",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1010-sha-104",
+        "type": "Short Answer",
+        "question": {
+          "stem": "This is a placeholder SHA question for LO10 Set4?"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 10",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1009-fib-101",
+        "type": "Fill in Blank",
+        "question": {
+          "stem": "This is a placeholder FIB question for LO9 Set1 with _____"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 9",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1009-tof-103",
+        "type": "True or False",
+        "question": {
+          "stem": "This is a placeholder TOF question for LO9 Set3?"
+        },
+        "answerKey": true,
+        "lo": "Learning Objective 9",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1010-fib-104",
+        "type": "Fill in Blank",
+        "question": {
+          "stem": "This is a placeholder FIB question for LO10 Set4 with _____"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 10",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "low"
+        }
+      }
+    ],
+    "type": "learning",
+    "day": "W6D2"
+  },
+  {
+    "questions": [
+      {
+        "id": "spacing-1010-fib-102",
+        "type": "Fill in Blank",
+        "question": {
+          "stem": "This is a placeholder FIB question for LO10 Set2 with _____"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 10",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1024-tof-104",
+        "type": "True or False",
+        "question": {
+          "stem": "This is a placeholder TOF question for LO24 Set4?"
+        },
+        "answerKey": true,
+        "lo": "Learning Objective 24",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1021-tof-103",
+        "type": "True or False",
+        "question": {
+          "stem": "This is a placeholder TOF question for LO21 Set3?"
+        },
+        "answerKey": true,
+        "lo": "Learning Objective 21",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1022-tof-104",
+        "type": "True or False",
+        "question": {
+          "stem": "This is a placeholder TOF question for LO22 Set4?"
+        },
+        "answerKey": true,
+        "lo": "Learning Objective 22",
+        "condition": {
+          "spacing": "wide",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1003-sha-104",
+        "type": "Short Answer",
+        "question": {
+          "stem": "This is a placeholder SHA question for LO3 Set4?"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 3",
+        "condition": {
+          "spacing": "wide",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1023-fib-104",
+        "type": "Fill in Blank",
+        "question": {
+          "stem": "This is a placeholder FIB question for LO23 Set4 with _____"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 23",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1012-tof-102",
+        "type": "True or False",
+        "question": {
+          "stem": "This is a placeholder TOF question for LO12 Set2?"
+        },
+        "answerKey": true,
+        "lo": "Learning Objective 12",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1020-fib-103",
+        "type": "Fill in Blank",
+        "question": {
+          "stem": "This is a placeholder FIB question for LO20 Set3 with _____"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 20",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1018-fib-103",
+        "type": "Fill in Blank",
+        "question": {
+          "stem": "This is a placeholder FIB question for LO18 Set3 with _____"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 18",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1014-sha-102",
+        "type": "Short Answer",
+        "question": {
+          "stem": "This is a placeholder SHA question for LO14 Set2?"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 14",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1009-tof-104",
+        "type": "True or False",
+        "question": {
+          "stem": "This is a placeholder TOF question for LO9 Set4?"
+        },
+        "answerKey": true,
+        "lo": "Learning Objective 9",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1021-sha-106",
+        "type": "Short Answer",
+        "question": {
+          "stem": "This is a placeholder SHA question for LO21 Set6?"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 21",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1010-sha-103",
+        "type": "Short Answer",
+        "question": {
+          "stem": "This is a placeholder SHA question for LO10 Set3?"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 10",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1019-fib-101",
+        "type": "Fill in Blank",
+        "question": {
+          "stem": "This is a placeholder FIB question for LO19 Set1 with _____"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 19",
+        "condition": {
+          "spacing": "wide",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1011-mcq-104",
+        "type": "Multiple Choice",
+        "question": {
+          "stem": "This is a placeholder MCQ question for LO11 Set4?",
+          "choices": [
+            {
+              "label": "a",
+              "text": "Choice A for LO11 Set4"
+            },
+            {
+              "label": "b",
+              "text": "Choice B for LO11 Set4"
+            },
+            {
+              "label": "c",
+              "text": "Choice C for LO11 Set4"
+            },
+            {
+              "label": "d",
+              "text": "Choice D for LO11 Set4"
+            }
+          ]
+        },
+        "answerKey": "a",
+        "lo": "Learning Objective 11",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1012-fib-104",
+        "type": "Fill in Blank",
+        "question": {
+          "stem": "This is a placeholder FIB question for LO12 Set4 with _____"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 12",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1002-tof-101",
+        "type": "True or False",
+        "question": {
+          "stem": "This is a placeholder TOF question for LO2 Set1?"
+        },
+        "answerKey": true,
+        "lo": "Learning Objective 2",
+        "condition": {
+          "spacing": "wide",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1001-mcq-102",
+        "type": "Multiple Choice",
+        "question": {
+          "stem": "This is a placeholder MCQ question for LO1 Set2?",
+          "choices": [
+            {
+              "label": "a",
+              "text": "Choice A for LO1 Set2"
+            },
+            {
+              "label": "b",
+              "text": "Choice B for LO1 Set2"
+            },
+            {
+              "label": "c",
+              "text": "Choice C for LO1 Set2"
+            },
+            {
+              "label": "d",
+              "text": "Choice D for LO1 Set2"
+            }
+          ]
+        },
+        "answerKey": "a",
+        "lo": "Learning Objective 1",
+        "condition": {
+          "spacing": "wide",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1016-mcq-104",
+        "type": "Multiple Choice",
+        "question": {
+          "stem": "This is a placeholder MCQ question for LO16 Set4?",
+          "choices": [
+            {
+              "label": "a",
+              "text": "Choice A for LO16 Set4"
+            },
+            {
+              "label": "b",
+              "text": "Choice B for LO16 Set4"
+            },
+            {
+              "label": "c",
+              "text": "Choice C for LO16 Set4"
+            },
+            {
+              "label": "d",
+              "text": "Choice D for LO16 Set4"
+            }
+          ]
+        },
+        "answerKey": "a",
+        "lo": "Learning Objective 16",
+        "condition": {
+          "spacing": "wide",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1019-mcq-105",
+        "type": "Multiple Choice",
+        "question": {
+          "stem": "This is a placeholder MCQ question for LO19 Set5?",
+          "choices": [
+            {
+              "label": "a",
+              "text": "Choice A for LO19 Set5"
+            },
+            {
+              "label": "b",
+              "text": "Choice B for LO19 Set5"
+            },
+            {
+              "label": "c",
+              "text": "Choice C for LO19 Set5"
+            },
+            {
+              "label": "d",
+              "text": "Choice D for LO19 Set5"
+            }
+          ]
+        },
+        "answerKey": "a",
+        "lo": "Learning Objective 19",
+        "condition": {
+          "spacing": "wide",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1008-fib-102",
+        "type": "Fill in Blank",
+        "question": {
+          "stem": "This is a placeholder FIB question for LO8 Set2 with _____"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 8",
+        "condition": {
+          "spacing": "wide",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1001-tof-103",
+        "type": "True or False",
+        "question": {
+          "stem": "This is a placeholder TOF question for LO1 Set3?"
+        },
+        "answerKey": true,
+        "lo": "Learning Objective 1",
+        "condition": {
+          "spacing": "wide",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1020-sha-105",
+        "type": "Short Answer",
+        "question": {
+          "stem": "This is a placeholder SHA question for LO20 Set5?"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 20",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1011-mcq-103",
+        "type": "Multiple Choice",
+        "question": {
+          "stem": "This is a placeholder MCQ question for LO11 Set3?",
+          "choices": [
+            {
+              "label": "a",
+              "text": "Choice A for LO11 Set3"
+            },
+            {
+              "label": "b",
+              "text": "Choice B for LO11 Set3"
+            },
+            {
+              "label": "c",
+              "text": "Choice C for LO11 Set3"
+            },
+            {
+              "label": "d",
+              "text": "Choice D for LO11 Set3"
+            }
+          ]
+        },
+        "answerKey": "a",
+        "lo": "Learning Objective 11",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1014-tof-101",
+        "type": "True or False",
+        "question": {
+          "stem": "This is a placeholder TOF question for LO14 Set1?"
+        },
+        "answerKey": true,
+        "lo": "Learning Objective 14",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1013-fib-102",
+        "type": "Fill in Blank",
+        "question": {
+          "stem": "This is a placeholder FIB question for LO13 Set2 with _____"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 13",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1007-mcq-103",
+        "type": "Multiple Choice",
+        "question": {
+          "stem": "This is a placeholder MCQ question for LO7 Set3?",
+          "choices": [
+            {
+              "label": "a",
+              "text": "Choice A for LO7 Set3"
+            },
+            {
+              "label": "b",
+              "text": "Choice B for LO7 Set3"
+            },
+            {
+              "label": "c",
+              "text": "Choice C for LO7 Set3"
+            },
+            {
+              "label": "d",
+              "text": "Choice D for LO7 Set3"
+            }
+          ]
+        },
+        "answerKey": "a",
+        "lo": "Learning Objective 7",
+        "condition": {
+          "spacing": "wide",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1004-sha-105",
+        "type": "Short Answer",
+        "question": {
+          "stem": "This is a placeholder SHA question for LO4 Set5?"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 4",
+        "condition": {
+          "spacing": "wide",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1015-sha-104",
+        "type": "Short Answer",
+        "question": {
+          "stem": "This is a placeholder SHA question for LO15 Set4?"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 15",
+        "condition": {
+          "spacing": "wide",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1017-mcq-101",
+        "type": "Multiple Choice",
+        "question": {
+          "stem": "This is a placeholder MCQ question for LO17 Set1?",
+          "choices": [
+            {
+              "label": "a",
+              "text": "Choice A for LO17 Set1"
+            },
+            {
+              "label": "b",
+              "text": "Choice B for LO17 Set1"
+            },
+            {
+              "label": "c",
+              "text": "Choice C for LO17 Set1"
+            },
+            {
+              "label": "d",
+              "text": "Choice D for LO17 Set1"
+            }
+          ]
+        },
+        "answerKey": "a",
+        "lo": "Learning Objective 17",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1009-mcq-103",
+        "type": "Multiple Choice",
+        "question": {
+          "stem": "This is a placeholder MCQ question for LO9 Set3?",
+          "choices": [
+            {
+              "label": "a",
+              "text": "Choice A for LO9 Set3"
+            },
+            {
+              "label": "b",
+              "text": "Choice B for LO9 Set3"
+            },
+            {
+              "label": "c",
+              "text": "Choice C for LO9 Set3"
+            },
+            {
+              "label": "d",
+              "text": "Choice D for LO9 Set3"
+            }
+          ]
+        },
+        "answerKey": "a",
+        "lo": "Learning Objective 9",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1008-fib-103",
+        "type": "Fill in Blank",
+        "question": {
+          "stem": "This is a placeholder FIB question for LO8 Set3 with _____"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 8",
+        "condition": {
+          "spacing": "wide",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1005-fib-104",
+        "type": "Fill in Blank",
+        "question": {
+          "stem": "This is a placeholder FIB question for LO5 Set4 with _____"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 5",
+        "condition": {
+          "spacing": "wide",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1004-fib-102",
+        "type": "Fill in Blank",
+        "question": {
+          "stem": "This is a placeholder FIB question for LO4 Set2 with _____"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 4",
+        "condition": {
+          "spacing": "wide",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1003-sha-102",
+        "type": "Short Answer",
+        "question": {
+          "stem": "This is a placeholder SHA question for LO3 Set2?"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 3",
+        "condition": {
+          "spacing": "wide",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1024-fib-102",
+        "type": "Fill in Blank",
+        "question": {
+          "stem": "This is a placeholder FIB question for LO24 Set2 with _____"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 24",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1013-mcq-103",
+        "type": "Multiple Choice",
+        "question": {
+          "stem": "This is a placeholder MCQ question for LO13 Set3?",
+          "choices": [
+            {
+              "label": "a",
+              "text": "Choice A for LO13 Set3"
+            },
+            {
+              "label": "b",
+              "text": "Choice B for LO13 Set3"
+            },
+            {
+              "label": "c",
+              "text": "Choice C for LO13 Set3"
+            },
+            {
+              "label": "d",
+              "text": "Choice D for LO13 Set3"
+            }
+          ]
+        },
+        "answerKey": "a",
+        "lo": "Learning Objective 13",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1023-fib-103",
+        "type": "Fill in Blank",
+        "question": {
+          "stem": "This is a placeholder FIB question for LO23 Set3 with _____"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 23",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1006-tof-102",
+        "type": "True or False",
+        "question": {
+          "stem": "This is a placeholder TOF question for LO6 Set2?"
+        },
+        "answerKey": true,
+        "lo": "Learning Objective 6",
+        "condition": {
+          "spacing": "wide",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1002-mcq-103",
+        "type": "Multiple Choice",
+        "question": {
+          "stem": "This is a placeholder MCQ question for LO2 Set3?",
+          "choices": [
+            {
+              "label": "a",
+              "text": "Choice A for LO2 Set3"
+            },
+            {
+              "label": "b",
+              "text": "Choice B for LO2 Set3"
+            },
+            {
+              "label": "c",
+              "text": "Choice C for LO2 Set3"
+            },
+            {
+              "label": "d",
+              "text": "Choice D for LO2 Set3"
+            }
+          ]
+        },
+        "answerKey": "a",
+        "lo": "Learning Objective 2",
+        "condition": {
+          "spacing": "wide",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1016-mcq-106",
+        "type": "Multiple Choice",
+        "question": {
+          "stem": "This is a placeholder MCQ question for LO16 Set6?",
+          "choices": [
+            {
+              "label": "a",
+              "text": "Choice A for LO16 Set6"
+            },
+            {
+              "label": "b",
+              "text": "Choice B for LO16 Set6"
+            },
+            {
+              "label": "c",
+              "text": "Choice C for LO16 Set6"
+            },
+            {
+              "label": "d",
+              "text": "Choice D for LO16 Set6"
+            }
+          ]
+        },
+        "answerKey": "a",
+        "lo": "Learning Objective 16",
+        "condition": {
+          "spacing": "wide",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1006-fib-101",
+        "type": "Fill in Blank",
+        "question": {
+          "stem": "This is a placeholder FIB question for LO6 Set1 with _____"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 6",
+        "condition": {
+          "spacing": "wide",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1018-mcq-102",
+        "type": "Multiple Choice",
+        "question": {
+          "stem": "This is a placeholder MCQ question for LO18 Set2?",
+          "choices": [
+            {
+              "label": "a",
+              "text": "Choice A for LO18 Set2"
+            },
+            {
+              "label": "b",
+              "text": "Choice B for LO18 Set2"
+            },
+            {
+              "label": "c",
+              "text": "Choice C for LO18 Set2"
+            },
+            {
+              "label": "d",
+              "text": "Choice D for LO18 Set2"
+            }
+          ]
+        },
+        "answerKey": "a",
+        "lo": "Learning Objective 18",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1017-mcq-104",
+        "type": "Multiple Choice",
+        "question": {
+          "stem": "This is a placeholder MCQ question for LO17 Set4?",
+          "choices": [
+            {
+              "label": "a",
+              "text": "Choice A for LO17 Set4"
+            },
+            {
+              "label": "b",
+              "text": "Choice B for LO17 Set4"
+            },
+            {
+              "label": "c",
+              "text": "Choice C for LO17 Set4"
+            },
+            {
+              "label": "d",
+              "text": "Choice D for LO17 Set4"
+            }
+          ]
+        },
+        "answerKey": "a",
+        "lo": "Learning Objective 17",
+        "condition": {
+          "spacing": "narrow",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1022-sha-105",
+        "type": "Short Answer",
+        "question": {
+          "stem": "This is a placeholder SHA question for LO22 Set5?"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 22",
+        "condition": {
+          "spacing": "wide",
+          "variability": "low"
+        }
+      },
+      {
+        "id": "spacing-1015-sha-101",
+        "type": "Short Answer",
+        "question": {
+          "stem": "This is a placeholder SHA question for LO15 Set1?"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 15",
+        "condition": {
+          "spacing": "wide",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1005-fib-101",
+        "type": "Fill in Blank",
+        "question": {
+          "stem": "This is a placeholder FIB question for LO5 Set1 with _____"
+        },
+        "answerKey": "placeholder",
+        "lo": "Learning Objective 5",
+        "condition": {
+          "spacing": "wide",
+          "variability": "high"
+        }
+      },
+      {
+        "id": "spacing-1007-tof-104",
+        "type": "True or False",
+        "question": {
+          "stem": "This is a placeholder TOF question for LO7 Set4?"
+        },
+        "answerKey": true,
+        "lo": "Learning Objective 7",
+        "condition": {
+          "spacing": "wide",
+          "variability": "low"
+        }
+      }
+    ],
+    "type": "posttest",
+    "day": "posttest"
+  }
+]

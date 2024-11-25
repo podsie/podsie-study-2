@@ -63,6 +63,31 @@ describe("Generated Student Assignments", () => {
           });
         });
       });
+
+      it("should have equal distribution of high and low variability LOs", () => {
+        wideDays.forEach((day) => {
+          const highVariabilityQuestions = day.questions.filter(
+            (q) => q.condition?.variability === "high"
+          );
+          const lowVariabilityQuestions = day.questions.filter(
+            (q) => q.condition?.variability === "low"
+          );
+
+          // Should have 12 questions from each variability condition
+          expect(highVariabilityQuestions.length).toBe(12);
+          expect(lowVariabilityQuestions.length).toBe(12);
+
+          // Should have 6 unique LOs for each variability condition
+          const highVariabilityLOs = new Set(
+            highVariabilityQuestions.map((q) => q.lo)
+          );
+          const lowVariabilityLOs = new Set(
+            lowVariabilityQuestions.map((q) => q.lo)
+          );
+          expect(highVariabilityLOs.size).toBe(6);
+          expect(lowVariabilityLOs.size).toBe(6);
+        });
+      });
     });
 
     describe("Narrow Spacing Days (D2)", () => {
@@ -90,6 +115,40 @@ describe("Generated Student Assignments", () => {
           // Each narrow spacing day should have 2 LOs with 12 questions each
           expect(Object.keys(questionsPerLO).length).toBe(2);
           Object.values(questionsPerLO).forEach((count) => {
+            expect(count).toBe(12);
+          });
+        });
+      });
+
+      it("should pair one high variability LO with one low variability LO each day", () => {
+        narrowDays.forEach((day) => {
+          const questionsPerLOAndVariability = day.questions.reduce(
+            (acc, q) => {
+              const key = `${q.lo}-${q.condition?.variability}`;
+              acc[key] = (acc[key] || 0) + 1;
+              return acc;
+            },
+            {} as Record<string, number>
+          );
+
+          // Should have exactly 2 LOs
+          expect(Object.keys(questionsPerLOAndVariability).length).toBe(2);
+
+          // Get unique LOs and their variability
+          const loVariability = Object.keys(questionsPerLOAndVariability).map(
+            (key) => ({
+              lo: key.split("-")[0],
+              variability: key.split("-")[1],
+            })
+          );
+
+          // One LO should be high variability, one should be low
+          const variabilities = loVariability.map((lv) => lv.variability);
+          expect(variabilities).toContain("high");
+          expect(variabilities).toContain("low");
+
+          // Each LO should have 12 questions
+          Object.values(questionsPerLOAndVariability).forEach((count) => {
             expect(count).toBe(12);
           });
         });

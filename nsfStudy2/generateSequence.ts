@@ -1,4 +1,4 @@
-import { readFileSync } from "fs";
+import random from "random";
 import {
   LearningObjective,
   Question,
@@ -7,109 +7,15 @@ import {
   SpacingCondition,
   VariabilityCondition,
 } from "./nsfStudy2.types";
+import { parseQuestions } from "./parseQuestions";
 import { shuffleArray } from "./util";
 
+const selectRandomQuestionFromSet = (set: QuestionSet): Question =>
+  shuffleArray([...set.questions])[0];
+
 export const generateSequences = () => {
-  const parseQuestions = (): LearningObjective[] => {
-    // Read the JSONL file
-    const fileContent = readFileSync(
-      "./nsfStudy2/placeholder-questions.jsonl",
-      "utf-8"
-    );
-    const questions: Question[] = fileContent
-      .split("\n")
-      .filter((line) => line.trim())
-      .map((line) => JSON.parse(line));
-
-    // Group questions by LO
-    const loMap = new Map<number, Question[]>();
-    questions.forEach((question) => {
-      const loMatch = question.lo.match(/\d+/);
-      if (!loMatch) {
-        throw new Error(`Invalid LO format for question: ${question.id}`);
-      }
-      const loNumber = parseInt(loMatch[0]);
-      if (!loMap.has(loNumber)) {
-        loMap.set(loNumber, []);
-      }
-      const questions = loMap.get(loNumber);
-      if (!questions) {
-        throw new Error(`Failed to get questions array for LO ${loNumber}`);
-      }
-      questions.push(question);
-    });
-
-    // Convert map to array of LearningObjectives
-    const learningObjectives: LearningObjective[] = [];
-    loMap.forEach((questions, loNumber) => {
-      // Group questions by set
-      const setMap = new Map<number, Question[]>();
-      questions.forEach((question) => {
-        const setNumber = parseInt(question.id.split("-")[3].substring(1));
-        if (!setMap.has(setNumber)) {
-          setMap.set(setNumber, []);
-        }
-        const questions = setMap.get(setNumber);
-        if (!questions) {
-          throw new Error(`Failed to get questions array for set ${setNumber}`);
-        }
-        questions.push(question);
-      });
-
-      // Convert sets map to array of QuestionSets
-      const sets: QuestionSet[] = [];
-      setMap.forEach((questions) => {
-        // Sort questions by type to maintain consistent order
-        const sortedQuestions = questions.sort((a, b) => {
-          const typeOrder = {
-            "Multiple Choice": 0,
-            "True or False": 1,
-            "Fill in Blank": 2,
-            "Short Answer": 3,
-          } as const;
-          return (
-            typeOrder[a.type as keyof typeof typeOrder] -
-            typeOrder[b.type as keyof typeof typeOrder]
-          );
-        });
-
-        sets.push({ questions: sortedQuestions });
-      });
-
-      learningObjectives.push({
-        loNumber,
-        sets: sets.sort((a, b) => {
-          const setNumberA = parseInt(
-            a.questions[0].id.split("-")[3].substring(1)
-          );
-          const setNumberB = parseInt(
-            b.questions[0].id.split("-")[3].substring(1)
-          );
-          return setNumberA - setNumberB;
-        }),
-      });
-    });
-
-    return learningObjectives.sort((a, b) => a.loNumber - b.loNumber);
-  };
-
   // Parse questions and log some samples
   const learningObjectives = parseQuestions();
-
-  // Log some sample data
-  console.log("\nParsed Data Verification:");
-  console.log("======================");
-  console.log(`Total Learning Objectives: ${learningObjectives.length}`);
-  console.log(`Sets per LO: ${learningObjectives[0].sets.length}`);
-  console.log(
-    `Question types per set: ${
-      Object.keys(learningObjectives[0].sets[0]).length
-    }`
-  );
-
-  // Log a sample LO with its first set
-  console.log("\nSample Learning Objective (LO1, Set1):");
-  console.log(JSON.stringify(learningObjectives[0], null, 2));
 
   // shuffle the learningObjectives:
   const shuffledLearningObjectives = shuffleArray(learningObjectives);
@@ -133,30 +39,13 @@ export const generateSequences = () => {
     })
   );
 
-  // Verify the distribution
-  console.log("\nCondition Distribution:");
-  conditions.forEach((condition) => {
-    const count = assignedLearningObjectives.filter(
-      (lo) =>
-        lo.condition?.spacing === condition.spacing &&
-        lo.condition?.variability === condition.variability
-    ).length;
-    console.log(
-      `${condition.spacing} spacing, ${condition.variability} variability: ${count} LOs`
-    );
-  });
-
-  const selectRandomQuestionFromSet = (set: QuestionSet): Question =>
-    shuffleArray([...set.questions])[0];
-
   // iterate through each LO:
   const finalLearningObjectives: LearningObjective[] =
     assignedLearningObjectives.map((lo) => {
-      // Get question sets in order (1-6)
       const shuffledSets = shuffleArray(lo.sets);
 
       // 1. Handle Pretest
-      const selectedPretestSetNumber = Math.floor(Math.random() * 4) + 2; // Random number between 2-5
+      const selectedPretestSetNumber = random.int(2, 5); // Random number between 2-5
       const pretest = {
         questionSet1: selectRandomQuestionFromSet(shuffledSets[0]), // First question from Set 1
         selectedPretestSetNumber,
@@ -181,7 +70,7 @@ export const generateSequences = () => {
         }
       } else {
         // also create 3 blocks, but we select 1 random set from QuestionSet 2-5:
-        const selectedLearningSetNumber = Math.floor(Math.random() * 4) + 2; // Random number between 2-5
+        const selectedLearningSetNumber = random.int(2, 5); // Random number between 2-5
         while (blocks.length < 3) {
           const selectedSet = shuffledSets[selectedLearningSetNumber - 1];
           const questions: Question[] = [];
