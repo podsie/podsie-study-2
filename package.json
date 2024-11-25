@@ -1,0 +1,16 @@
+{
+  "name": "podsie",
+  "version": "0.0.1",
+  "private": true,
+  "sideEffects": false,
+  "type": "module",
+  "scripts": {},
+  "dependencies": {},
+  "devDependencies": {
+    "tsx": "^4.19.2",
+    "typescript": "^5.6.3"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
