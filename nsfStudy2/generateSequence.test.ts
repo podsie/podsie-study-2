@@ -7,7 +7,7 @@ describe("Generated Student Assignments", () => {
   const sequences = generateSequences();
   const assignments = generateStudentAssignment(sequences);
 
-  describe.only("Sequence Generation", () => {
+  describe("Sequence Generation", () => {
     // in every LO, the pretest's randomly selected question set should be the same as the posttest's matching pretest:
     sequences.forEach((s) => {
       const pretestRandomlySelectedQuestionSet =
