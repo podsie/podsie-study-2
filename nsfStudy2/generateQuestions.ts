@@ -62,8 +62,8 @@ const generateAllQuestions = (): Question[] => {
 
   // For each LO (1-24)
   for (let loNumber = 1; loNumber <= 24; loNumber++) {
-    // For each set (1-6)
-    for (let setNumber = 1; setNumber <= 6; setNumber++) {
+    // For each set (1-7)
+    for (let setNumber = 1; setNumber <= 7; setNumber++) {
       // For each question type
       const types: Array<"mcq" | "tof" | "fib" | "sha"> = [
         "mcq",
@@ -87,7 +87,7 @@ const questions = generateAllQuestions();
 const jsonl = questions.map((q) => JSON.stringify(q)).join("\n");
 
 // Write to file
-writeFileSync("placeholder-questions.jsonl", jsonl);
+writeFileSync("./nsfStudy2/placeholder-questions.jsonl", jsonl);
 
 // Verification output
 console.log("\nDataset Verification:");

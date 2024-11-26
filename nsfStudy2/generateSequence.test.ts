@@ -7,6 +7,38 @@ describe("Generated Student Assignments", () => {
   const sequences = generateSequences();
   const assignments = generateStudentAssignment(sequences);
 
+  describe.only("Sequence Generation", () => {
+    // in every LO, the pretest's randomly selected question set should be the same as the posttest's matching pretest:
+    sequences.forEach((s) => {
+      const pretestRandomlySelectedQuestionSet =
+        s.sequence?.pretest.randomQuestionSet;
+      const pretestRandomlySelectedQuestionSetId =
+        pretestRandomlySelectedQuestionSet?.id.split("-").pop();
+      // whatever is selected for the pretest should be in the posttest
+      it(`should have the same randomly selected question set in the pretest and posttest for LO${s.loNumber}`, () => {
+        // parse out the id from the integers after the very last "-":
+        const posttestRandomlySelectedQuestionSetId =
+          s.sequence?.posttest.matchingPretest.id.split("-").pop();
+        expect(pretestRandomlySelectedQuestionSetId).toBe(
+          posttestRandomlySelectedQuestionSetId
+        );
+      });
+      // whatever is selected for the pretest should be in the learning phase
+      if (s.condition?.variability === "low") {
+        describe("Low Variability", () => {
+          it(`should cover the same question set in the learning phase as the random selected question set in the pretest for LO${s.loNumber}`, () => {
+            // parse id from the integer after the last "-":
+            const learningPhaseQuestionSetId =
+              s.sequence?.learning.blocks[0].questions[0].id.split("-").pop();
+            expect(learningPhaseQuestionSetId).toBe(
+              pretestRandomlySelectedQuestionSetId
+            );
+          });
+        });
+      }
+    });
+  });
+
   describe("Pretest", () => {
     let pretest: Assignment;
 
@@ -174,6 +206,36 @@ describe("Generated Student Assignments", () => {
 
     it("should have 2 questions per LO", () => {
       const questionsPerLO = posttest.questions.reduce((acc, q) => {
+        acc[q.lo] = (acc[q.lo] || 0) + 1;
+        return acc;
+      }, {} as Record<string, number>);
+
+      Object.values(questionsPerLO).forEach((count) => {
+        expect(count).toBe(2);
+      });
+    });
+  });
+
+  describe("Postposttest", () => {
+    let postposttest: Assignment;
+
+    beforeAll(() => {
+      postposttest = assignments.find(
+        (a) => a.type === "postposttest"
+      ) as Assignment;
+    });
+
+    it("should have exactly 48 questions", () => {
+      expect(postposttest.questions.length).toBe(48);
+    });
+
+    it("should have questions from all 24 LOs", () => {
+      const uniqueLOs = new Set(postposttest.questions.map((q) => q.lo));
+      expect(uniqueLOs.size).toBe(24);
+    });
+
+    it("should have 2 questions per LO", () => {
+      const questionsPerLO = postposttest.questions.reduce((acc, q) => {
         acc[q.lo] = (acc[q.lo] || 0) + 1;
         return acc;
       }, {} as Record<string, number>);

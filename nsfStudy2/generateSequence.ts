@@ -10,8 +10,12 @@ import {
 import { parseQuestions } from "./parseQuestions";
 import { shuffleArray } from "./util";
 
-const selectRandomQuestionFromSet = (set: QuestionSet): Question =>
-  shuffleArray([...set.questions])[0];
+const selectRandomQuestionFromSet = (set: QuestionSet): Question => {
+  if (!set) {
+    throw new Error(`No set!`);
+  }
+  return shuffleArray([...set.questions])[0];
+};
 
 export const generateSequences = () => {
   // Parse questions and log some samples
@@ -47,7 +51,10 @@ export const generateSequences = () => {
       // 1. Handle Pretest
       const selectedPretestSetNumber = random.int(2, 5); // Random number between 2-5
       const pretest = {
-        questionSet1: selectRandomQuestionFromSet(shuffledSets[0]), // First question from Set 1
+        questionSet1: {
+          ...selectRandomQuestionFromSet(shuffledSets[0]),
+          conditions: lo.condition,
+        },
         selectedPretestSetNumber,
         randomQuestionSet: selectRandomQuestionFromSet(
           shuffledSets[selectedPretestSetNumber - 1]
@@ -69,10 +76,9 @@ export const generateSequences = () => {
           });
         }
       } else {
-        // also create 3 blocks, but we select 1 random set from QuestionSet 2-5:
-        const selectedLearningSetNumber = random.int(2, 5); // Random number between 2-5
+        // also create 3 blocks, but the questions are from the set selected for the pretest:
         while (blocks.length < 3) {
-          const selectedSet = shuffledSets[selectedLearningSetNumber - 1];
+          const selectedSet = shuffledSets[selectedPretestSetNumber - 1];
           const questions: Question[] = [];
           while (questions.length < 4) {
             questions.push(selectRandomQuestionFromSet(selectedSet));
@@ -92,12 +98,20 @@ export const generateSequences = () => {
         ),
       };
 
+      const postposttest = {
+        questionSet7: selectRandomQuestionFromSet(shuffledSets[6]), // Random question from Set 7
+        matchingPretest: selectRandomQuestionFromSet(
+          shuffledSets[pretest.selectedPretestSetNumber - 1]
+        ),
+      };
+
       return {
         ...lo,
         sequence: {
           pretest,
           learning: { blocks },
           posttest,
+          postposttest,
         },
       };
     });
@@ -109,5 +123,8 @@ export const generateSequences = () => {
       sets: undefined,
     })
   );
-  return finalLearningObjectivesWithoutSets;
+  return finalLearningObjectivesWithoutSets as Omit<
+    LearningObjective,
+    "sets"
+  >[];
 };

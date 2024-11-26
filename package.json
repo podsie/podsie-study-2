@@ -6,6 +6,7 @@
   "type": "module",
   "scripts": {
     "generate": "tsx ./nsfStudy2/generate.ts",
+    "generate-questions": "tsx ./nsfStudy2/generateQuestions.ts",
     "test": "vitest"
   },
   "devDependencies": {
