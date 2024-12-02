@@ -64,7 +64,7 @@ export const generateStudentAssignment = (
       const block = lo.sequence?.learning.blocks[blockIndex];
       if (block) {
         const questions = block.questions
-          .slice(questionIndexStart, questionIndexEnd + 1)
+          .slice(questionIndexStart, questionIndexEnd + 1) // +1 because slice is end-exclusive
           .map((q) => ({ ...q, condition: lo.condition }));
         currentDayWideQuestionSet.push(...questions);
       }
