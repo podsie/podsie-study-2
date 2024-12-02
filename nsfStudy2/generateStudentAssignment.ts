@@ -90,6 +90,7 @@ export const generateStudentAssignment = (
   // use question sets to put together assignments:
   const learningAssignments: Assignment[] = [];
 
+  // counter-balancing logic:
   const isD1Wide = isD1WidePreset ?? Math.random() < 0.5;
   if (isD1Wide) {
     wideAssignmentQuestionSets.forEach((questions, index) => {
