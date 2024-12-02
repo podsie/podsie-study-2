@@ -69,7 +69,9 @@ export const generateStudentAssignment = (
         currentDayWideQuestionSet.push(...questions);
       }
     });
-    wideAssignmentQuestionSets.push(currentDayWideQuestionSet);
+    wideAssignmentQuestionSets.push(
+      shuffleArray([...currentDayWideQuestionSet])
+    );
 
     const currentDayNarrowQuestionSet: Assignment["questions"] = [];
     // handle narrow spacing LOs
@@ -84,7 +86,9 @@ export const generateStudentAssignment = (
       );
       currentDayNarrowQuestionSet.push(...questions);
     }
-    narrowAssignmentQuestionSets.push(currentDayNarrowQuestionSet);
+    narrowAssignmentQuestionSets.push(
+      shuffleArray([...currentDayNarrowQuestionSet])
+    );
   }
 
   // use question sets to put together assignments:
