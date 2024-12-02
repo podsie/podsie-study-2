@@ -2,23 +2,9 @@ import { Assignment, LearningObjective, Question } from "./nsfStudy2.types";
 import { shuffleArray } from "./util";
 
 export const generateStudentAssignment = (
-  learningObjectives: Omit<LearningObjective, "sets">[]
+  learningObjectives: Omit<LearningObjective, "sets">[],
+  isD1WidePreset?: boolean
 ): Assignment[] => {
-  // 1. Randomly decide if D1 will be wide spacing or narrow spacing
-  const isD1Wide = Math.random() < 0.5;
-
-  // Split LOs by spacing condition, but swap them if D1 should be narrow
-  const [d1SpacingLOs, d2SpacingLOs] = isD1Wide
-    ? [
-        learningObjectives.filter((lo) => lo.condition?.spacing === "wide"),
-        learningObjectives.filter((lo) => lo.condition?.spacing === "narrow"),
-      ]
-    : [
-        learningObjectives.filter((lo) => lo.condition?.spacing === "narrow"),
-        learningObjectives.filter((lo) => lo.condition?.spacing === "wide"),
-      ];
-
-  // 2. Generate pretest
   const pretest: Assignment = {
     questions: shuffleArray(
       learningObjectives.flatMap((lo) => {
@@ -37,93 +23,104 @@ export const generateStudentAssignment = (
     day: "pretest",
   };
 
-  // 3. Generate learning phase assignments
-  const learningAssignments: Assignment[] = [];
+  const wideAssignmentQuestionSets: Assignment["questions"][] = [];
+  const narrowAssignmentQuestionSets: Assignment["questions"][] = [];
+  const wideSpacingLOs = learningObjectives.filter(
+    (lo) => lo.condition?.spacing === "wide"
+  );
+  const narrowSpacingHighVariabilityLOs = learningObjectives.filter(
+    (lo) =>
+      lo.condition?.spacing === "narrow" && lo.condition?.variability === "high"
+  );
+  const narrowSpacingLowVariabilityLOs = learningObjectives.filter(
+    (lo) =>
+      lo.condition?.spacing === "narrow" && lo.condition?.variability === "low"
+  );
 
-  // Handle D1 assignments (W1D1 through W6D1)
-  for (let week = 1; week <= 6; week++) {
-    const questionsForDay: Question[] = [];
+  const blockIndices = [
+    0, // day 1 takes from block 1 first half, so index 0 and then 0..1
+    0, // day 2 takes from block 1 second half, so index 0 and then 2..3
+    1, // day 3 takes from block 2 first half, so index 1 and then 0..1
+    1, // day 4 takes from block 2 second half, so index 1 and then 2..3
+    2, // day 5 takes from block 3 first half, so index 2 and then 0..1
+    2, // day 6 takes from block 3 second half, so index 2 and then 2..3
+  ];
 
-    // Split D1 LOs by variability
-    const highVariabilityD1LOs = d1SpacingLOs.filter(
-      (lo) => lo.condition?.variability === "high"
-    );
-    const lowVariabilityD1LOs = d1SpacingLOs.filter(
-      (lo) => lo.condition?.variability === "low"
-    );
+  const questionIndices = [
+    [0, 1], // day 1 takes from block 1 first half, so index 0 and then 0..1
+    [2, 3], // day 2 takes from block 1 second half, so index 0 and then 2..3
+    [0, 1], // day 3 takes from block 2 first half, so index 1 and then 0..1
+    [2, 3], // day 4 takes from block 2 second half, so index 1 and then 2..3
+    [0, 1], // day 5 takes from block 3 first half, so index 2 and then 0..1
+    [2, 3], // day 6 takes from block 3 second half, so index 2 and then 2..3
+  ];
 
-    // Get questions from high variability LOs
-    highVariabilityD1LOs.forEach((lo) => {
-      const blockIndex = Math.floor((week - 1) / 2);
-      const questionStartIdx = ((week - 1) % 2) * 2;
-
+  for (let day = 1; day <= 6; day++) {
+    const currentDayWideQuestionSet: Assignment["questions"] = [];
+    // handle wide spacing LOs
+    const blockIndex = blockIndices[day - 1];
+    const [questionIndexStart, questionIndexEnd] = questionIndices[day - 1];
+    wideSpacingLOs.forEach((lo) => {
       const block = lo.sequence?.learning.blocks[blockIndex];
       if (block) {
-        const questionsFromBlock = block.questions
-          .slice(questionStartIdx, questionStartIdx + 2)
-          .map((q) => ({
-            ...q,
-            condition: lo.condition,
-          }));
-        questionsForDay.push(...questionsFromBlock);
+        const questions = block.questions
+          .slice(questionIndexStart, questionIndexEnd + 1)
+          .map((q) => ({ ...q, condition: lo.condition }));
+        currentDayWideQuestionSet.push(...questions);
       }
     });
+    wideAssignmentQuestionSets.push(currentDayWideQuestionSet);
 
-    // Get questions from low variability LOs
-    lowVariabilityD1LOs.forEach((lo) => {
-      const blockIndex = Math.floor((week - 1) / 2);
-      const questionStartIdx = ((week - 1) % 2) * 2;
-
-      const block = lo.sequence?.learning.blocks[blockIndex];
-      if (block) {
-        const questionsFromBlock = block.questions
-          .slice(questionStartIdx, questionStartIdx + 2)
-          .map((q) => ({
-            ...q,
-            condition: lo.condition,
-          }));
-        questionsForDay.push(...questionsFromBlock);
-      }
-    });
-
-    const d1Assignment: Assignment = {
-      questions: shuffleArray([...questionsForDay]),
-      type: "learning",
-      day: `W${week}D1`,
-    };
-    learningAssignments.push(d1Assignment);
+    const currentDayNarrowQuestionSet: Assignment["questions"] = [];
+    // handle narrow spacing LOs
+    // take 1 high and 1 low variability LO for each day
+    const highVariabilityLO = narrowSpacingHighVariabilityLOs[day - 1];
+    const lowVariabilityLO = narrowSpacingLowVariabilityLOs[day - 1];
+    if (highVariabilityLO && lowVariabilityLO) {
+      const questions = [highVariabilityLO, lowVariabilityLO].flatMap((lo) =>
+        (lo.sequence?.learning.blocks ?? []).flatMap((block) =>
+          block.questions.map((q) => ({ ...q, condition: lo.condition }))
+        )
+      );
+      currentDayNarrowQuestionSet.push(...questions);
+    }
+    narrowAssignmentQuestionSets.push(currentDayNarrowQuestionSet);
   }
 
-  // Handle D2 assignments (W1D2 through W6D2)
-  for (let week = 1; week <= 6; week++) {
-    // Split D2 LOs by variability
-    const highVariabilityD2LOs = d2SpacingLOs.filter(
-      (lo) => lo.condition?.variability === "high"
-    );
-    const lowVariabilityD2LOs = d2SpacingLOs.filter(
-      (lo) => lo.condition?.variability === "low"
-    );
+  // use question sets to put together assignments:
+  const learningAssignments: Assignment[] = [];
 
-    // Get all questions for the current week's D2 LOs
-    const highVariabilityLO = highVariabilityD2LOs[Math.floor((week - 1) / 2)];
-    const lowVariabilityLO = lowVariabilityD2LOs[Math.floor((week - 1) / 2)];
-
-    const questionsForDay = [highVariabilityLO, lowVariabilityLO].flatMap(
-      (lo) =>
-        lo?.sequence?.learning.blocks.flatMap((block) =>
-          block.questions.map((q) => ({
-            ...q,
-            condition: lo.condition,
-          }))
-        ) ?? []
-    );
-
-    const d2Assignment: Assignment = {
-      questions: shuffleArray([...questionsForDay]),
-      type: "learning",
-      day: `W${week}D2`,
-    };
-    learningAssignments.push(d2Assignment);
+  const isD1Wide = isD1WidePreset ?? Math.random() < 0.5;
+  if (isD1Wide) {
+    wideAssignmentQuestionSets.forEach((questions, index) => {
+      learningAssignments.push({
+        questions,
+        type: "learning",
+        day: `W${index + 1}D1`,
+      });
+    });
+    narrowAssignmentQuestionSets.forEach((questions, index) => {
+      learningAssignments.push({
+        questions,
+        type: "learning",
+        day: `W${index + 1}D2`,
+      });
+    });
+  } else {
+    narrowAssignmentQuestionSets.forEach((questions, index) => {
+      learningAssignments.push({
+        questions,
+        type: "learning",
+        day: `W${index + 1}D1`,
+      });
+    });
+    wideAssignmentQuestionSets.forEach((questions, index) => {
+      learningAssignments.push({
+        questions,
+        type: "learning",
+        day: `W${index + 1}D2`,
+      });
+    });
   }
 
   // 4. Generate posttest
