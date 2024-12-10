@@ -8,7 +8,7 @@
     "generate": "tsx ./nsfStudy2/generate.ts",
     "generate-questions": "tsx ./nsfStudy2/generateQuestions.ts",
     "test": "vitest",
-    "simulate": "tsx ./nsfStudy2/simulateStudy.ts"
+    "simulate": "tsx ./nsfStudy2/generateSimulatedEvents.ts"
   },
   "devDependencies": {
     "tsx": "^4.19.2",

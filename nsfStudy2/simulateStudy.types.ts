@@ -14,6 +14,8 @@ export interface SimulatedEvent {
 
   // Problem Information
   problemName: string;
+  level: string; // Course name
+  input: string; // Student's input submission
 
   // Condition Information
   conditionName1: "Standard Spacing";
@@ -43,6 +45,7 @@ export interface SimulatedEvent {
   cfAnonTeacherId: number;
   cfCourse: string;
   cfQuestionId: string;
+  cfAssignmentDay: string;
 
   // Outcome
   outcome: Outcome;
@@ -54,6 +57,8 @@ export const keysDict: Record<keyof SimulatedEvent, string> = {
   time: "Time",
   problemStartTime: "Problem Start Time",
   problemName: "Problem Name",
+  level: "Level (Course)",
+  input: "Input",
   conditionName1: "Condition Name",
   conditionType1: "Condition Type",
   conditionName2: "Condition Name",
@@ -73,5 +78,6 @@ export const keysDict: Record<keyof SimulatedEvent, string> = {
   cfAnonTeacherId: "CF (Anon Teacher Id)",
   cfCourse: "CF (Course)",
   cfQuestionId: "CF (Question Id)",
+  cfAssignmentDay: "CF (Assignment Day)",
   outcome: "Outcome",
 };

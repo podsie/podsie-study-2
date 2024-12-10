@@ -1,8 +1,7 @@
-import { writeFileSync } from "fs";
 import { generateSequences } from "./generateSequence";
 import { generateStudentAssignment } from "./generateStudentAssignment";
 import { Assignment, Question } from "./nsfStudy2.types";
-import { Outcome, SimulatedEvent, keysDict } from "./simulateStudy.types";
+import { Outcome, SimulatedEvent } from "./simulateStudy.types";
 
 interface SimulationConfig {
   schoolId: number;
@@ -98,6 +97,8 @@ function createSimulatedEvent(
     time: currentTime + responseTime,
     problemStartTime: currentTime,
     problemName: question.question.stem,
+    level: config.courseName,
+    input: response.selection,
     cfQuestionId: question.id,
     conditionName1: "Standard Spacing",
     conditionType1: question.condition?.spacing ?? "wide",
@@ -118,10 +119,11 @@ function createSimulatedEvent(
     cfAnonTeacherId: teacherId,
     cfCourse: config.courseName,
     outcome: response.outcome,
+    cfAssignmentDay: assignment.day,
   };
 }
 
-function simulateStudy(): SimulatedEvent[] {
+export function simulateStudy(): SimulatedEvent[] {
   const events: SimulatedEvent[] = [];
   const sequence = generateSequences();
   let studentId = 1;
@@ -177,19 +179,3 @@ function simulateStudy(): SimulatedEvent[] {
 
   return events;
 }
-
-function convertToTSV(events: SimulatedEvent[]): string {
-  const headers = Object.values(keysDict);
-  const rows = events.map((event) =>
-    Object.keys(keysDict).map((key) =>
-      String(event[key as keyof SimulatedEvent])
-    )
-  );
-
-  return [headers.join("\t"), ...rows.map((row) => row.join("\t"))].join("\n");
-}
-
-// Run simulation and save to file
-const simulatedEvents = simulateStudy();
-const tsvContent = convertToTSV(simulatedEvents);
-writeFileSync("./simulated_events.tsv", tsvContent, "utf-8");
