@@ -12,7 +12,7 @@ The generator creates sequences with the following characteristics:
   - Posttest (2 questions)
  
 
-The above is based on the [following pseudocode]([url](https://docs.google.com/document/d/10nUiwFA6HFJ7vvcEcUlM7cop0dTQq2H7xiRM-GDPNt4/edit?tab=t.qvbn6yu5b715)) from Phil Pavlik.
+The above is based on the [following pseudocode](https://docs.google.com/document/d/10nUiwFA6HFJ7vvcEcUlM7cop0dTQq2H7xiRM-GDPNt4/edit?tab=t.qvbn6yu5b715) from Phil Pavlik.
 
 
 ## Getting Started
