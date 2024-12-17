@@ -78,7 +78,7 @@ describe("Simulated Study Events", () => {
 
         // Count events by condition combination
         const conditionCounts = learningEvents.reduce((acc, event) => {
-          const key = `${event.conditionType1}-${event.conditionType2}`;
+          const key = `${event.conditionName1}-${event.conditionName2}`;
           acc[key] = (acc[key] || 0) + 1;
           return acc;
         }, {} as Record<string, number>);
@@ -105,7 +105,7 @@ describe("Simulated Study Events", () => {
 
         // Group events by condition combination and get unique LOs
         const conditionLOs = learningEvents.reduce((acc, event) => {
-          const key = `${event.conditionType1}-${event.conditionType2}`;
+          const key = `${event.conditionName1}-${event.conditionName2}`;
           if (!acc[key]) {
             acc[key] = new Set<string>();
           }
@@ -119,6 +119,50 @@ describe("Simulated Study Events", () => {
         expect(conditionLOs["narrow-high"].size).toBe(6);
         expect(conditionLOs["narrow-low"].size).toBe(6);
       });
+    });
+
+    it("each student should have a unique sequence of condition assignments", () => {
+      const studentIds = getUniqueStudentIds();
+
+      // Create a map of condition sequences by student
+      const studentSequences = new Map<number, string>();
+
+      studentIds.forEach((studentId) => {
+        const learningEvents = getEventsForStudentAndStage(
+          studentId,
+          "learning"
+        );
+
+        // Create a string representation of the condition sequence
+        const sequenceKey = learningEvents
+          .map(
+            (event) =>
+              `${event.conditionName1}-${event.conditionName2}-${event.kcTopic}`
+          )
+          .join("|");
+
+        // Store the sequence for this student
+        studentSequences.set(studentId, sequenceKey);
+      });
+
+      // Check that all sequences are unique
+      const uniqueSequences = new Set(studentSequences.values());
+      expect(uniqueSequences.size).toBe(studentIds.length);
+    });
+
+    it("should have correctly paired condition names and types", () => {
+      const events = simulateStudy();
+      const sampleEvent = events[0];
+
+      // First pair
+      expect(sampleEvent.conditionType1).toBe("Standard Spacing");
+      expect(typeof sampleEvent.conditionName1).toBe("string");
+      expect(["wide", "narrow"]).toContain(sampleEvent.conditionName1);
+
+      // Second pair
+      expect(sampleEvent.conditionType2).toBe("Question Variability");
+      expect(typeof sampleEvent.conditionName2).toBe("string");
+      expect(["high", "low"]).toContain(sampleEvent.conditionName2);
     });
   });
 });

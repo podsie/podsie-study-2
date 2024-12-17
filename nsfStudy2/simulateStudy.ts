@@ -91,6 +91,12 @@ function createSimulatedEvent(
   );
   const response = generateSimulatedResponse(question);
 
+  if (!question.condition) {
+    throw new Error(
+      `Question ${question.id} in ${assignment.type} (${assignment.day}) is missing condition`
+    );
+  }
+
   return {
     anonStudentId: studentId,
     sessionId,
@@ -100,10 +106,10 @@ function createSimulatedEvent(
     level: config.courseName,
     input: response.selection,
     cfQuestionId: question.id,
-    conditionName1: "Standard Spacing",
-    conditionType1: question.condition?.spacing ?? "wide",
-    conditionName2: "Question Variability",
-    conditionType2: question.condition?.variability ?? "high",
+    conditionType1: "Standard Spacing",
+    conditionName1: question.condition.spacing,
+    conditionType2: "Question Variability",
+    conditionName2: question.condition.variability,
     action: "Select",
     selection: response.selection,
     kcTopic: question.lo,
@@ -125,7 +131,6 @@ function createSimulatedEvent(
 
 export function simulateStudy(): SimulatedEvent[] {
   const events: SimulatedEvent[] = [];
-  const sequence = generateSequences();
   let studentId = 1;
   let sessionId = 1;
   for (let classId = 1; classId <= config.numClasses; classId++) {
@@ -143,6 +148,8 @@ export function simulateStudy(): SimulatedEvent[] {
       studentNum <= config.studentsPerClass;
       studentNum++
     ) {
+      // Generate a new sequence for each student
+      const sequence = generateSequences();
       const assignments = generateStudentAssignment(sequence);
 
       let currentTime = config.baseStartTime;

@@ -18,10 +18,10 @@ export interface SimulatedEvent {
   input: string; // Student's input submission
 
   // Condition Information
-  conditionName1: "Standard Spacing";
-  conditionType1: "wide" | "narrow";
-  conditionName2: "Question Variability";
-  conditionType2: "high" | "low";
+  conditionName1: "wide" | "narrow";
+  conditionType1: "Standard Spacing";
+  conditionName2: "high" | "low";
+  conditionType2: "Question Variability";
 
   // Action and Response
   action: "Select"; // In DataShop format, this is typically "Select" for all question types
