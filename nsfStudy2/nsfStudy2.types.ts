@@ -42,20 +42,19 @@ export interface QuestionBlock {
 
 interface PhaseSequence {
   pretest: {
-    questionSet1: Question; // Always QS1
-    randomQuestionSet: Question; // Randomly selected from QS2-5
-    selectedPretestSetNumber: number; // Store which set was selected (2-5)
+    selectedQuestion: Question; // Randomly selected from Q1-Q4
+    selectedSetIndex: number; // Store which set was selected (0-3)
   };
   learning: {
     blocks: QuestionBlock[]; // 3 blocks of 4 questions each
   };
   posttest: {
-    questionSet6: Question; // Always QS6
-    matchingPretest: Question; // Same set number as pretest random set
+    questionSet5: Question; // Q5
+    matchingPretest: Question; // Same as pretest selected question
   };
   postposttest: {
-    questionSet7: Question; // Always QS7
-    matchingPretest: Question; // Same set number as pretest random set
+    questionSet6: Question; // Q6
+    matchingPretest: Question; // Same as pretest selected question
   };
 }
 
