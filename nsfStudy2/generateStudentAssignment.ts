@@ -1,30 +1,62 @@
 import { Assignment, LearningObjective, Question } from "./nsfStudy2.types";
 import { shuffleArray } from "./util";
 
+/**
+ * Calculates the index into selectedQuestions based on week (1-6) and whether it's day A or B
+ * Week 1, Day A: index 0
+ * Week 1, Day B: index 1
+ * Week 2, Day A: index 2
+ * Week 2, Day B: index 3
+ * etc.
+ */
+const getLearningQuestionIndex = (week: number, isDayB: boolean): number => {
+  return (week - 1) * 2 + (isDayB ? 1 : 0);
+};
+
+const extractLearningQuestionsFromLO = (
+  lo: Omit<LearningObjective, "sets">,
+  index: number
+): Question[] => {
+  const question = lo.sequence!.learning.selectedQuestions[index];
+  return [{ ...question, condition: lo.condition }];
+};
+
+/**
+ * Gets the narrow spacing questions for a given day based on which LO is selected and whether it's high/low variability day
+ */
+const getNarrowSpacingQuestions = (
+  highVariabilityLO: Omit<LearningObjective, "sets"> | undefined,
+  lowVariabilityLO: Omit<LearningObjective, "sets"> | undefined,
+  isHighVariabilityDay: boolean
+): Question[] => {
+  const selectedLO = isHighVariabilityDay
+    ? highVariabilityLO
+    : lowVariabilityLO;
+  if (!selectedLO) {
+    return [];
+  }
+
+  return selectedLO.sequence!.learning.selectedQuestions.map((q) => ({
+    ...q,
+    condition: selectedLO.condition,
+  }));
+};
+
 export const generateStudentAssignment = (
-  learningObjectives: Omit<LearningObjective, "sets">[],
-  isD1WidePreset?: boolean
+  learningObjectives: Omit<LearningObjective, "sets">[]
 ): Assignment[] => {
+  // Generate pretest - one randomly selected question from Q1-Q4 for each standard
   const pretest: Assignment = {
     questions: shuffleArray(
-      learningObjectives.flatMap((lo) => {
-        return [
-          lo.sequence?.pretest.questionSet1,
-          lo.sequence?.pretest.randomQuestionSet,
-        ]
-          .filter((q): q is Question => q !== undefined)
-          .map((q) => ({
-            ...q,
-            condition: lo.condition,
-          }));
-      })
+      learningObjectives.map((lo) => ({
+        ...lo.sequence!.pretest.selectedQuestion,
+        condition: lo.condition,
+      }))
     ),
     type: "pretest",
     day: "pretest",
   };
 
-  const wideAssignmentQuestionSets: Assignment["questions"][] = [];
-  const narrowAssignmentQuestionSets: Assignment["questions"][] = [];
   const wideSpacingLOs = learningObjectives.filter(
     (lo) => lo.condition?.spacing === "wide"
   );
@@ -37,146 +69,130 @@ export const generateStudentAssignment = (
       lo.condition?.spacing === "narrow" && lo.condition?.variability === "low"
   );
 
-  const blockIndices = [
-    0, // day 1 takes from block 1 first half, so index 0 and then 0..1
-    0, // day 2 takes from block 1 second half, so index 0 and then 2..3
-    1, // day 3 takes from block 2 first half, so index 1 and then 0..1
-    1, // day 4 takes from block 2 second half, so index 1 and then 2..3
-    2, // day 5 takes from block 3 first half, so index 2 and then 0..1
-    2, // day 6 takes from block 3 second half, so index 2 and then 2..3
-  ];
+  // Track which narrow spacing LOs have been used
+  const usedNarrowSpacingLOs = new Set<number>();
 
-  const questionIndices = [
-    [0, 1], // day 1 takes from block 1 first half, so index 0 and then 0..1
-    [2, 3], // day 2 takes from block 1 second half, so index 0 and then 2..3
-    [0, 1], // day 3 takes from block 2 first half, so index 1 and then 0..1
-    [2, 3], // day 4 takes from block 2 second half, so index 1 and then 2..3
-    [0, 1], // day 5 takes from block 3 first half, so index 2 and then 0..1
-    [2, 3], // day 6 takes from block 3 second half, so index 2 and then 2..3
-  ];
-
-  for (let day = 1; day <= 6; day++) {
-    const currentDayWideQuestionSet: Assignment["questions"] = [];
-    // handle wide spacing LOs
-    const blockIndex = blockIndices[day - 1];
-    const [questionIndexStart, questionIndexEnd] = questionIndices[day - 1];
-    wideSpacingLOs.forEach((lo) => {
-      const block = lo.sequence?.learning.blocks[blockIndex];
-      if (block) {
-        const questions = block.questions
-          .slice(questionIndexStart, questionIndexEnd + 1) // +1 because slice is end-exclusive
-          .map((q) => ({ ...q, condition: lo.condition }));
-        currentDayWideQuestionSet.push(...questions);
-      }
-    });
-    wideAssignmentQuestionSets.push(
-      shuffleArray([...currentDayWideQuestionSet])
-    );
-
-    const currentDayNarrowQuestionSet: Assignment["questions"] = [];
-    // handle narrow spacing LOs
-    // take 1 high and 1 low variability LO for each day
-    const highVariabilityLO = narrowSpacingHighVariabilityLOs[day - 1];
-    const lowVariabilityLO = narrowSpacingLowVariabilityLOs[day - 1];
-    if (highVariabilityLO && lowVariabilityLO) {
-      const questions = [highVariabilityLO, lowVariabilityLO].flatMap((lo) =>
-        (lo.sequence?.learning.blocks ?? []).flatMap((block) =>
-          block.questions.map((q) => ({ ...q, condition: lo.condition }))
-        )
-      );
-      currentDayNarrowQuestionSet.push(...questions);
-    }
-    narrowAssignmentQuestionSets.push(
-      shuffleArray([...currentDayNarrowQuestionSet])
-    );
-  }
-
-  // use question sets to put together assignments:
   const learningAssignments: Assignment[] = [];
+  for (let week = 1; week <= 6; week++) {
+    const dayAIsHighVariability = Math.random() < 0.5;
 
-  // counter-balancing logic:
-  const isD1Wide = isD1WidePreset ?? Math.random() < 0.5;
-  if (isD1Wide) {
-    wideAssignmentQuestionSets.forEach((questions, index) => {
-      learningAssignments.push({
-        questions,
-        type: "learning",
-        day: `W${index + 1}D1`,
-      });
+    // Get unused narrow spacing LOs for this week
+    const unusedHighVariabilityLOs = narrowSpacingHighVariabilityLOs.filter(
+      (lo) => !usedNarrowSpacingLOs.has(lo.loNumber)
+    );
+    const unusedLowVariabilityLOs = narrowSpacingLowVariabilityLOs.filter(
+      (lo) => !usedNarrowSpacingLOs.has(lo.loNumber)
+    );
+
+    // Select LOs for this week and mark them as used
+    const highVariabilityLO = unusedHighVariabilityLOs[0];
+    const lowVariabilityLO = unusedLowVariabilityLOs[0];
+    if (highVariabilityLO) usedNarrowSpacingLOs.add(highVariabilityLO.loNumber);
+    if (lowVariabilityLO) usedNarrowSpacingLOs.add(lowVariabilityLO.loNumber);
+
+    const dayAQuestions = [
+      ...wideSpacingLOs.map((lo) =>
+        extractLearningQuestionsFromLO(
+          lo,
+          getLearningQuestionIndex(week, false)
+        )
+      ),
+      ...getNarrowSpacingQuestions(
+        highVariabilityLO,
+        lowVariabilityLO,
+        dayAIsHighVariability
+      ),
+    ].flat();
+
+    learningAssignments.push({
+      questions: shuffleArray(dayAQuestions),
+      type: "learning",
+      day: `W${week}D1`,
     });
-    narrowAssignmentQuestionSets.forEach((questions, index) => {
-      learningAssignments.push({
-        questions,
-        type: "learning",
-        day: `W${index + 1}D2`,
-      });
-    });
-  } else {
-    narrowAssignmentQuestionSets.forEach((questions, index) => {
-      learningAssignments.push({
-        questions,
-        type: "learning",
-        day: `W${index + 1}D1`,
-      });
-    });
-    wideAssignmentQuestionSets.forEach((questions, index) => {
-      learningAssignments.push({
-        questions,
-        type: "learning",
-        day: `W${index + 1}D2`,
-      });
+
+    const dayBQuestions = [
+      ...wideSpacingLOs.map((lo) =>
+        extractLearningQuestionsFromLO(lo, getLearningQuestionIndex(week, true))
+      ),
+      ...getNarrowSpacingQuestions(
+        highVariabilityLO,
+        lowVariabilityLO,
+        !dayAIsHighVariability
+      ),
+    ].flat();
+
+    learningAssignments.push({
+      questions: shuffleArray(dayBQuestions),
+      type: "learning",
+      day: `W${week}D2`,
     });
   }
 
-  // 4. Generate posttest
+  // Generate posttest - Q5 and matching pretest question for each standard
+  // Split into two sets of 24 questions each, then combine
+  const posttestQuestions = learningObjectives.map((lo) => ({
+    q5: { ...lo.sequence!.posttest.selectedQuestion, condition: lo.condition },
+    qx: { ...lo.sequence!.posttest.matchingPretest, condition: lo.condition },
+  }));
+
+  // Randomly assign each pair to either first or second set
+  const posttestSet1: Question[] = [];
+  const posttestSet2: Question[] = [];
+  posttestQuestions.forEach(({ q5, qx }) => {
+    if (Math.random() < 0.5) {
+      posttestSet1.push(q5);
+      posttestSet2.push(qx);
+    } else {
+      posttestSet1.push(qx);
+      posttestSet2.push(q5);
+    }
+  });
+
+  // Shuffle each set independently, then combine them in order
   const posttest: Assignment = {
-    questions: shuffleArray(
-      learningObjectives.flatMap((lo) => {
-        return [
-          lo.sequence?.posttest.questionSet6,
-          lo.sequence?.posttest.matchingPretest,
-        ]
-          .filter((q): q is Question => q !== undefined)
-          .map((q) => ({
-            ...q,
-            condition: lo.condition,
-          }));
-      })
-    ),
+    questions: [
+      ...shuffleArray([...posttestSet1]),
+      ...shuffleArray([...posttestSet2]),
+    ],
     type: "posttest",
     day: "posttest",
   };
 
+  // Generate post-posttest - Q6 and matching pretest question for each standard
+  // Split into two sets of 24 questions each, then combine
+  const postposttestQuestions = learningObjectives.map((lo) => ({
+    q6: {
+      ...lo.sequence!.postposttest.selectedQuestion,
+      condition: lo.condition,
+    },
+    qx: {
+      ...lo.sequence!.postposttest.matchingPretest,
+      condition: lo.condition,
+    },
+  }));
+
+  // Randomly assign each pair to either first or second set
+  const postposttestSet1: Question[] = [];
+  const postposttestSet2: Question[] = [];
+  postposttestQuestions.forEach(({ q6, qx }) => {
+    if (Math.random() < 0.5) {
+      postposttestSet1.push(q6);
+      postposttestSet2.push(qx);
+    } else {
+      postposttestSet1.push(qx);
+      postposttestSet2.push(q6);
+    }
+  });
+
+  // Shuffle each set independently, then combine them in order
   const postposttest: Assignment = {
-    questions: shuffleArray(
-      learningObjectives.flatMap((lo) => {
-        return [
-          lo.sequence?.postposttest.questionSet7,
-          lo.sequence?.postposttest.matchingPretest,
-        ]
-          .filter((q): q is Question => q !== undefined)
-          .map((q) => ({
-            ...q,
-            condition: lo.condition,
-          }));
-      })
-    ),
+    questions: [
+      ...shuffleArray([...postposttestSet1]),
+      ...shuffleArray([...postposttestSet2]),
+    ],
     type: "postposttest",
     day: "postposttest",
   };
 
-  // 5. Return all assignments
-  const sortedLearningAssignments = learningAssignments.sort((a, b) => {
-    const weekA = parseInt(a.day.match(/W(\d+)/)?.[1] ?? "0");
-    const weekB = parseInt(b.day.match(/W(\d+)/)?.[1] ?? "0");
-
-    if (weekA === weekB) {
-      // If same week, sort by day (D1 before D2)
-      return a.day.includes("D1") ? -1 : 1;
-    }
-
-    return weekA - weekB;
-  });
-
-  return [pretest, ...sortedLearningAssignments, posttest, postposttest];
+  return [pretest, ...learningAssignments, posttest, postposttest];
 };

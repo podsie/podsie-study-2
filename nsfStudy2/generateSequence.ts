@@ -43,80 +43,93 @@ export const generateSequences = () => {
     })
   );
 
-  // iterate through each LO:
   const finalLearningObjectives: LearningObjective[] =
     assignedLearningObjectives.map((lo) => {
       const shuffledSets = shuffleArray(lo.sets);
 
-      // 1. Handle Pretest
-      const selectedPretestSetNumber = random.int(2, 5); // Random number between 2-5
+      // 1. Select random pretest question from Q1-Q4
+      const pretestSetIndex = random.int(0, 3); // Random number between 0-3 for Q1-Q4
       const pretest = {
-        questionSet1: {
-          ...selectRandomQuestionFromSet(shuffledSets[0]),
-          conditions: lo.condition,
+        selectedQuestion: {
+          ...selectRandomQuestionFromSet(shuffledSets[pretestSetIndex]),
+          condition: lo.condition,
         },
-        selectedPretestSetNumber,
-        randomQuestionSet: selectRandomQuestionFromSet(
-          shuffledSets[selectedPretestSetNumber - 1]
-        ),
+        selectedSetIndex: pretestSetIndex,
       };
 
       // 2. Handle Learning Phase
       const blocks: QuestionBlock[] = [];
 
       if (lo.condition?.variability === "high") {
-        // create 3 blocks:
+        // Create 3 blocks with all Q1-Q4 questions
         while (blocks.length < 3) {
           const blockQuestions = shuffledSets
-            .slice(1, 5)
-            .map((set) => selectRandomQuestionFromSet(set));
+            .slice(0, 4) // Use Q1-Q4
+            .map((set) => ({
+              ...selectRandomQuestionFromSet(set),
+              condition: lo.condition,
+            }));
           blocks.push({
             questions: shuffleArray(blockQuestions),
             blockNumber: blocks.length + 1,
           });
         }
       } else {
-        // also create 3 blocks, but the questions are from the set selected for the pretest:
+        // Create 3 blocks using only the pretest question (Qx)
         while (blocks.length < 3) {
-          const selectedSet = shuffledSets[selectedPretestSetNumber - 1];
           const questions: Question[] = [];
           while (questions.length < 4) {
-            questions.push(selectRandomQuestionFromSet(selectedSet));
+            questions.push({
+              ...selectRandomQuestionFromSet(shuffledSets[pretestSetIndex]),
+              condition: lo.condition,
+            });
           }
           blocks.push({
-            questions,
+            questions: shuffleArray(questions),
             blockNumber: blocks.length + 1,
           });
         }
       }
 
-      // 3. Handle Posttest
+      // Get all selected questions from blocks
+      const selectedQuestions = blocks.flatMap((block) => block.questions);
+
+      // 3. Handle Posttest - Q5 and pretest question (Qx)
       const posttest = {
-        questionSet6: selectRandomQuestionFromSet(shuffledSets[5]), // Random question from Set 6
-        matchingPretest: selectRandomQuestionFromSet(
-          shuffledSets[pretest.selectedPretestSetNumber - 1]
-        ),
+        selectedQuestion: {
+          ...selectRandomQuestionFromSet(shuffledSets[4]), // Q5
+          condition: lo.condition,
+        },
+        matchingPretest: {
+          ...selectRandomQuestionFromSet(shuffledSets[pretestSetIndex]), // Qx
+          condition: lo.condition,
+        },
       };
 
+      // 4. Handle Delayed Posttest - Q6 and pretest question (Qx)
       const postposttest = {
-        questionSet7: selectRandomQuestionFromSet(shuffledSets[6]), // Random question from Set 7
-        matchingPretest: selectRandomQuestionFromSet(
-          shuffledSets[pretest.selectedPretestSetNumber - 1]
-        ),
+        selectedQuestion: {
+          ...selectRandomQuestionFromSet(shuffledSets[5]), // Q6
+          condition: lo.condition,
+        },
+        matchingPretest: {
+          ...selectRandomQuestionFromSet(shuffledSets[pretestSetIndex]), // Qx
+          condition: lo.condition,
+        },
       };
 
       return {
         ...lo,
         sequence: {
           pretest,
-          learning: { blocks },
+          learning: { selectedQuestions },
           posttest,
           postposttest,
         },
       };
     });
 
-  // remove no longer neded sets:
+  // Remove no longer needed sets
   const finalLearningObjectivesWithoutSets = finalLearningObjectives.map(
     (lo) => ({
       ...lo,
