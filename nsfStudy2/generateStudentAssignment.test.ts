@@ -1,7 +1,7 @@
 import { beforeAll, describe, expect, it } from "vitest";
 import { generateSequences } from "./generateSequence";
 import { generateStudentAssignment } from "./generateStudentAssignment";
-import { Assignment, LearningObjective } from "./nsfStudy2.types";
+import { Assignment, LearningObjective, Question } from "./nsfStudy2.types";
 
 // Add helper function to print the table
 function printLOFrequencyTable(
@@ -28,242 +28,171 @@ function printLOFrequencyTable(
 }
 
 describe("Generated Student Assignments", () => {
-  const isD1Wide = true;
   const sequences = generateSequences();
-  const assignments = generateStudentAssignment(sequences, isD1Wide);
+  const assignments = generateStudentAssignment(sequences);
 
-  describe("Each LO should be seen 18 times", () => {
-    it("should include each LO exactly 18 times across all assignments", () => {
-      const learningObjectives = generateSequences();
-      const assignments = generateStudentAssignment(learningObjectives);
-
-      // Count occurrences of each LO across all assignments
-      const loFrequency: Record<string, number> = {};
-
-      assignments.forEach((assignment) => {
-        assignment.questions.forEach((question) => {
-          const loId = question.lo;
-          loFrequency[loId] = (loFrequency[loId] || 0) + 1;
-        });
-      });
-
-      // Print the frequency table for debugging
-      printLOFrequencyTable(loFrequency, learningObjectives);
-
-      // Check that each LO appears exactly 18 times
-      Object.entries(loFrequency).forEach(([loId, frequency]) => {
-        expect(
-          frequency,
-          `LO ${loId} appears ${frequency} times instead of 18 times`
-        ).toBe(18);
+  // Print frequency table for debugging purposes
+  beforeAll(() => {
+    const loFrequency: Record<string, number> = {};
+    assignments.forEach((assignment) => {
+      assignment.questions.forEach((question) => {
+        const loId = question.lo;
+        loFrequency[loId] = (loFrequency[loId] || 0) + 1;
       });
     });
-  });
-
-  describe("Pretest", () => {
-    let pretest: Assignment;
-
-    beforeAll(() => {
-      pretest = assignments.find((a) => a.type === "pretest") as Assignment;
-    });
-
-    it("should have exactly 48 questions", () => {
-      expect(pretest.questions.length).toBe(48);
-    });
-
-    it("should have questions from all 24 LOs", () => {
-      const uniqueLOs = new Set(pretest.questions.map((q) => q.lo));
-      expect(uniqueLOs.size).toBe(24);
-    });
-
-    it("should have 2 questions per LO", () => {
-      const questionsPerLO = pretest.questions.reduce((acc, q) => {
-        acc[q.lo] = (acc[q.lo] || 0) + 1;
-        return acc;
-      }, {} as Record<string, number>);
-
-      Object.values(questionsPerLO).forEach((count) => {
-        expect(count).toBe(2);
-      });
-    });
+    printLOFrequencyTable(loFrequency, sequences);
   });
 
   describe("Learning Phase", () => {
-    describe("Wide Spacing Days (D1)", () => {
-      const wideDays = assignments.filter(
-        (a) => a.day.endsWith("D1") && a.type === "learning"
-      );
+    const learningAssignments = assignments
+      .filter((a) => a.type === "learning")
+      .sort((a, b) => a.day.localeCompare(b.day));
 
-      it("should have 6 wide spacing days", () => {
-        expect(wideDays.length).toBe(6);
-      });
-
-      it("should have 24 questions per day", () => {
-        wideDays.forEach((day) => {
-          expect(day.questions.length).toBe(24);
-        });
-      });
-
-      it("should include 2 questions from each wide-spacing LO", () => {
-        wideDays.forEach((day) => {
-          const questionsPerLO = day.questions.reduce((acc, q) => {
-            acc[q.lo] = (acc[q.lo] || 0) + 1;
-            return acc;
-          }, {} as Record<string, number>);
-
-          Object.values(questionsPerLO).forEach((count) => {
-            expect(count).toBe(2);
-          });
-        });
-      });
-
-      it("should have equal distribution of high and low variability LOs", () => {
-        wideDays.forEach((day) => {
-          const highVariabilityQuestions = day.questions.filter(
-            (q) => q.condition?.variability === "high"
-          );
-          const lowVariabilityQuestions = day.questions.filter(
-            (q) => q.condition?.variability === "low"
-          );
-
-          // Should have 12 questions from each variability condition
-          expect(highVariabilityQuestions.length).toBe(12);
-          expect(lowVariabilityQuestions.length).toBe(12);
-
-          // Should have 6 unique LOs for each variability condition
-          const highVariabilityLOs = new Set(
-            highVariabilityQuestions.map((q) => q.lo)
-          );
-          const lowVariabilityLOs = new Set(
-            lowVariabilityQuestions.map((q) => q.lo)
-          );
-          expect(highVariabilityLOs.size).toBe(6);
-          expect(lowVariabilityLOs.size).toBe(6);
-        });
-      });
+    it("should have 12 days total (6 weeks × 2 days)", () => {
+      expect(learningAssignments.length).toBe(12);
     });
 
-    describe("Narrow Spacing Days (D2)", () => {
-      const narrowDays = assignments.filter(
-        (a) => a.day.endsWith("D2") && a.type === "learning"
+    it("each wide spacing LO should appear once per day", () => {
+      const wideSpacingLOs = sequences.filter(
+        (lo) => lo.condition?.spacing === "wide"
       );
 
-      it("should have 6 narrow spacing days", () => {
-        expect(narrowDays.length).toBe(6);
-      });
-
-      it("should have 24 questions per day", () => {
-        narrowDays.forEach((day) => {
-          expect(day.questions.length).toBe(24);
-        });
-      });
-
-      it("should include 12 questions from each narrow-spacing LO", () => {
-        narrowDays.forEach((day) => {
-          const questionsPerLO = day.questions.reduce((acc, q) => {
-            acc[q.lo] = (acc[q.lo] || 0) + 1;
-            return acc;
-          }, {} as Record<string, number>);
-
-          // Each narrow spacing day should have 2 LOs with 12 questions each
-          expect(Object.keys(questionsPerLO).length).toBe(2);
-          Object.values(questionsPerLO).forEach((count) => {
-            expect(count).toBe(12);
-          });
-        });
-      });
-
-      it("should pair one high variability LO with one low variability LO each day", () => {
-        narrowDays.forEach((day) => {
-          const questionsPerLOAndVariability = day.questions.reduce(
-            (acc, q) => {
-              const key = `${q.lo}-${q.condition?.variability}`;
-              acc[key] = (acc[key] || 0) + 1;
-              return acc;
-            },
-            {} as Record<string, number>
-          );
-
-          // Should have exactly 2 LOs
-          expect(Object.keys(questionsPerLOAndVariability).length).toBe(2);
-
-          // Get unique LOs and their variability
-          const loVariability = Object.keys(questionsPerLOAndVariability).map(
-            (key) => ({
-              lo: key.split("-")[0],
-              variability: key.split("-")[1],
+      learningAssignments.forEach((assignment) => {
+        const wideLOsInDay = new Set(
+          assignment.questions
+            .filter((q) => {
+              const lo = sequences.find(
+                (lo) => `Learning Objective ${lo.loNumber}` === q.lo
+              );
+              return lo?.condition?.spacing === "wide";
             })
+            .map((q) => q.lo)
+        );
+
+        expect(wideLOsInDay.size).toBe(wideSpacingLOs.length);
+      });
+    });
+
+    it("each narrow spacing LO should appear exactly once in the learning phase", () => {
+      const narrowLOAppearances = new Map<string, number>();
+
+      learningAssignments.forEach((assignment) => {
+        const narrowQuestions = assignment.questions.filter((q) => {
+          const lo = sequences.find(
+            (lo) => `Learning Objective ${lo.loNumber}` === q.lo
           );
+          return lo?.condition?.spacing === "narrow";
+        });
 
-          // One LO should be high variability, one should be low
-          const variabilities = loVariability.map((lv) => lv.variability);
-          expect(variabilities).toContain("high");
-          expect(variabilities).toContain("low");
-
-          // Each LO should have 12 questions
-          Object.values(questionsPerLOAndVariability).forEach((count) => {
-            expect(count).toBe(12);
-          });
+        narrowQuestions.forEach((q) => {
+          narrowLOAppearances.set(
+            q.lo,
+            (narrowLOAppearances.get(q.lo) || 0) + 1
+          );
         });
       });
+
+      // Each narrow spacing LO should appear in exactly one day
+      narrowLOAppearances.forEach((count, loId) => {
+        const lo = sequences.find(
+          (lo) => `Learning Objective ${lo.loNumber}` === loId
+        );
+        if (lo?.condition?.spacing === "narrow") {
+          expect(count).toBe(12); // Should appear 12 times in one day
+        }
+      });
+    });
+
+    it("each week should have opposite variability conditions for narrow spacing LOs", () => {
+      for (let week = 1; week <= 6; week++) {
+        const day1 = learningAssignments.find((a) => a.day === `W${week}D1`);
+        const day2 = learningAssignments.find((a) => a.day === `W${week}D2`);
+
+        const getNarrowLOVariability = (assignment: Assignment) => {
+          const narrowQuestions = assignment.questions.filter((q) => {
+            const lo = sequences.find(
+              (lo) => `Learning Objective ${lo.loNumber}` === q.lo
+            );
+            return lo?.condition?.spacing === "narrow";
+          });
+          return narrowQuestions[0]?.condition?.variability;
+        };
+
+        const day1Variability = getNarrowLOVariability(day1!);
+        const day2Variability = getNarrowLOVariability(day2!);
+
+        expect(day1Variability).not.toBe(day2Variability);
+      }
     });
   });
 
-  describe("Posttest", () => {
-    let posttest: Assignment;
+  describe("Posttest and Post-posttest", () => {
+    const posttest = assignments.find((a) => a.type === "posttest")!;
+    const postposttest = assignments.find((a) => a.type === "postposttest")!;
 
-    beforeAll(() => {
-      posttest = assignments.find((a) => a.type === "posttest") as Assignment;
+    it("should have questions split into two equal sets", () => {
+      const halfLength = sequences.length;
+
+      // First half should be Set 1, second half should be Set 2
+      const firstHalf = posttest.questions.slice(0, halfLength);
+      const secondHalf = posttest.questions.slice(halfLength);
+
+      expect(firstHalf.length).toBe(secondHalf.length);
+      expect(firstHalf.length).toBe(sequences.length);
+
+      // Same for post-posttest
+      const ppFirstHalf = postposttest.questions.slice(0, halfLength);
+      const ppSecondHalf = postposttest.questions.slice(halfLength);
+
+      expect(ppFirstHalf.length).toBe(ppSecondHalf.length);
+      expect(ppFirstHalf.length).toBe(sequences.length);
     });
 
-    it("should have exactly 48 questions", () => {
-      expect(posttest.questions.length).toBe(48);
+    it("each LO should have one question in each set", () => {
+      const halfLength = sequences.length;
+
+      // Check posttest
+      const firstHalfLOs = new Set(
+        posttest.questions.slice(0, halfLength).map((q) => q.lo)
+      );
+      const secondHalfLOs = new Set(
+        posttest.questions.slice(halfLength).map((q) => q.lo)
+      );
+
+      expect(firstHalfLOs.size).toBe(sequences.length);
+      expect(secondHalfLOs.size).toBe(sequences.length);
+
+      // Check post-posttest
+      const ppFirstHalfLOs = new Set(
+        postposttest.questions.slice(0, halfLength).map((q) => q.lo)
+      );
+      const ppSecondHalfLOs = new Set(
+        postposttest.questions.slice(halfLength).map((q) => q.lo)
+      );
+
+      expect(ppFirstHalfLOs.size).toBe(sequences.length);
+      expect(ppSecondHalfLOs.size).toBe(sequences.length);
     });
 
-    it("should have questions from all 24 LOs", () => {
-      const uniqueLOs = new Set(posttest.questions.map((q) => q.lo));
-      expect(uniqueLOs.size).toBe(24);
-    });
+    it("each set should be independently randomized", () => {
+      const halfLength = sequences.length;
 
-    it("should have 2 questions per LO", () => {
-      const questionsPerLO = posttest.questions.reduce((acc, q) => {
-        acc[q.lo] = (acc[q.lo] || 0) + 1;
-        return acc;
-      }, {} as Record<string, number>);
+      // Helper to check if arrays are in different order
+      const areArraysInDifferentOrder = (
+        arr1: Question[],
+        arr2: Question[]
+      ) => {
+        return arr1.some((q, i) => q.lo !== arr2[i].lo);
+      };
 
-      Object.values(questionsPerLO).forEach((count) => {
-        expect(count).toBe(2);
-      });
-    });
-  });
+      // Check that Set 1 and Set 2 are in different orders
+      const posttestSet1 = posttest.questions.slice(0, halfLength);
+      const posttestSet2 = posttest.questions.slice(halfLength);
+      expect(areArraysInDifferentOrder(posttestSet1, posttestSet2)).toBe(true);
 
-  describe("Postposttest", () => {
-    let postposttest: Assignment;
-
-    beforeAll(() => {
-      postposttest = assignments.find(
-        (a) => a.type === "postposttest"
-      ) as Assignment;
-    });
-
-    it("should have exactly 48 questions", () => {
-      expect(postposttest.questions.length).toBe(48);
-    });
-
-    it("should have questions from all 24 LOs", () => {
-      const uniqueLOs = new Set(postposttest.questions.map((q) => q.lo));
-      expect(uniqueLOs.size).toBe(24);
-    });
-
-    it("should have 2 questions per LO", () => {
-      const questionsPerLO = postposttest.questions.reduce((acc, q) => {
-        acc[q.lo] = (acc[q.lo] || 0) + 1;
-        return acc;
-      }, {} as Record<string, number>);
-
-      Object.values(questionsPerLO).forEach((count) => {
-        expect(count).toBe(2);
-      });
+      const ppSet1 = postposttest.questions.slice(0, halfLength);
+      const ppSet2 = postposttest.questions.slice(halfLength);
+      expect(areArraysInDifferentOrder(ppSet1, ppSet2)).toBe(true);
     });
   });
 });

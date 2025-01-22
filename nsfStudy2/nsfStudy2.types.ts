@@ -24,9 +24,6 @@ export interface Assignment {
   questions: Question[];
   type: "pretest" | "learning" | "posttest" | "postposttest";
   day: string; // more info on days:
-  // eg. pretest, W1D1, W1D2, WXD1, WXD2, all the way to W6D1 and W6D2 (total of 12 learning days), posttest
-  // On WXD1, we want wide spacing + even split of high and low variability. This means 2 questions per LO: show all 12 LOs assigned to wide spacing.
-  // On WXD2, we want narrow spacing + even split of high and low variability. This means 12 questions per LO: show 2 LOs assigned to narrow spacing.
 }
 export interface QuestionSet {
   questions: Question[];
@@ -46,14 +43,14 @@ interface PhaseSequence {
     selectedSetIndex: number; // Store which set was selected (0-3)
   };
   learning: {
-    blocks: QuestionBlock[]; // 3 blocks of 4 questions each
+    selectedQuestions: Question[]; // All questions in learning phase
   };
   posttest: {
-    questionSet5: Question; // Q5
+    selectedQuestion: Question; // Q5
     matchingPretest: Question; // Same as pretest selected question
   };
   postposttest: {
-    questionSet6: Question; // Q6
+    selectedQuestion: Question; // Q6
     matchingPretest: Question; // Same as pretest selected question
   };
 }

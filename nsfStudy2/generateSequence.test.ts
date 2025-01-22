@@ -34,16 +34,12 @@ describe("Generated Student Sequence", () => {
       if (s.condition?.variability === "low") {
         describe("Low Variability", () => {
           it(`should use the same question set in learning phase as the selected pretest question for LO${s.loNumber}`, () => {
-            // Check all blocks and all questions within blocks
-            s.sequence?.learning.blocks.forEach((block) => {
-              block.questions.forEach((question) => {
-                const learningPhaseQuestionNumbers = extractQuestionNumbers(
-                  question.id
-                );
-                expect(learningPhaseQuestionNumbers).toBe(
-                  pretestQuestionNumbers
-                );
-              });
+            // Check all selected questions
+            s.sequence?.learning.selectedQuestions.forEach((question) => {
+              const learningPhaseQuestionNumbers = extractQuestionNumbers(
+                question.id
+              );
+              expect(learningPhaseQuestionNumbers).toBe(pretestQuestionNumbers);
             });
           });
         });
@@ -62,6 +58,13 @@ describe("Generated Student Sequence", () => {
             postposttestMatchingQuestionNumbers
           );
         }
+      });
+
+      // Test selectedQuestions
+      it(`should have 12 questions in selectedQuestions for LO${s.loNumber}`, () => {
+        const selectedQuestions = s.sequence?.learning.selectedQuestions;
+        expect(selectedQuestions).toBeDefined();
+        expect(selectedQuestions).toHaveLength(12);
       });
     });
   });

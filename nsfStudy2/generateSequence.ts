@@ -91,9 +91,12 @@ export const generateSequences = () => {
         }
       }
 
+      // Get all selected questions from blocks
+      const selectedQuestions = blocks.flatMap((block) => block.questions);
+
       // 3. Handle Posttest - Q5 and pretest question (Qx)
       const posttest = {
-        questionSet5: {
+        selectedQuestion: {
           ...selectRandomQuestionFromSet(shuffledSets[4]), // Q5
           condition: lo.condition,
         },
@@ -105,7 +108,7 @@ export const generateSequences = () => {
 
       // 4. Handle Delayed Posttest - Q6 and pretest question (Qx)
       const postposttest = {
-        questionSet6: {
+        selectedQuestion: {
           ...selectRandomQuestionFromSet(shuffledSets[5]), // Q6
           condition: lo.condition,
         },
@@ -119,7 +122,7 @@ export const generateSequences = () => {
         ...lo,
         sequence: {
           pretest,
-          learning: { blocks },
+          learning: { selectedQuestions },
           posttest,
           postposttest,
         },

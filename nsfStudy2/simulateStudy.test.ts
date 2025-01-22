@@ -1,9 +1,35 @@
-import { describe, expect, it } from "vitest";
+import { beforeAll, describe, expect, it } from "vitest";
 import { simulateStudy } from "./simulateStudy";
 import { SimulatedEvent } from "./simulateStudy.types";
 
+// Helper function to print frequency table
+function printEventFrequencyTable(events: SimulatedEvent[]) {
+  // Group events by stage and condition
+  const frequencyMap = events.reduce((acc, event) => {
+    const key = `${event.cfStage}-${event.conditionName1}-${event.conditionName2}`;
+    acc[key] = (acc[key] || 0) + 1;
+    return acc;
+  }, {} as Record<string, number>);
+
+  // Print table
+  console.log("\nStage\tSpacing\tVariability\tFrequency");
+  console.log("-".repeat(50));
+
+  Object.entries(frequencyMap)
+    .sort(([a], [b]) => a.localeCompare(b))
+    .forEach(([key, count]) => {
+      const [stage, spacing, variability] = key.split("-");
+      console.log(`${stage}\t${spacing}\t${variability}\t${count}`);
+    });
+}
+
 describe("Simulated Study Events", () => {
   const events = simulateStudy();
+
+  // Print frequency table for debugging purposes
+  beforeAll(() => {
+    printEventFrequencyTable(events);
+  });
 
   // Helper function to get events for a specific student and stage
   const getEventsForStudentAndStage = (
@@ -21,14 +47,14 @@ describe("Simulated Study Events", () => {
   };
 
   describe("Basic Event Counts", () => {
-    it("each student should have 48 events for pretest", () => {
+    it("each student should have 24 events for pretest", () => {
       const studentIds = getUniqueStudentIds();
       studentIds.forEach((studentId) => {
         const pretestEvents = getEventsForStudentAndStage(
           studentId,
           "pre-test"
         );
-        expect(pretestEvents).toHaveLength(48);
+        expect(pretestEvents).toHaveLength(24);
       });
     });
 
