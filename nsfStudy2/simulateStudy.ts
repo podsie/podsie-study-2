@@ -77,6 +77,45 @@ function mapAssignmentType(
   }
 }
 
+function calculateDueDate(
+  assignmentDay: string,
+  baseStartTime: number
+): number {
+  // For pre-test, due date is same as start date
+  if (assignmentDay === "pretest") {
+    return baseStartTime;
+  }
+
+  // For post-test, it's the day after W6D2
+  if (assignmentDay === "posttest") {
+    const w6d2Offset = (6 * 7 - 7 + 2) * 24 * 60 * 60 * 1000; // 6 weeks * 7 days - 7 days + 2 days
+    return baseStartTime + w6d2Offset + 24 * 60 * 60 * 1000; // Plus one more day
+  }
+
+  // For post-post-test, it's one week after post-test
+  if (assignmentDay === "postposttest") {
+    const posttestOffset = (6 * 7 - 7 + 2 + 1) * 24 * 60 * 60 * 1000; // Post-test offset
+    return baseStartTime + posttestOffset + 7 * 24 * 60 * 60 * 1000; // Plus one week
+  }
+
+  // For weekly assignments (e.g., "W1D1", "W2D2", etc.)
+  const match = assignmentDay.match(/W(\d+)D(\d+)/);
+  if (match) {
+    const week = parseInt(match[1]);
+    const day = parseInt(match[2]);
+
+    // Calculate offset:
+    // - Weeks are zero-based (W1 = week 0)
+    // - Days are one-based (D1 = first day)
+    const weekOffset = (week - 1) * 7 * 24 * 60 * 60 * 1000; // Each week
+    const dayOffset = day * 24 * 60 * 60 * 1000; // Days within week
+
+    return baseStartTime + weekOffset + dayOffset;
+  }
+
+  throw new Error(`Invalid assignment day format: ${assignmentDay}`);
+}
+
 function createSimulatedEvent(
   studentId: number,
   sessionId: number,
@@ -86,10 +125,23 @@ function createSimulatedEvent(
   teacherId: number,
   currentTime: number
 ): SimulatedEvent {
+  // Base response time (time to answer)
   const responseTime = Math.floor(
     config.averageResponseTimeMs * (0.5 + Math.random())
   );
+
+  // Additional time spent reviewing after answering (10-30% of response time)
+  const reviewTime = Math.floor(responseTime * (0.1 + Math.random() * 0.2));
+
   const response = generateSimulatedResponse(question);
+
+  // Calculate all timing values
+  const startTime = currentTime;
+  const responseTimestamp = startTime + responseTime;
+  const completionTimestamp = responseTimestamp + reviewTime;
+
+  // Calculate due date based on assignment day pattern
+  const dueDate = calculateDueDate(assignment.day, config.baseStartTime);
 
   if (!question.condition) {
     throw new Error(
@@ -100,8 +152,8 @@ function createSimulatedEvent(
   return {
     anonStudentId: studentId,
     sessionId,
-    time: currentTime + responseTime,
-    problemStartTime: currentTime,
+    time: responseTimestamp,
+    problemStartTime: startTime,
     problemName: question.question.stem,
     level: config.courseName,
     input: response.selection,
@@ -118,7 +170,7 @@ function createSimulatedEvent(
     class: classId,
     cfExemplarAnswer: question.answerKey.toString(),
     cfQuestionType: question.type,
-    cfOriginalDueDate: currentTime + 7 * 24 * 60 * 60 * 1000, // Due in 7 days
+    cfOriginalDueDate: dueDate,
     cfResponseTime: responseTime,
     cfExperimentId: config.experimentId,
     cfStage: mapAssignmentType(assignment.type),
@@ -126,6 +178,7 @@ function createSimulatedEvent(
     cfCourse: config.courseName,
     outcome: response.outcome,
     cfAssignmentDay: assignment.day,
+    cfCompletionTime: completionTimestamp,
   };
 }
 
@@ -133,6 +186,7 @@ export function simulateStudy(): SimulatedEvent[] {
   const events: SimulatedEvent[] = [];
   let studentId = 1;
   let sessionId = 1;
+
   for (let classId = 1; classId <= config.numClasses; classId++) {
     // Find the teacher for this class
     const teacherId = Object.entries(config.teacherAssignments).find(
@@ -148,18 +202,17 @@ export function simulateStudy(): SimulatedEvent[] {
       studentNum <= config.studentsPerClass;
       studentNum++
     ) {
-      // Generate a new sequence for each student
       const sequence = generateSequences();
       const assignments = generateStudentAssignment(sequence);
 
-      let currentTime = config.baseStartTime;
-
       // Process each assignment
       assignments.forEach((assignment) => {
-        // Add some variation to starting times between assignments
-        currentTime += Math.floor(
-          24 * 60 * 60 * 1000 * (0.9 + Math.random() * 0.2)
-        );
+        // Get the due date for this assignment
+        const dueDate = calculateDueDate(assignment.day, config.baseStartTime);
+
+        // Start the assignment 1-3 hours before due date
+        const hoursBeforeDue = 1 + Math.random() * 2; // 1-3 hours
+        let currentTime = dueDate - hoursBeforeDue * 60 * 60 * 1000;
 
         assignment.questions.forEach((question) => {
           const event = createSimulatedEvent(
@@ -173,10 +226,8 @@ export function simulateStudy(): SimulatedEvent[] {
           );
           events.push(event);
 
-          // Add some random time between questions
-          currentTime += Math.floor(
-            config.averageResponseTimeMs * (0.8 + Math.random() * 0.4)
-          );
+          // Update currentTime to the completion time of this question
+          currentTime = event.cfCompletionTime;
         });
         sessionId++;
       });

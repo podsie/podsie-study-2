@@ -9,8 +9,8 @@ export interface SimulatedEvent {
   // Student and Session Information
   anonStudentId: number;
   sessionId: number;
-  time: number; // Unix timestamp in milliseconds
-  problemStartTime: number; // Unix timestamp in milliseconds
+  time: number; // Unix timestamp - when answer submitted
+  problemStartTime: number; // Unix timestamp - when question first shown
 
   // Problem Information
   problemName: string;
@@ -39,7 +39,8 @@ export interface SimulatedEvent {
   cfExemplarAnswer: string;
   cfQuestionType: NSFQuestionType;
   cfOriginalDueDate: number; // Unix timestamp in milliseconds
-  cfResponseTime: number; // Unix timestamp in milliseconds
+  cfResponseTime: number; // Duration in ms between start and response
+  cfCompletionTime: number; // Unix timestamp - when student moves to next question
   cfExperimentId: number;
   cfStage: "pre-test" | "learning" | "post-test" | "post-post-test";
   cfAnonTeacherId: number;
@@ -73,6 +74,7 @@ export const keysDict: Record<keyof SimulatedEvent, string> = {
   cfQuestionType: "CF (Question Type)",
   cfOriginalDueDate: "CF (Original Due Date)",
   cfResponseTime: "CF (Response Time)",
+  cfCompletionTime: "CF (Completion Time)",
   cfExperimentId: "CF (Experiment ID)",
   cfStage: "CF (Stage)",
   cfAnonTeacherId: "CF (Anon Teacher Id)",
